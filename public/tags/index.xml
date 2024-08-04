@@ -16,6 +16,13 @@
       <description></description>
     </item>
     <item>
+      <title>电影</title>
+      <link>https://example.org/tags/%E7%94%B5%E5%BD%B1/</link>
+      <pubDate>Wed, 01 Jan 2020 21:31:20 +0000</pubDate>
+      <guid>https://example.org/tags/%E7%94%B5%E5%BD%B1/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Reading</title>
       <link>https://example.org/tags/reading/</link>
       <pubDate>Sun, 15 Dec 2019 11:56:45 +0000</pubDate>
