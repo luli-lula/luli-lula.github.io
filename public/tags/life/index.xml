@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Life on lula&#39;s blog</title>
-    <link>https://example.org/tags/life/</link>
+    <link>http://localhost:1313/tags/life/</link>
     <description>Recent content in Life on lula&#39;s blog</description>
     <generator>Hugo -- 0.128.2</generator>
     <language>en</language>
     <lastBuildDate>Sat, 03 Aug 2024 11:30:03 +0000</lastBuildDate>
-    <atom:link href="https://example.org/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024年又重新开始写博客</title>
-      <link>https://example.org/posts/2024%E5%B9%B4%E5%8F%88%E9%87%8D%E6%96%B0%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2/</link>
+      <link>http://localhost:1313/posts/2024%E5%B9%B4%E5%8F%88%E9%87%8D%E6%96%B0%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Sat, 03 Aug 2024 11:30:03 +0000</pubDate>
-      <guid>https://example.org/posts/2024%E5%B9%B4%E5%8F%88%E9%87%8D%E6%96%B0%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>http://localhost:1313/posts/2024%E5%B9%B4%E5%8F%88%E9%87%8D%E6%96%B0%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2/</guid>
       <description>现在写博客，可能也类似在在豆瓣写日记一样没人看吧，最近因为做独立产品买了一个域名，所以又开始产生折腾博客的念头，依然是用的Hugo+Github，似乎和七八年前一样，不过有了很多更便捷的工具。
 挣扎的互联网产品经理的工作 在国内互联网挣扎了6年之后，终于躺平摊手放弃了，成了传说中“永远升不上P8的底层大头兵”，6年时间呆了4个团队，老板换了六七八个，经历了互联网最后一点荣光，越来越发现自己在这个环境中无法适从。
 6年时间，环境在一点点恶化成一滩烂泥。看着互联网最后一点繁华消失殆尽，每个公司都内部宣扬着“不唯上”的slogan，但是却在每一个下班的时间要求下属们对老板和他们的朋友们上报的Case快速响应，从最开始强调用户体验和做正确的事情，到后来再听到职场上听到这些话会觉得可笑。

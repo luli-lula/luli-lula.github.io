@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Data Analyst on lula&#39;s blog</title>
+    <link>http://localhost:1313/tags/data-analyst/</link>
+    <description>Recent content in Data Analyst on lula&#39;s blog</description>
+    <generator>Hugo -- 0.128.2</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 May 2017 15:04:44 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/data-analyst/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL必知必会笔记</title>
+      <link>http://localhost:1313/posts/sql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 28 May 2017 15:04:44 +0000</pubDate>
+      <guid>http://localhost:1313/posts/sql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%AC%94%E8%AE%B0/</guid>
+      <description>Sams Teach Yourself SQL in 10 Minutes - Fourth Edition 语句备份，方便查阅，SQL Server版本
+检索数据 排序数据 过滤语句 模糊过滤 字段计算 函数 分组数据 嵌套查询 连接表 组合查询 插入数据 更新删除数据 创建和操纵类 使用视图 使用存储过程(批处理) 管理事务处理（transaction processing） 使用游标 高级SQL特性 约束 索引 触发器 检索数据 SELECT语句
+检索单个列 SELECT column_name FROM tablename; 检索多个列 SELECT col_name1, col_name2 FROM tablename; 检索所有列 SELECT * from tablename; 检索不同的值, 使用 DISTINCT关键词 SELECT DISTINCT col_name1 FROM tablename; 注意：DISTINCT关键字用于所有的列，不仅仅是跟在其后的那一列。 返回前五行结果 SELECT top 5 prod_name FROM Products 使用注释 ----注释的方法--- /* 这是注释 的方法2 */ 排序数据 ORDER BY 语句</description>
+    </item>
+  </channel>
+</rss>
