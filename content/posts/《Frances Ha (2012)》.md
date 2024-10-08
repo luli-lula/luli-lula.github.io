@@ -2,7 +2,6 @@
 title: '🎬《Frances Ha (2012)》'
 date: 2020-01-01 21:31:20
 tags: [Movies]
-published: true
 hideInList: false
 feature: /post-images/152-bu-dian-ying-ji-hua-lesslessfrances-ha-2012greatergreater.jpg
 ---
@@ -52,6 +51,4 @@ feature: /post-images/152-bu-dian-ying-ji-hua-lesslessfrances-ha-2012greatergrea
 >![](https://lilulula.github.io//post-images/1577886349930.jpg)
 
 
-真心觉得自己词穷了，表达能力堪忧还是本身体会就不够深呢？第一次类似写作，继续加油吧～
-进度条：1/52 ■☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐
 

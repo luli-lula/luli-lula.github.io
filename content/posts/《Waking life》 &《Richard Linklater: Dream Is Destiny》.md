@@ -2,7 +2,6 @@
 title: '🎬《Waking life》 &《Richard Linklater: Dream Is Destiny》'
 date: 2020-01-22 18:16:23
 tags: [Movies]
-published: true
 hideInList: false
 feature: 
 ---

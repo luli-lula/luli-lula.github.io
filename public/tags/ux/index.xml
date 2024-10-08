@@ -4,7 +4,7 @@
     <title>UX on lula&#39;s blog</title>
     <link>http://localhost:1313/tags/ux/</link>
     <description>Recent content in UX on lula&#39;s blog</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 16 Jul 2023 16:23:07 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ux/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,10 @@
       <link>http://localhost:1313/posts/course3-build-wireframes-and-low-fidelity-prototypes/</link>
       <pubDate>Sun, 16 Jul 2023 16:23:07 +0000</pubDate>
       <guid>http://localhost:1313/posts/course3-build-wireframes-and-low-fidelity-prototypes/</guid>
-      <description>01 Learn more about goal statements It’s time to merge the insights from empathy maps, personas, user stories, and user journey maps to come up with a focused scope for your designs. You’ll transition from the problem the user is facing to the solution we can create as UX designers. To focus the scope of your designs, you’ll create a goal statement. A goal statement is one or two sentences that describe a product and its benefits for the user.</description>
+      <description>&lt;!-- more --&gt;
+&lt;h1 id=&#34;01-learn-more-about-goal-statements&#34;&gt;01 Learn more about goal statements&lt;/h1&gt;
+&lt;p&gt;It’s time to merge the insights from empathy maps, personas, user stories, and user journey maps to come up with a focused scope for your designs. You’ll transition from the problem the user is facing to the solution we can create as UX designers. To focus the scope of your designs, you’ll create a goal statement. &lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;goal statement&lt;/strong&gt; is one or two sentences that describe a product and its benefits for the user. In other words, the goal statement provides the ideal solution for your design challenge. Goal statements cover &lt;em&gt;who&lt;/em&gt; the product will serve, &lt;em&gt;what&lt;/em&gt; the product will do, and &lt;em&gt;why&lt;/em&gt; the product solves the user’s need. &lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

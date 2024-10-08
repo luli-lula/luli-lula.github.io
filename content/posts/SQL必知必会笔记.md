@@ -2,7 +2,6 @@
 title: 'SQL必知必会笔记'
 date: 2017-05-28 15:04:44
 tags: [Data Analyst]
-published: true
 hideInList: false
 feature: 
 ---

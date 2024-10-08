@@ -2,7 +2,6 @@
 title: '📖《Jusitce：What''''s the right things to do》'
 date: 2019-11-24 13:59:31
 tags: [Books]
-published: true
 hideInList: false
 feature: /post-images/jusitcewhats-the-right-things-to-do.png
 ---

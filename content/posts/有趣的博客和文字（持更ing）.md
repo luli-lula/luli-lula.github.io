@@ -2,7 +2,6 @@
 title: '有趣的博客和文字（持更ing）'
 date: 2019-11-15 12:37:51
 tags: []
-published: false
 hideInList: false
 feature: 
 ---
