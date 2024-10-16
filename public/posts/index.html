@@ -164,6 +164,36 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">旧Kindle安装微信读书防踩坑全流程
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p> 上个月重新开始使用微信读书，又开始了30天的赌博（连续30天&#43;阅读30小时可以换取30天的会员卡活动），这就导致Kindle上看非常不方便，iPad又很难集中注意力，虽然Kindle上也支持网页，但是必须一直联网在线&#43;翻页延迟效果很不好，所以开始找解决方案。
+直接换开放系统的墨水屏，比如文石之类的 —— 1000&#43;有些小纠结，再加上海运过来时效太久 Kindle刷安卓安装微信读书 —— 非常折腾，有可能变砖 纠结了一段时间之后，一鼓作气尝试了#2，回头看当时可能也不知道有这么多步骤。其实一共分为三步，越狱（变为开放系统），刷机（安装安卓系统），安装匹配版本的软件。每一步网上都有挺多失败案例导致Kindle无法使用的劝退帖，但是实际走一遍之后发现其实并没有那么可怕，每一步基本上都有回滚的重新刷回原系统的方案，所以也不用太担心。
+最后安装好的效果个人感觉还不错，离线下载图书之后翻页效果好很多。掉电有些快，没有详细测量，下载之后关闭Wi-Fi的话可以几天充一次，打开Wi-Fi的话可能一两天就得充了。
+决策是不是要走这一遍之前，建议评估一下以下
+以下是全部完成之后的翻页效果，觉得效果能接受就可以开始https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click&amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9 需要准备：适配的Kindle版本（我的是kpw3，太老的不建议搞会很卡） &#43; kindle连接电脑数据线 &#43; windows系统的PC（主要是步骤二刷机程序是exe文件） 时间预估：全部顺利的话最多1小时完成，不顺利的话可能好几天。。。。 OK开始整体教程以及踩坑记录
+1. Kindle越狱（3分钟） 全流程参考书伴的攻略即可，非常详细基本上不会有问题，全程顺利的话3分钟完成
+Kpw3是要求Kindle 固件版本小于等于 5.16.2.1.1，我的设备信息里看正好是这个版本就直接开始了，按照四越狱步骤开始就行，书伴写的非常详细其实也就三步，正式开始之前可以B站找个视频几分钟看一下整个流程然后开始，这样就不用一步一步对着文字看。
+;enter_demo 并按回车加上秘密手势进入【演示模式】（这一步我是一次成功的，不行多尝试几次就行），这个名字真的好好笑 ;demo 按回车进入“演示菜单”界面，安装对应语言的越狱文件（这一步有一个需要快速拷贝文件的时间窗口，其实也不用紧张，提前插好USB一次成功） 拷贝热修复补丁文件到Kindle，整个流程就完成了 2. 刷安卓系统（5分钟） 全程参考的这个刷机程序的作者教程
+我是这个步骤卡住了好久，第一步我是全部在Mac系统完成没有问题，这一步刷机文件是exe程序，必须要windows系统，然后就进入了多年之前折腾安卓手机的噩梦。
+这个刷机程序的作者是一个中国人，在论坛有发完整教程和文件，也有B站完整流程，据说淘宝有人用他的刷机包卖钱，导致他直接删除了B站的下载链接，不过原始论坛的内容都还在可以直接看那个。
+先说一下正常流程
+安装**插件程序启动器MRPI&#43;**KUAL（流程继续参考书伴的教程1和2的部分） 拷贝刷机程序中的插件用KUAL安装完成 在windows上运行自动刷机程序.exe文件等待重启几次就完成了 这里我踩过的坑如下
+windows系统无法运行.exe文件（再次吐槽微软自作聪明太恶心了）
+都不是直接报错，而是双击之后显示文件找不到，回到文件夹发现文件消失。找了一下解决方案是关闭windows defender，这一步又发现我用的这台windows不知道为什么无法关闭，中间又尝试了一些添加不过滤exe文件的规则，以毒攻毒想用360杀毒来关闭windows denfender的方法都失败了。最后只能重装系统，最开始有尝试win7（因为下一个问题是驱动识别Kindle），但是后来发现新系统网卡问题一直无法联网，最后还是换回了win11的系统，成功关闭windows defender之后终于可以打开刷机程序了。
+驱动识别Kindle问题
+主要表现在运行刷机的exe文件之后，一直没有出现“识别出设备”，不停出现连接弹出设备提示音问题。B站评论有解释，但是都太复杂了，其实按照论坛英文版本的攻略走就行，下载并且安装驱动识别程序就行adb-setup-1.4.2，安装完成重试一次就OK了，后面就是等待重启完成
+3. 安装微信读书 看网友们尝试大部分推荐1.5.2的版本，大概是好几年前的旧版本，豌豆荚啥的都下载不到了。最后搜索到墨水屏版的这个拷贝到Kindle中之后，在kindle文件管理程序中打开就自动安装了，和安卓手机装软件类似。然后就可以开心阅读啦。
+最后的最后这个系统可以支持10张自定义的wallpaper，直接拷贝文件到wallpaper文件夹就行，非常方便，推荐这个kindle原始作家系列的壁纸 https://www.douban.com/photos/album/124589122/，如果自己有兴趣的话也可以自制一些，Google slides中设置1448 * 1072 尺寸，把自己希望的文字换个字体之类的输出为jpg就行。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-16 11:30:03 +0000 +0000'>October 16, 2024</span>&nbsp;·&nbsp;lula</footer>
+  <a class="entry-link" aria-label="post link to 旧Kindle安装微信读书防踩坑全流程" href="http://localhost:1313/posts/%E6%97%A7kindle%E5%AE%89%E8%A3%85%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E9%98%B2%E8%B8%A9%E5%9D%91%E5%85%A8%E6%B5%81%E7%A8%8B/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">2024年又重新开始写博客
     </h2>
   </header>
@@ -404,23 +434,6 @@ TOP250 分类TOP20 年度榜单（分类） 一周口碑榜 实时热门电影 �
   <footer class="entry-footer"><span title='2020-01-30 13:34:23 +0000 UTC'>January 30, 2020</span>&nbsp;·&nbsp;lula</footer>
   <a class="entry-link" aria-label="post link to 🎬《婚姻生活》" href="http://localhost:1313/posts/%E5%A9%9A%E5%A7%BB%E7%94%9F%E6%B4%BB/"></a>
 </article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">🎬《Waking life》 &amp;《Richard Linklater: Dream Is Destiny》
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>半梦半醒的人生 🌟🌟🌟🌟🌟 理查德·林克莱特：筑梦而生 🌟🌟🌟🌟
-写完上一篇之后断断续续看了一些电影，但是始终没有想要表达的内容和欲望，自己想了一下有两个原因，一个是没有看电影的欲望，自己似乎逐渐失去了看电影的热情和好奇心，偶尔新片宣传或者出资源了找来看看，老片子也耐不下性子去仔细的看。二是没有表达的内容，因为给自己定的目标，所以在豆瓣上找了一些推荐来看，但是看完总有一种就这样啊，似乎很难产生碰撞和表达欲。最后的最后就是带着输出的目标看电影很多时候会很有压力，会在没有输出和碰撞或者语言表达不出来的时候产生很大的焦虑而失去了做这件事本身的乐趣。
-最近放假放松了，把之前下载的电影陆续找出来看，Waking Life 断断续续看的差点睡着了，就像一个视频的哲学入门课，大段的哲学对白讨论，只有少数能产生共鸣，关于对于电影表达的思考和语言的意义，专门找了一个剧本网站。
-看完之后就想着把导演的纪录片也找来看看，没想到B站竟然有版权©️，一直因为他的电影似乎总是执着于时间所以觉得很特别，最喜欢的《爱在三部曲》相同的演员拍了18年，《少年时代》跟着小演员一起拍了12年。纪录片的第一个画面也说了“他的电影是关于时间的电影”。 半梦半醒的人生 Dream is Destiny 整部电影就是在讲主人公一直在做梦 叙述性对于电影的作用 电影是对于人而不是那个故事，最好的电影不一定有最好的剧本，最好的剧本不能拍出最好的电影，因为带有文学叙述的限制。此处@不喜欢写剧本的王家卫和林克莱特 三千年前的古希腊人和我们现在差不多，最近在看哲学入门书的时候也常有这种感觉，我们现在烦恼的事情古希腊人早已在集会探讨了 语言的意义和带来的精神交流 理查德·林克莱特：筑梦而生 Before Sunset 的拍摄其实本身并不是计划中的。 需要很长时间的练习，技术和能力才能才能把想法表达出来 电影是一个平行世界为那些不喜欢现实世界的人，那些不知道如何穿着得体，做一个正常人的人而存在，电影世界其实是包围着现实世界的另一个世界。 在产业集中的地方工作是不是对的事情？ PS 补充另外两个截图
-生活多美好 企鹅公路 年度进度条：3/52 ■■■☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2020-01-22 18:16:23 +0000 UTC'>January 22, 2020</span>&nbsp;·&nbsp;lula</footer>
-  <a class="entry-link" aria-label="post link to 🎬《Waking life》 &《Richard Linklater: Dream Is Destiny》" href="http://localhost:1313/posts/waking-life-richard-linklater-dream-is-destiny/"></a>
-</article>
 <footer class="page-footer">
   <nav class="pagination">
     <a class="next" href="http://localhost:1313/posts/page/2/">Next&nbsp;2/3&nbsp;»
@@ -441,10 +454,7 @@ TOP250 分类TOP20 年度榜单（分类） 一周口碑榜 实时热门电影 �
     
 <div class="busuanzi-footer">
   <span id="busuanzi_container_site_pv">
-    Total views<span id="busuanzi_value_site_pv"></span>次
-  </span>
-  <span id="busuanzi_container_site_uv">
-    Total visitors<span id="busuanzi_value_site_uv"></span>人次
+    Total Views <span id="busuanzi_value_site_pv"></span>次
   </span>
 </div></footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
