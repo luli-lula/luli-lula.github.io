@@ -1,7 +1,8 @@
-baseURL: https://ailula.top
+baseURL: https://ailula.top/
 languageCode: zh-cn
 title: lula's blog
 theme: PaperMod
+canonifyURLs: true 
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
