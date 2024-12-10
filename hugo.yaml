@@ -1,7 +1,7 @@
-baseURL: https://example.org/
+baseURL: https://ailula.top
 languageCode: zh-cn
 title: lula's blog
-theme: ["PaperMod"]
+theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
