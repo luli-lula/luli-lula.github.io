@@ -4,7 +4,7 @@
     <title>Share on lula&#39;s blog</title>
     <link>http://localhost:1313/tags/share/</link>
     <description>Recent content in Share on lula&#39;s blog</description>
-    <generator>Hugo -- 0.135.0</generator>
+    <generator>Hugo -- 0.139.4</generator>
     <language>en</language>
     <lastBuildDate>Wed, 16 Oct 2024 11:30:03 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/share/index.xml" rel="self" type="application/rss+xml" />
@@ -23,7 +23,7 @@
 &lt;p&gt;最后安装好的效果个人感觉还不错，离线下载图书之后翻页效果好很多。掉电有些快，没有详细测量，下载之后关闭Wi-Fi的话可以几天充一次，打开Wi-Fi的话可能一两天就得充了。&lt;/p&gt;
 &lt;p&gt;决策是不是要走这一遍之前，建议评估一下以下&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;以下是全部完成之后的翻页效果，觉得效果能接受就可以开始&lt;a href=&#34;https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click&amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9&#34;&gt;https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;以下是全部完成之后的翻页效果，觉得效果能接受就可以开始&lt;a href=&#34;https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9&#34;&gt;https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;需要准备：适配的Kindle版本（我的是kpw3，太老的不建议搞会很卡） + kindle连接电脑数据线 + windows系统的PC（主要是步骤二刷机程序是exe文件）&lt;/li&gt;
 &lt;li&gt;时间预估：全部顺利的话最多1小时完成，不顺利的话可能好几天。。。。&lt;/li&gt;
 &lt;/ol&gt;
@@ -32,7 +32,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;全流程参考&lt;a href=&#34;https://bookfere.com/post/1075.html&#34;&gt;书伴的攻略&lt;/a&gt;即可，非常详细基本上不会有问题，全程顺利的话3分钟完成&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Kpw3是要求Kindle 固件版本&lt;strong&gt;小于等于 5.16.2.1.1&lt;/strong&gt;，我的设备信息里看正好是这个版本就直接开始了，按照四越狱步骤开始就行，书伴写的非常详细其实也就三步，正式开始之前可以&lt;a href=&#34;https://www.bilibili.com/video/BV1PN4y1279z/?spm_id_from=333.337.search-card.all.click&amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9&#34;&gt;B站找个视频几分钟&lt;/a&gt;看一下整个流程然后开始，这样就不用一步一步对着文字看。&lt;/p&gt;
+&lt;p&gt;Kpw3是要求Kindle 固件版本&lt;strong&gt;小于等于 5.16.2.1.1&lt;/strong&gt;，我的设备信息里看正好是这个版本就直接开始了，按照四越狱步骤开始就行，书伴写的非常详细其实也就三步，正式开始之前可以&lt;a href=&#34;https://www.bilibili.com/video/BV1PN4y1279z/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9&#34;&gt;B站找个视频几分钟&lt;/a&gt;看一下整个流程然后开始，这样就不用一步一步对着文字看。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;;enter_demo&lt;/code&gt; 并按回车加上秘密手势进入【演示模式】（这一步我是一次成功的，不行多尝试几次就行），这个名字真的好好笑&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;;demo&lt;/code&gt; 按回车进入“演示菜单”界面，安装对应语言的越狱文件（这一步有一个需要快速拷贝文件的时间窗口，其实也不用紧张，提前插好USB一次成功）&lt;/li&gt;

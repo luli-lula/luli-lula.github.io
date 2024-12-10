@@ -4,7 +4,7 @@
     <title>lula&#39;s blog</title>
     <link>http://localhost:1313/</link>
     <description>Recent content on lula&#39;s blog</description>
-    <generator>Hugo -- 0.135.0</generator>
+    <generator>Hugo -- 0.139.4</generator>
     <language>en</language>
     <lastBuildDate>Wed, 16 Oct 2024 11:30:03 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
@@ -23,7 +23,7 @@
 &lt;p&gt;最后安装好的效果个人感觉还不错，离线下载图书之后翻页效果好很多。掉电有些快，没有详细测量，下载之后关闭Wi-Fi的话可以几天充一次，打开Wi-Fi的话可能一两天就得充了。&lt;/p&gt;
 &lt;p&gt;决策是不是要走这一遍之前，建议评估一下以下&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;以下是全部完成之后的翻页效果，觉得效果能接受就可以开始&lt;a href=&#34;https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click&amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9&#34;&gt;https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;以下是全部完成之后的翻页效果，觉得效果能接受就可以开始&lt;a href=&#34;https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9&#34;&gt;https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;需要准备：适配的Kindle版本（我的是kpw3，太老的不建议搞会很卡） + kindle连接电脑数据线 + windows系统的PC（主要是步骤二刷机程序是exe文件）&lt;/li&gt;
 &lt;li&gt;时间预估：全部顺利的话最多1小时完成，不顺利的话可能好几天。。。。&lt;/li&gt;
 &lt;/ol&gt;
@@ -32,7 +32,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;全流程参考&lt;a href=&#34;https://bookfere.com/post/1075.html&#34;&gt;书伴的攻略&lt;/a&gt;即可，非常详细基本上不会有问题，全程顺利的话3分钟完成&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Kpw3是要求Kindle 固件版本&lt;strong&gt;小于等于 5.16.2.1.1&lt;/strong&gt;，我的设备信息里看正好是这个版本就直接开始了，按照四越狱步骤开始就行，书伴写的非常详细其实也就三步，正式开始之前可以&lt;a href=&#34;https://www.bilibili.com/video/BV1PN4y1279z/?spm_id_from=333.337.search-card.all.click&amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9&#34;&gt;B站找个视频几分钟&lt;/a&gt;看一下整个流程然后开始，这样就不用一步一步对着文字看。&lt;/p&gt;
+&lt;p&gt;Kpw3是要求Kindle 固件版本&lt;strong&gt;小于等于 5.16.2.1.1&lt;/strong&gt;，我的设备信息里看正好是这个版本就直接开始了，按照四越狱步骤开始就行，书伴写的非常详细其实也就三步，正式开始之前可以&lt;a href=&#34;https://www.bilibili.com/video/BV1PN4y1279z/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9&#34;&gt;B站找个视频几分钟&lt;/a&gt;看一下整个流程然后开始，这样就不用一步一步对着文字看。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;;enter_demo&lt;/code&gt; 并按回车加上秘密手势进入【演示模式】（这一步我是一次成功的，不行多尝试几次就行），这个名字真的好好笑&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;;demo&lt;/code&gt; 按回车进入“演示菜单”界面，安装对应语言的越狱文件（这一步有一个需要快速拷贝文件的时间窗口，其实也不用紧张，提前插好USB一次成功）&lt;/li&gt;
@@ -279,7 +279,7 @@
 &lt;p&gt;我们将通过四个组成模块来解释中层控制系统的工作原理：第一个模块是占据栅格的软件工具；第二个模块是一个软件程序，用于识别并标记流入占据栅格的原始数据；第三个模块使用预测性的人工智能软件对障碍物用不确定性锥（Cones of Uncertainty）做替代；最后，第四个模块由一个短期轨迹规划器（Short-term Trajectory Planner）组成，负责引导汽车绕过感知到的障碍，同时保证遵守相应的交通规则。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>手抄报</title>
+      <title>手抄报20200418</title>
       <link>http://localhost:1313/posts/%E6%89%8B%E6%8A%84%E6%8A%A5/</link>
       <pubDate>Sat, 18 Apr 2020 14:32:43 +0000</pubDate>
       <guid>http://localhost:1313/posts/%E6%89%8B%E6%8A%84%E6%8A%A5/</guid>
@@ -467,8 +467,7 @@
 &lt;ul&gt;
 &lt;li&gt;展示电影评分信息方便选择&lt;/li&gt;
 &lt;li&gt;前置点击操作想看，看过的会把推荐标记为「看过」（有点纳闷为什么会推荐看过的电影，推测可能是强化用户标记的成就感）
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585894455114.jpeg&#34; alt=&#34;&#34;  /&gt;
-&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585894455114.jpeg&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;
@@ -531,8 +530,7 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;衡量指标：搜索满足度
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585821897735.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585821897735.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;【语义理解】：&lt;/p&gt;
@@ -600,8 +598,7 @@
 &lt;li&gt;分析双方利益关系：都是希望撮合交易，但是矛盾点在于每个人都渴望最优质的匹配对象，而最优质的资源是稀缺的&lt;/li&gt;
 &lt;li&gt;阶段性目标：成交率最大（在乘客需求更稀缺时，更偏向于乘客）&lt;/li&gt;
 &lt;li&gt;方案：
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585878966815.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585878966815.png&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;p&gt;网约车分派单策略1.0——以乘客为中心&lt;/p&gt;
@@ -717,16 +714,13 @@
 &lt;ol&gt;
 &lt;li&gt;流程梳理：乘客发单（乘客发单取消）——司机应答（司机无应答）——接驾（司机/乘客应答后取消）——司机乘客碰面&lt;/li&gt;
 &lt;li&gt;影响面分析：抽取1000个未成交Case分析原因
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585811559755.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585811559755.png&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;提出解决方案：
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585814793870.png&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585814819565.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585814793870.png&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585814819565.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
@@ -739,11 +733,9 @@
 搜索后点击了一条满足需求的搜索结果，无后续行为&lt;/li&gt;
 &lt;li&gt;拆解未达到理想态原因：
 随机抽取5000个用户搜索行为，人工分析其是否满足需求，其中1500个不满足的确定原因是什么
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585815187719.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585815187719.png&#34;&gt;&lt;/li&gt;
 &lt;li&gt;提出解决方案：
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585815266674.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1585815266674.png&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
@@ -775,7 +767,32 @@
 &lt;li&gt;&lt;strong&gt;阶段性调研&lt;/strong&gt;：针对产品现状的系统性调研，有效指导下阶段的工作。参考策略基础方法论&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;撰写需求发起项目&lt;/p&gt;</description>
+&lt;p&gt;撰写需求发起项目&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;以逻辑描述和Case示例的方式描述待解决问题和解决后的效果期望&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;简单策略：直接给出规则（已有数据积累时，基于数据分析判断，如银行APP中断操作时，重新输入密码的时间间隔；从0到1时，参照竞品给出，如多次重复尝试竞品给出），开发成本较小&lt;/li&gt;
+&lt;li&gt;复杂策略：详细描述待解决问题/输入因素/输出效果/总结概述/示例Case&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;策略文档
+&lt;ol&gt;
+&lt;li&gt;从0到1的项目：更多描述理想态，在怎样的输入下要达成怎样的输出效果&lt;/li&gt;
+&lt;li&gt;策略迭代的项目：更多描述策略现状，待解决问题是什么，针对这些问题，理想的输出结果是什么&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;项目背景：为什么要启动这个项目？&lt;/li&gt;
+&lt;li&gt;项目目标：理想态OR考核指标是什么&lt;/li&gt;
+&lt;li&gt;需求概述：理解整个文档的需求框架&lt;/li&gt;
+&lt;li&gt;需求详述：所有产品细节是怎么的？触发条件/考虑因素/特殊情况/Case示例&lt;/li&gt;
+&lt;li&gt;（统计需求、监控需求：非通用，0到1的需求不需要，修复bug的需求不需要）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;跟进开发评估&lt;/p&gt;</description>
     </item>
     <item>
       <title>🎬《婚姻生活》</title>
@@ -788,20 +805,16 @@
 &lt;p&gt;看的优酷的6集电视剧版本299分钟，断断续续看了一个月才看完，很喜欢这种密集型的对话电影。故事很简单就是一对夫妇的离婚过程，丈夫约翰是心理学教授，妻子玛丽安是离婚律师，大家眼中的模范夫妻，之后丈夫袒露自己出轨而离婚，玛丽安从崩溃到找到自我。整个过程都伴随着两个人的自我剖析和成长。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;没想到5年婚姻合同期的这个想法是从这儿来的：
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1580362961993.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1580362961993.jpg&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;印象最深的是第四集约翰袒露出轨离开玛丽安一年之后回来谈到孤独和安全感，人总是在外部去寻找，但是孤独实际上是不可避免的。
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1580362975832.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1580362975832.jpg&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;玛丽安在约翰离开后终于开始了思考自我，从小到大一直没有自己的主见，孤注一掷想要取悦他人，安全感是一个巨大的陷进，需要接受他人对于自己人格的侵蚀，而取悦他人的根本在于内疚感，女主袒露完自己后看向男主发现他已经睡着了。
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1580362996386.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1580363006436.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1580362996386.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1580363006436.jpg&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;进度条：4/52 ■■■■☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐&lt;/p&gt;</description>
     </item>
@@ -815,63 +828,48 @@
 &lt;p&gt;写完上一篇之后断断续续看了一些电影，但是始终没有想要表达的内容和欲望，自己想了一下有两个原因，一个是没有看电影的欲望，自己似乎逐渐失去了看电影的热情和好奇心，偶尔新片宣传或者出资源了找来看看，老片子也耐不下性子去仔细的看。二是没有表达的内容，因为给自己定的目标，所以在豆瓣上找了一些推荐来看，但是看完总有一种就这样啊，似乎很难产生碰撞和表达欲。最后的最后就是带着输出的目标看电影很多时候会很有压力，会在没有输出和碰撞或者语言表达不出来的时候产生很大的焦虑而失去了做这件事本身的乐趣。&lt;/p&gt;
 &lt;p&gt;最近放假放松了，把之前下载的电影陆续找出来看，Waking Life 断断续续看的差点睡着了，就像一个视频的哲学入门课，大段的哲学对白讨论，只有少数能产生共鸣，关于对于电影表达的思考和语言的意义，专门找了一个&lt;a href=&#34;https://wakinglifemovie.net/transcript&#34;&gt;剧本网站&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;看完之后就想着把导演的纪录片也找来看看，没想到B站竟然有版权©️，一直因为他的电影似乎总是执着于时间所以觉得很特别，最喜欢的《爱在三部曲》相同的演员拍了18年，《少年时代》跟着小演员一起拍了12年。纪录片的第一个画面也说了“他的电影是关于时间的电影”。
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579688824950.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579688824950.png&#34;&gt;&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;h2 id=&#34;半梦半醒的人生&#34;&gt;半梦半醒的人生&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Dream is Destiny 整部电影就是在讲主人公一直在做梦
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579688723128.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579688723128.png&#34;&gt;&lt;/li&gt;
 &lt;li&gt;叙述性对于电影的作用
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579693110149.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579693110149.jpg&#34;&gt;&lt;/li&gt;
 &lt;li&gt;电影是对于人而不是那个故事，最好的电影不一定有最好的剧本，最好的剧本不能拍出最好的电影，因为带有文学叙述的限制。此处@不喜欢写剧本的王家卫和林克莱特
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579693141552.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579693141552.jpg&#34;&gt;&lt;/li&gt;
 &lt;li&gt;三千年前的古希腊人和我们现在差不多，最近在看哲学入门书的时候也常有这种感觉，我们现在烦恼的事情古希腊人早已在集会探讨了
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579693175154.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579693175154.jpg&#34;&gt;&lt;/li&gt;
 &lt;li&gt;语言的意义和带来的精神交流
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579693209440.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579693209440.jpg&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;理查德林克莱特筑梦而生&#34;&gt;理查德·林克莱特：筑梦而生&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Before Sunset 的拍摄其实本身并不是计划中的。
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579692928028.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579692967931.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579692928028.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579692967931.jpg&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;需要很长时间的练习，技术和能力才能才能把想法表达出来
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579692999600.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579692999600.jpg&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;电影是一个平行世界为那些不喜欢现实世界的人，那些不知道如何穿着得体，做一个正常人的人而存在，电影世界其实是包围着现实世界的另一个世界。
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579693068274.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579693068274.jpg&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;在产业集中的地方工作是不是对的事情？
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579693274763.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579693274763.jpg&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;PS 补充另外两个截图&lt;/p&gt;
 &lt;h2 id=&#34;生活多美好&#34;&gt;生活多美好&lt;/h2&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579688782769.png&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579692891149.png&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579693244257.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579688782769.png&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579692891149.png&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579693244257.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;企鹅公路&#34;&gt;企鹅公路&lt;/h2&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579688673632.png&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1579688673632.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;年度进度条：3/52 ■■■☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐☐&lt;/p&gt;</description>
     </item>
     <item>
@@ -891,69 +889,55 @@
 &lt;li&gt;电影最后一幕是女主在公寓的邮箱中塞入自己名字的纸条，仿佛在说终于安定下来了，但是经历了最开始挚友离开，到无力负担房租而回家，最后放弃舞蹈梦想（希望只是暂时）来赚钱从而负担起这个独居的房子。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578018521855.jpeg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578018521855.jpeg&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;本来想请喜欢的人吃饭，结果无法刷卡，只能尴尬着跑着去取钱，还要为3刀的手续费犹豫一下，实际上对方毫无兴趣。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014058083.jpeg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014058083.jpeg&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;贯穿全片被认为是undateable的女主&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014098539.jpeg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014108548.jpeg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014115354.jpeg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578018601544.jpeg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014098539.jpeg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014108548.jpeg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014115354.jpeg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578018601544.jpeg&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;和女主最搭的木吉吐槽，坐在屏幕前的27岁女汉子感觉膝盖中枪&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014308803.jpeg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1577889383977.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014308803.jpeg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1577889383977.jpg&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;独自一人在巴黎的画面和BGM超级配&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014337603.jpeg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014343692.jpeg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014356471.jpeg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014337603.jpeg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014343692.jpeg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1578014356471.jpeg&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;在纽约无家可归把东西都塞进储物柜的时候剩下的椅子，和自己一样格格不入&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1577889337292.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1577889337292.jpg&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol start=&#34;7&#34;&gt;
 &lt;li&gt;女主和闺蜜之前的调侃(PS 电影频道的中文翻译)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1577889441652.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1577889441652.jpg&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol start=&#34;8&#34;&gt;
 &lt;li&gt;谈到什么是理想中的爱情，那种难以描述和周围人的尴尬真的是切身体会了&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1577886349930.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1577886349930.jpg&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     <item>
@@ -1216,13 +1200,11 @@
 &lt;h1 id=&#34;d1926北京乌鲁木齐&#34;&gt;D1（9.26）北京——乌鲁木齐&lt;/h1&gt;
 &lt;p&gt;周四下午从公司出发去石家庄的高铁上看到了很美的夕阳，虽然内心里面还有很多的不确定性，但是又充满了期待，突然意识自己所谓喜欢旅行似乎每次都是喜欢逃离的这个动作。
 最后晚点了2个小时，凌晨2点落地，见到了第一个伙伴：福州小牙医，发现经历很像也是第一次组队没有成功后来被捡，也很担忧毫无计划的开始，后来实在太晚了就洗洗睡了（都不知道第二天几点出发。。。）
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1576109894539.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1576109894539.jpg&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;d2-927乌鲁木齐奎屯独子山大峡谷景点独库公路起点乔尔玛&#34;&gt;D2 (9.27)乌鲁木齐——奎屯——独子山大峡谷(景点）——独库公路起点——乔尔玛&lt;/h1&gt;
 &lt;p&gt;【风景】
 从市区离开到独库公路起点，广阔的风景逐渐展开，去了大峡谷看了冰川地貌，很奇特但是拍不出来所以也就没有放照片了，第一晚走到一个只有三个宾馆的小县城，300一间房也就住了，这也是第一次发现睡袋实在太有用了，在条件不好的宾馆直接睡也不会冷。
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1576110829333.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1576110829333.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;【人物】
 早上82年老男人带着武汉社会女过来接我和福州小牙医，其余的人在另外一个车上，汇合之后大家才开始第一次商量行程。&lt;/p&gt;
 &lt;p&gt;其实新疆环线就只有两种走法，顺时针先去北边的喀纳斯，然后走南边的独库公路，或者反向。喀纳斯因为热门而且我们没有提前定住宿，十一期间天气很冷所以担心没有住的地方，独库公路经常临时封路不能走。&lt;/p&gt;
@@ -1231,8 +1213,7 @@
 &lt;h1 id=&#34;d3-928乔尔玛巴音布鲁克景点&#34;&gt;D3 (9.28)乔尔玛——巴音布鲁克（景点）&lt;/h1&gt;
 &lt;p&gt;【风景】
 早上触发因为在村里所以就开始起雾，经过的风景都特别美，下午3点左右就到了第一个景点，九曲十八弯，全程最坑的景点，就是地理书上看到很多的河流地貌类型，新疆的景点基本上都有一个问题：把入口放在离景区超级远的地方以收区间车费用，所以我们买了门票花了一个小时才到景点，结果进去发现还有一个短程小车的票，很愤怒但是还是买了。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1576112374931.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1576112374931.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;【人物】&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1251,12 +1232,17 @@
 &lt;h1 id=&#34;d4-929巴音布鲁克库车大峡谷景点独库公路终点库尔勒&#34;&gt;D4 (9.29)巴音布鲁克——库车大峡谷（景点）——独库公路终点——库尔勒&lt;/h1&gt;
 &lt;p&gt;【风景】
 超喜欢今天看了两种不同的地貌，红色的峡谷太震撼了，进去之间热的不行，走到深处寒气逼人，中午饭没吃呆了两个小时太美了，下午傍晚在独库的终点看到了露天的风蚀地貌。
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1576112795649.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1576112832973.jpg&#34; alt=&#34;&#34;  /&gt;
-
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1576112795649.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1576112832973.jpg&#34;&gt;
 【人物】
-昨天的问题在今天也没有解决，库车峡谷等了近两个小时，而他们也迁就了我们午饭没吃，一直饿到很晚才吃到午饭，然后将近12点才到大家精疲力尽也没时间讨论，我跟福州小牙医都不想和他们说话自己找了一个烧烤摊打包了一点串串。&lt;/p&gt;</description>
+昨天的问题在今天也没有解决，库车峡谷等了近两个小时，而他们也迁就了我们午饭没吃，一直饿到很晚才吃到午饭，然后将近12点才到大家精疲力尽也没时间讨论，我跟福州小牙医都不想和他们说话自己找了一个烧烤摊打包了一点串串。&lt;/p&gt;
+&lt;h1 id=&#34;d5930库尔勒那拉提草原&#34;&gt;D5(9.30)库尔勒——那拉提草原&lt;/h1&gt;
+&lt;p&gt;【风景】
+今天基本上全程都在赶路，没什么风景，但是翻越一座山的时候出现了下雪，异常天气超级奇特，晚上到了那拉提草原，因为下雨所以没有进去，但是跟着北京gay一起走到了一个废弃的公园，下过雨之后的云和雪山太美了。
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lilulula.github.io//post-images/1576112940872.jpg&#34;&gt;
+【人物】
+早上出发的时候我们计划这次直接到伊宁，所以到那拉提下了很大的雨我们就飞速前进，后车全程都在停下来玩，所以时间差再次拉大，导致的结果就是我们在饭馆以为他们很快到所以点了很多菜，结果他们到的时候我们都吃完了，终于爆发了，就是两辆车的司机不同步的问题，北京gay很生气觉得一天都在开车，什么也没玩还在吵架浪费时间，所以就留下了领队和82年老男人一起商量，带着我们趁着最后的时间瞎逛了一下。
+这也是第一次上另外一辆车，跟着他一起淋着小雨，偷偷翻栅栏进了一个废弃公园，很诡异也很有趣，完全抛弃之前怕淋雨怕被抓的自己，这次下定决心要换车了。&lt;/p&gt;</description>
     </item>
     <item>
       <title>📖《Jusitce：What&#39;&#39;s the right things to do》</title>
@@ -1379,66 +1365,66 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;🔗&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;❤️&lt;/th&gt;
+          &lt;th&gt;🔗&lt;/th&gt;
+          &lt;th&gt;❤️&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://www.liaoyuqin.com/post/it-s-me/liqixproject&#34;&gt;liaoyuqin&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;很可爱的94年妹子，最开始是从利器访谈中找到的，访谈最后一个问题：推荐一件生活中的利器给大家，回答是三观相合的可爱男朋友。&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.liaoyuqin.com/post/it-s-me/liqixproject&#34;&gt;liaoyuqin&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;很可爱的94年妹子，最开始是从利器访谈中找到的，访谈最后一个问题：推荐一件生活中的利器给大家，回答是三观相合的可爱男朋友。&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://blog.joway.io/&#34;&gt;joway&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;很复古设计的网站&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://blog.joway.io/&#34;&gt;joway&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;很复古设计的网站&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://www.byvoid.com/zhs/blog/list&#34;&gt;byvoid&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;谷歌日本员工，游记写的很不错&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.byvoid.com/zhs/blog/list&#34;&gt;byvoid&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;谷歌日本员工，游记写的很不错&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://tumutanzi.com/archives&#34;&gt;土木坛子&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;知名中文博客&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://tumutanzi.com/archives&#34;&gt;土木坛子&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;知名中文博客&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://chenghouwen.com/about&#34;&gt;程心诚意&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;文字是指向月亮的手指&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://chenghouwen.com/about&#34;&gt;程心诚意&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;文字是指向月亮的手指&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://www.lushaojun.com/file&#34;&gt;随望淡思&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;记录了17年生活的博客&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.lushaojun.com/file&#34;&gt;随望淡思&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;记录了17年生活的博客&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;http://www.loyhome.com/me/&#34;&gt;落园&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;专注经济视角下的互联网&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;http://www.loyhome.com/me/&#34;&gt;落园&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;专注经济视角下的互联网&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://yihui.org/cn/&#34;&gt;谢益辉&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;生活博主&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://yihui.org/cn/&#34;&gt;谢益辉&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;生活博主&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;http://www.yinwang.org/&#34;&gt;王垠的个人主页&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;语言方面专家，思路开阔&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;http://www.yinwang.org/&#34;&gt;王垠的个人主页&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;语言方面专家，思路开阔&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://chidd.net/&#34;&gt;陈大猫&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://chidd.net/&#34;&gt;陈大猫&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;http://linlinxing.net/&#34;&gt;Time within time&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;摄影师&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;http://linlinxing.net/&#34;&gt;Time within time&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;摄影师&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://lastone.art/link/&#34;&gt;一稿计划&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;设计师&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://lastone.art/link/&#34;&gt;一稿计划&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;设计师&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://zerg.cc/updates.html&#34;&gt;战国册&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;历史题材&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://zerg.cc/updates.html&#34;&gt;战国册&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;历史题材&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;http://1900.live/archive-post/&#34;&gt;1900&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;写了10年的博客&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;http://1900.live/archive-post/&#34;&gt;1900&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;写了10年的博客&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1802,8 +1788,7 @@ TIPs:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-24/63210392.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-24/63210392.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Q1.你认为图中爱先锋处于哪个生命和周期阶段？&lt;/strong&gt;
 处于成长期，从2014年的1.0版本到2015/06/01的2.0版本，可以看到迭代版本次数较少，主要是集中产品的基本功能迭代。而在v2.0开始进入成长期，开始在提升平台内的商品的品种并在运营上下力。在2015/11/01的v2.5版本基于双十一的运营推广取得了很好的效果，进入快速成长期。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Q2. 为了用户增长做了哪些努力&lt;/strong&gt;&lt;/p&gt;
@@ -1948,8 +1933,7 @@ TIPs:&lt;/p&gt;
 &lt;li&gt;求推广，附上相应的位置、文案、物料；&lt;/li&gt;
 &lt;li&gt;求销售，准备好材料和宣讲会时间，有使用帮助；&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-24/95151028.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-24/95151028.jpg&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;拓展阅读&#34;&gt;拓展阅读&lt;/h3&gt;
 &lt;p&gt;以下内容不是规范，只是写邮件时的总结，请务必根据自己公司、团队的实际情况带入思考。
 重点注意一下几点：&lt;/p&gt;
@@ -2218,15 +2202,13 @@ TIPs:&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;产品经理成长体系&#34;&gt;产品经理成长体系&lt;/h2&gt;
 &lt;p&gt;实际上就是一个螺旋上升的过程，学对应自己的阶段的内容&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-3/12152901.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-3/12152901.jpg&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;用产品画布思考问题&#34;&gt;用产品画布思考问题&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;产品设计的关键：用户，场景，需求&lt;/li&gt;
 &lt;li&gt;实际上就是从《Running Lean》里面的框架改的&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-3/18974775.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-3/18974775.jpg&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;产品生命周期理论&#34;&gt;产品生命周期理论&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;探索期，成长期，成熟期，衰退期&lt;/li&gt;
@@ -2243,34 +2225,33 @@ TIPs:&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;渠道&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;内容&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;处理策略&lt;/th&gt;
+          &lt;th&gt;渠道&lt;/th&gt;
+          &lt;th&gt;内容&lt;/th&gt;
+          &lt;th&gt;处理策略&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;公共渠道&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;应用商店，微博，贴吧，论坛&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;勤搜索，关键字订阅，监测工具&lt;/td&gt;
+          &lt;td&gt;公共渠道&lt;/td&gt;
+          &lt;td&gt;应用商店，微博，贴吧，论坛&lt;/td&gt;
+          &lt;td&gt;勤搜索，关键字订阅，监测工具&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;半公开渠道&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;微信群，朋友圈定期搜索关键词&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;定期分析用户评论&lt;/td&gt;
+          &lt;td&gt;半公开渠道&lt;/td&gt;
+          &lt;td&gt;微信群，朋友圈定期搜索关键词&lt;/td&gt;
+          &lt;td&gt;定期分析用户评论&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;内部渠道&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;用户投诉，客服咨询&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;整合内部用户反馈渠道，定期与一线同事沟通&lt;/td&gt;
+          &lt;td&gt;内部渠道&lt;/td&gt;
+          &lt;td&gt;用户投诉，客服咨询&lt;/td&gt;
+          &lt;td&gt;整合内部用户反馈渠道，定期与一线同事沟通&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;简单的用户调研主动渠道&#34;&gt;简单的用户调研（主动渠道）&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;明确调研的背景和目的
-&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-17/33831099.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-17/33831099.jpg&#34;&gt;&lt;/li&gt;
 &lt;li&gt;选择目标典型用户（5-10个）&lt;/li&gt;
 &lt;li&gt;猜测用户问题&lt;/li&gt;
 &lt;/ol&gt;
@@ -2321,29 +2302,24 @@ TIPs:&lt;/p&gt;
 &lt;h3 id=&#34;问问题的技巧&#34;&gt;问问题的技巧&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;深入追问
-&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-17/71924099.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-17/71924099.jpg&#34;&gt;&lt;/li&gt;
 &lt;li&gt;侧面对比相关产品
-&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-17/67201742.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-17/67201742.jpg&#34;&gt;&lt;/li&gt;
 &lt;li&gt;行为分析
 &lt;ul&gt;
 &lt;li&gt;在网络调研时无法层层深入追问，而且原因类问题更难回答。
-&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-17/54735235.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-17/54735235.jpg&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;连环问很容易引起反感，把问题转化为只需要回忆或者陈述事实的问题
-&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-17/57870279.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/li&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-17/57870279.jpg&#34;&gt;&lt;/li&gt;
 &lt;li&gt;用户访谈最重要的是&amp;quot;让用户更好的诉说&amp;quot;&lt;/li&gt;
 &lt;li&gt;如果调研结果对于下一步行动没有有价值的指导意义，调研就是失败的。&lt;/li&gt;
 &lt;li&gt;做用户调研是一个验证自己的想法，发现机会的过程，事先想好ABC的解决方案问问用户的意见&lt;/li&gt;
 &lt;li&gt;用户的言行不一致,,如果你想预测一个人你在面对某一真实的特定情景或特定任务时将如何表现的话，对假设性情景的口头回答（调查问卷）是远远不够的&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;gap模型找到问题缺口在什么地方&#34;&gt;GAP模型，找到问题缺口在什么地方&lt;/h3&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-17/75733706.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;</description>
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://oczbwvoof.bkt.clouddn.com/17-7-17/75733706.jpg&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>地图导航产品分析报告</title>
@@ -2354,34 +2330,20 @@ TIPs:&lt;/p&gt;
 没有实习经历，只能傻了吧唧自己瞎琢磨花了一段时间磨出来下面的内容，也算是后来找工作的敲门砖，现在回头看起来里面的观点真的太幼稚了，但是还是还能回想起来当时截图对比分析时的乐趣和初心
 高德和百度都做到10.0了，从当时觉得很酷很有价值的工具产品，到现在挂在嘴上的竞品，时间的力量。
 PS：之前的图床挂了，最后还是从邮箱里面找到PDF重新转上来，阅读体验不好也只能见谅了&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720381282.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720387894.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720393975.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720398726.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720405828.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720428060.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720435525.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720441708.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720449842.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720454525.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720458741.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720463758.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720468092.jpg&#34; alt=&#34;&#34;  /&gt;
-
-&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720471992.jpg&#34; alt=&#34;&#34;  /&gt;
-&lt;/p&gt;</description>
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720381282.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720387894.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720393975.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720398726.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720405828.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720428060.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720435525.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720441708.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720449842.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720454525.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720458741.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720463758.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720468092.jpg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;https://lulalilu.github.io//post-images/1571720471992.jpg&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>SQL必知必会笔记</title>
