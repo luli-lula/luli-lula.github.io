@@ -1,6 +1,5 @@
 ---
 title: "我的项目"
-layout: "projects"
 url: "/projects/"
 description: "我做的一些有趣的Side Projects"
 ---

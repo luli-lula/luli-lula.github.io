@@ -2,143 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on lula&#39;s blog</title>
-    <link>https://ailula.top/tags/</link>
+    <link>http://localhost:1314/tags/</link>
     <description>Recent content in Tags on lula&#39;s blog</description>
     <generator>Hugo -- 0.139.4</generator>
     <language>en</language>
     <lastBuildDate>Thu, 20 Mar 2025 15:31:56 -0400</lastBuildDate>
-    <atom:link href="https://ailula.top/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reading</title>
-      <link>https://ailula.top/tags/reading/</link>
+      <link>http://localhost:1314/tags/reading/</link>
       <pubDate>Thu, 20 Mar 2025 15:31:56 -0400</pubDate>
-      <guid>https://ailula.top/tags/reading/</guid>
+      <guid>http://localhost:1314/tags/reading/</guid>
       <description></description>
     </item>
     <item>
       <title>Share</title>
-      <link>https://ailula.top/tags/share/</link>
+      <link>http://localhost:1314/tags/share/</link>
       <pubDate>Wed, 16 Oct 2024 11:30:03 +0000</pubDate>
-      <guid>https://ailula.top/tags/share/</guid>
+      <guid>http://localhost:1314/tags/share/</guid>
       <description></description>
     </item>
     <item>
       <title>Life</title>
-      <link>https://ailula.top/tags/life/</link>
+      <link>http://localhost:1314/tags/life/</link>
       <pubDate>Sat, 03 Aug 2024 11:30:03 +0000</pubDate>
-      <guid>https://ailula.top/tags/life/</guid>
+      <guid>http://localhost:1314/tags/life/</guid>
       <description></description>
     </item>
     <item>
       <title>CSS</title>
-      <link>https://ailula.top/tags/css/</link>
+      <link>http://localhost:1314/tags/css/</link>
       <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://ailula.top/tags/css/</guid>
+      <guid>http://localhost:1314/tags/css/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>https://ailula.top/tags/hugo/</link>
+      <link>http://localhost:1314/tags/hugo/</link>
       <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://ailula.top/tags/hugo/</guid>
+      <guid>http://localhost:1314/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>JavaScript</title>
-      <link>https://ailula.top/tags/javascript/</link>
+      <link>http://localhost:1314/tags/javascript/</link>
       <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://ailula.top/tags/javascript/</guid>
+      <guid>http://localhost:1314/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
       <title>PaperMod</title>
-      <link>https://ailula.top/tags/papermod/</link>
+      <link>http://localhost:1314/tags/papermod/</link>
       <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://ailula.top/tags/papermod/</guid>
+      <guid>http://localhost:1314/tags/papermod/</guid>
       <description></description>
     </item>
     <item>
       <title>个人项目</title>
-      <link>https://ailula.top/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/</link>
+      <link>http://localhost:1314/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/</link>
       <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://ailula.top/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/</guid>
+      <guid>http://localhost:1314/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/</guid>
       <description></description>
     </item>
     <item>
       <title>Next.js 14</title>
-      <link>https://ailula.top/tags/next.js-14/</link>
+      <link>http://localhost:1314/tags/next.js-14/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://ailula.top/tags/next.js-14/</guid>
+      <guid>http://localhost:1314/tags/next.js-14/</guid>
       <description></description>
     </item>
     <item>
       <title>React</title>
-      <link>https://ailula.top/tags/react/</link>
+      <link>http://localhost:1314/tags/react/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://ailula.top/tags/react/</guid>
+      <guid>http://localhost:1314/tags/react/</guid>
       <description></description>
     </item>
     <item>
       <title>Tailwind CSS</title>
-      <link>https://ailula.top/tags/tailwind-css/</link>
+      <link>http://localhost:1314/tags/tailwind-css/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://ailula.top/tags/tailwind-css/</guid>
+      <guid>http://localhost:1314/tags/tailwind-css/</guid>
       <description></description>
     </item>
     <item>
       <title>TypeScript</title>
-      <link>https://ailula.top/tags/typescript/</link>
+      <link>http://localhost:1314/tags/typescript/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://ailula.top/tags/typescript/</guid>
+      <guid>http://localhost:1314/tags/typescript/</guid>
       <description></description>
     </item>
     <item>
       <title>健康应用</title>
-      <link>https://ailula.top/tags/%E5%81%A5%E5%BA%B7%E5%BA%94%E7%94%A8/</link>
+      <link>http://localhost:1314/tags/%E5%81%A5%E5%BA%B7%E5%BA%94%E7%94%A8/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://ailula.top/tags/%E5%81%A5%E5%BA%B7%E5%BA%94%E7%94%A8/</guid>
+      <guid>http://localhost:1314/tags/%E5%81%A5%E5%BA%B7%E5%BA%94%E7%94%A8/</guid>
       <description></description>
     </item>
     <item>
       <title>无障碍设计</title>
-      <link>https://ailula.top/tags/%E6%97%A0%E9%9A%9C%E7%A2%8D%E8%AE%BE%E8%AE%A1/</link>
+      <link>http://localhost:1314/tags/%E6%97%A0%E9%9A%9C%E7%A2%8D%E8%AE%BE%E8%AE%A1/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://ailula.top/tags/%E6%97%A0%E9%9A%9C%E7%A2%8D%E8%AE%BE%E8%AE%A1/</guid>
+      <guid>http://localhost:1314/tags/%E6%97%A0%E9%9A%9C%E7%A2%8D%E8%AE%BE%E8%AE%A1/</guid>
       <description></description>
     </item>
     <item>
       <title>Books</title>
-      <link>https://ailula.top/tags/books/</link>
+      <link>http://localhost:1314/tags/books/</link>
       <pubDate>Sat, 09 May 2020 16:06:23 +0000</pubDate>
-      <guid>https://ailula.top/tags/books/</guid>
+      <guid>http://localhost:1314/tags/books/</guid>
       <description></description>
     </item>
     <item>
       <title>产品</title>
-      <link>https://ailula.top/tags/%E4%BA%A7%E5%93%81/</link>
+      <link>http://localhost:1314/tags/%E4%BA%A7%E5%93%81/</link>
       <pubDate>Fri, 03 Apr 2020 10:23:12 +0000</pubDate>
-      <guid>https://ailula.top/tags/%E4%BA%A7%E5%93%81/</guid>
+      <guid>http://localhost:1314/tags/%E4%BA%A7%E5%93%81/</guid>
       <description></description>
     </item>
     <item>
       <title>Movies</title>
-      <link>https://ailula.top/tags/movies/</link>
+      <link>http://localhost:1314/tags/movies/</link>
       <pubDate>Thu, 30 Jan 2020 13:34:23 +0000</pubDate>
-      <guid>https://ailula.top/tags/movies/</guid>
+      <guid>http://localhost:1314/tags/movies/</guid>
       <description></description>
     </item>
     <item>
       <title>Product</title>
-      <link>https://ailula.top/tags/product/</link>
+      <link>http://localhost:1314/tags/product/</link>
       <pubDate>Wed, 23 Oct 2019 14:55:39 +0000</pubDate>
-      <guid>https://ailula.top/tags/product/</guid>
+      <guid>http://localhost:1314/tags/product/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Analyst</title>
-      <link>https://ailula.top/tags/data-analyst/</link>
+      <link>http://localhost:1314/tags/data-analyst/</link>
       <pubDate>Sun, 28 May 2017 15:04:44 +0000</pubDate>
-      <guid>https://ailula.top/tags/data-analyst/</guid>
+      <guid>http://localhost:1314/tags/data-analyst/</guid>
       <description></description>
     </item>
   </channel>
