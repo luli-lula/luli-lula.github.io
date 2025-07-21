@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>个人项目 on lula&#39;s blog</title>
+    <link>http://localhost:1313/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/</link>
+    <description>Recent content in 个人项目 on lula&#39;s blog</description>
+    <generator>Hugo -- 0.139.4</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 15 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>个人博客网站</title>
+      <link>http://localhost:1313/projects/personal-blog/</link>
+      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/personal-blog/</guid>
+      <description>基于Hugo和PaperMod主题的个人博客，记录生活、读书和电影观感</description>
+    </item>
+  </channel>
+</rss>

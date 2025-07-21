@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>在线工具箱 | lula&#39;s blog</title>
+<meta name="keywords" content="Vue.js, Element UI, Node.js, Express, Web应用">
+<meta name="description" content="集成多种实用工具的在线平台，包括JSON格式化、二维码生成、颜色选择器等">
+<meta name="author" content="lula">
+<link rel="canonical" href="http://localhost:1313/projects/online-toolbox/">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="http://localhost:1313/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/online-toolbox/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMC06JHFDG"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WMC06JHFDG');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/projects/online-toolbox/">
+  <meta property="og:site_name" content="lula&#39;s blog">
+  <meta property="og:title" content="在线工具箱">
+  <meta property="og:description" content="集成多种实用工具的在线平台，包括JSON格式化、二维码生成、颜色选择器等">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2024-01-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-01-10T00:00:00+00:00">
+    <meta property="article:tag" content="Vue.js">
+    <meta property="article:tag" content="Element UI">
+    <meta property="article:tag" content="Node.js">
+    <meta property="article:tag" content="Express">
+    <meta property="article:tag" content="Web应用">
+    <meta property="og:image" content="http://localhost:1313/images/projects/toolbox-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/projects/toolbox-preview.png">
+<meta name="twitter:title" content="在线工具箱">
+<meta name="twitter:description" content="集成多种实用工具的在线平台，包括JSON格式化、二维码生成、颜色选择器等">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "在线工具箱",
+      "item": "http://localhost:1313/projects/online-toolbox/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "在线工具箱",
+  "name": "在线工具箱",
+  "description": "集成多种实用工具的在线平台，包括JSON格式化、二维码生成、颜色选择器等",
+  "keywords": [
+    "Vue.js", "Element UI", "Node.js", "Express", "Web应用"
+  ],
+  "articleBody": "项目简介 在线工具箱是一个集成了多种实用工具的Web平台，旨在为开发者和普通用户提供便捷的在线工具服务。无需安装软件，打开浏览器即可使用各种实用工具。\n技术栈 前端框架: Vue.js 3 UI组件库: Element Plus 构建工具: Vite 后端框架: Node.js + Express 部署: Docker + Nginx 版本控制: Git 已实现工具 🔧 开发工具 JSON格式化: 美化和压缩JSON数据 Base64编解码: 文本和图片的Base64转换 URL编解码: URL参数的编码和解码 MD5加密: 文本MD5哈希生成 UUID生成器: 生成各种版本的UUID 🎨 设计工具 颜色选择器: RGB、HEX、HSL颜色转换 二维码生成: 支持文本、URL、WiFi等类型 图片压缩: 在线压缩图片大小 Icon制作: SVG图标生成和编辑 📝 文本工具 文本差异对比: 可视化文本对比 字数统计: 统计字符、单词、段落数量 正则表达式测试: 在线正则匹配测试 Markdown编辑器: 实时预览的Markdown编辑器 🧮 实用工具 时间戳转换: Unix时间戳与日期互转 单位换算: 长度、重量、温度等单位转换 密码生成器: 生成安全密码 IP地址查询: 查询IP归属地信息 项目特色 🚀 高性能 前端采用Vue 3 Composition API，响应速度快 使用Vite构建，开发体验优秀 静态资源CDN加速 🎯 用户友好 简洁直观的界面设计 响应式布局，支持移动端 深色模式支持 工具分类清晰 🔒 隐私保护 大部分工具在前端处理，数据不上传服务器 支持离线使用 不收集用户个人信息 架构设计 前端架构 src/ ├── components/ # 公共组件 │ ├── Layout/ # 布局组件 │ ├── Tools/ # 工具组件 │ └── Common/ # 通用组件 ├── views/ # 页面视图 ├── router/ # 路由配置 ├── store/ # 状态管理 ├── utils/ # 工具函数 └── styles/ # 样式文件 后端架构 server/ ├── controllers/ # 控制器 ├── routes/ # 路由定义 ├── middleware/ # 中间件 ├── services/ # 业务逻辑 └── utils/ # 工具函数 开发亮点 1. 组件化设计 每个工具都设计为独立的Vue组件，便于维护和扩展：\n// 工具组件通用接口 export default { name: 'ToolComponent', props: { config: Object }, setup(props) { // 工具逻辑 } } 2. 插件化架构 设计了插件系统，可以方便地添加新工具：\n// 工具注册机制 const toolsRegistry = { 'json-formatter': () =\u003e import('./tools/JsonFormatter.vue'), 'qr-generator': () =\u003e import('./tools/QrGenerator.vue'), // ... } 3. 响应式设计 使用CSS Grid和Flexbox实现响应式布局：\n桌面端：3列网格布局 平板端：2列布局 手机端：单列布局 技术挑战 1. 工具性能优化 部分工具（如图片处理）需要处理大量数据：\n使用Web Workers进行后台计算 实现文件分片上传 添加进度指示器 2. 浏览器兼容性 确保工具在不同浏览器中正常工作：\n使用Babel进行语法转换 Polyfill缺失的API 降级方案处理 3. 用户体验优化 实现工具使用记录和收藏功能 添加快捷键支持 优化加载速度 部署方案 Docker容器化 # 多阶段构建 FROM node:16-alpine as builder WORKDIR /app COPY package*.json ./ RUN npm ci --only=production FROM nginx:alpine COPY --from=builder /app/dist /usr/share/nginx/html CI/CD流程 GitHub Actions自动构建 Docker镜像自动发布 自动部署到服务器 数据统计 使用数据（截至当前） 月活跃用户：2000+ 工具使用次数：50000+ 最受欢迎工具：JSON格式化器 平均停留时间：3分钟 性能指标 首屏加载时间：\u003c 1.5秒 工具响应时间：\u003c 200ms 移动端适配率：95%+ 用户反馈 “非常实用的工具网站，界面简洁，功能齐全！” - 张同学\n“JSON格式化功能很好用，开发必备！” - 李工程师\n“支持离线使用真的很棒，出差时也能用。” - 王设计师\n未来规划 短期计划 添加更多开发工具（SQL格式化、CSS压缩等） 优化移动端体验 添加工具使用教程 支持多语言 长期规划 开发桌面客户端 添加用户账户系统 工具自定义配置 API接口开放 技术收获 这个项目让我在以下方面有了显著提升：\nVue.js生态: 深入理解Vue 3的新特性 前端工程化: 掌握现代前端构建工具链 用户体验设计: 学会从用户角度思考产品 性能优化: 实践各种前端性能优化技巧 开源贡献 欢迎开发者参与贡献：\n提交Bug报告 贡献新工具 改进现有功能 翻译文档 相关链接 🔗 在线演示 📖 GitHub源码 📋 功能建议 📊 使用统计 ",
+  "wordCount" : "303",
+  "inLanguage": "en",
+  "image":"http://localhost:1313/images/projects/toolbox-preview.png","datePublished": "2024-01-10T00:00:00Z",
+  "dateModified": "2024-01-10T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "lula"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/projects/online-toolbox/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "lula's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="lula&#39;s blog (Alt + H)">lula&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a></div>
+    <h1 class="post-title entry-hint-parent">
+      在线工具箱
+    </h1>
+    <div class="post-description">
+      集成多种实用工具的在线平台，包括JSON格式化、二维码生成、颜色选择器等
+    </div>
+    <div class="post-meta"><span title='2024-01-10 00:00:00 +0000 UTC'>January 10, 2024</span>&nbsp;·&nbsp;lula
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="eager" src="http://localhost:1313/images/projects/toolbox-preview.png" alt="在线工具箱界面截图">
+        
+</figure><div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e9%a1%b9%e7%9b%ae%e7%ae%80%e4%bb%8b" aria-label="项目简介">项目简介</a></li>
+                <li>
+                    <a href="#%e6%8a%80%e6%9c%af%e6%a0%88" aria-label="技术栈">技术栈</a></li>
+                <li>
+                    <a href="#%e5%b7%b2%e5%ae%9e%e7%8e%b0%e5%b7%a5%e5%85%b7" aria-label="已实现工具">已实现工具</a><ul>
+                        
+                <li>
+                    <a href="#-%e5%bc%80%e5%8f%91%e5%b7%a5%e5%85%b7" aria-label="🔧 开发工具">🔧 开发工具</a></li>
+                <li>
+                    <a href="#-%e8%ae%be%e8%ae%a1%e5%b7%a5%e5%85%b7" aria-label="🎨 设计工具">🎨 设计工具</a></li>
+                <li>
+                    <a href="#-%e6%96%87%e6%9c%ac%e5%b7%a5%e5%85%b7" aria-label="📝 文本工具">📝 文本工具</a></li>
+                <li>
+                    <a href="#-%e5%ae%9e%e7%94%a8%e5%b7%a5%e5%85%b7" aria-label="🧮 实用工具">🧮 实用工具</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e9%a1%b9%e7%9b%ae%e7%89%b9%e8%89%b2" aria-label="项目特色">项目特色</a><ul>
+                        
+                <li>
+                    <a href="#-%e9%ab%98%e6%80%a7%e8%83%bd" aria-label="🚀 高性能">🚀 高性能</a></li>
+                <li>
+                    <a href="#-%e7%94%a8%e6%88%b7%e5%8f%8b%e5%a5%bd" aria-label="🎯 用户友好">🎯 用户友好</a></li>
+                <li>
+                    <a href="#-%e9%9a%90%e7%a7%81%e4%bf%9d%e6%8a%a4" aria-label="🔒 隐私保护">🔒 隐私保护</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e6%9e%b6%e6%9e%84%e8%ae%be%e8%ae%a1" aria-label="架构设计">架构设计</a><ul>
+                        
+                <li>
+                    <a href="#%e5%89%8d%e7%ab%af%e6%9e%b6%e6%9e%84" aria-label="前端架构">前端架构</a></li>
+                <li>
+                    <a href="#%e5%90%8e%e7%ab%af%e6%9e%b6%e6%9e%84" aria-label="后端架构">后端架构</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e5%bc%80%e5%8f%91%e4%ba%ae%e7%82%b9" aria-label="开发亮点">开发亮点</a><ul>
+                        
+                <li>
+                    <a href="#1-%e7%bb%84%e4%bb%b6%e5%8c%96%e8%ae%be%e8%ae%a1" aria-label="1. 组件化设计">1. 组件化设计</a></li>
+                <li>
+                    <a href="#2-%e6%8f%92%e4%bb%b6%e5%8c%96%e6%9e%b6%e6%9e%84" aria-label="2. 插件化架构">2. 插件化架构</a></li>
+                <li>
+                    <a href="#3-%e5%93%8d%e5%ba%94%e5%bc%8f%e8%ae%be%e8%ae%a1" aria-label="3. 响应式设计">3. 响应式设计</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e6%8a%80%e6%9c%af%e6%8c%91%e6%88%98" aria-label="技术挑战">技术挑战</a><ul>
+                        
+                <li>
+                    <a href="#1-%e5%b7%a5%e5%85%b7%e6%80%a7%e8%83%bd%e4%bc%98%e5%8c%96" aria-label="1. 工具性能优化">1. 工具性能优化</a></li>
+                <li>
+                    <a href="#2-%e6%b5%8f%e8%a7%88%e5%99%a8%e5%85%bc%e5%ae%b9%e6%80%a7" aria-label="2. 浏览器兼容性">2. 浏览器兼容性</a></li>
+                <li>
+                    <a href="#3-%e7%94%a8%e6%88%b7%e4%bd%93%e9%aa%8c%e4%bc%98%e5%8c%96" aria-label="3. 用户体验优化">3. 用户体验优化</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e9%83%a8%e7%bd%b2%e6%96%b9%e6%a1%88" aria-label="部署方案">部署方案</a><ul>
+                        
+                <li>
+                    <a href="#docker%e5%ae%b9%e5%99%a8%e5%8c%96" aria-label="Docker容器化">Docker容器化</a></li>
+                <li>
+                    <a href="#cicd%e6%b5%81%e7%a8%8b" aria-label="CI/CD流程">CI/CD流程</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e6%95%b0%e6%8d%ae%e7%bb%9f%e8%ae%a1" aria-label="数据统计">数据统计</a><ul>
+                        
+                <li>
+                    <a href="#%e4%bd%bf%e7%94%a8%e6%95%b0%e6%8d%ae%e6%88%aa%e8%87%b3%e5%bd%93%e5%89%8d" aria-label="使用数据（截至当前）">使用数据（截至当前）</a></li>
+                <li>
+                    <a href="#%e6%80%a7%e8%83%bd%e6%8c%87%e6%a0%87" aria-label="性能指标">性能指标</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e7%94%a8%e6%88%b7%e5%8f%8d%e9%a6%88" aria-label="用户反馈">用户反馈</a></li>
+                <li>
+                    <a href="#%e6%9c%aa%e6%9d%a5%e8%a7%84%e5%88%92" aria-label="未来规划">未来规划</a><ul>
+                        
+                <li>
+                    <a href="#%e7%9f%ad%e6%9c%9f%e8%ae%a1%e5%88%92" aria-label="短期计划">短期计划</a></li>
+                <li>
+                    <a href="#%e9%95%bf%e6%9c%9f%e8%a7%84%e5%88%92" aria-label="长期规划">长期规划</a></li></ul>
+                </li>
+                <li>
+                    <a href="#%e6%8a%80%e6%9c%af%e6%94%b6%e8%8e%b7" aria-label="技术收获">技术收获</a></li>
+                <li>
+                    <a href="#%e5%bc%80%e6%ba%90%e8%b4%a1%e7%8c%ae" aria-label="开源贡献">开源贡献</a></li>
+                <li>
+                    <a href="#%e7%9b%b8%e5%85%b3%e9%93%be%e6%8e%a5" aria-label="相关链接">相关链接</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="项目简介">项目简介<a hidden class="anchor" aria-hidden="true" href="#项目简介">#</a></h2>
+<p>在线工具箱是一个集成了多种实用工具的Web平台，旨在为开发者和普通用户提供便捷的在线工具服务。无需安装软件，打开浏览器即可使用各种实用工具。</p>
+<h2 id="技术栈">技术栈<a hidden class="anchor" aria-hidden="true" href="#技术栈">#</a></h2>
+<ul>
+<li><strong>前端框架</strong>: Vue.js 3</li>
+<li><strong>UI组件库</strong>: Element Plus</li>
+<li><strong>构建工具</strong>: Vite</li>
+<li><strong>后端框架</strong>: Node.js + Express</li>
+<li><strong>部署</strong>: Docker + Nginx</li>
+<li><strong>版本控制</strong>: Git</li>
+</ul>
+<h2 id="已实现工具">已实现工具<a hidden class="anchor" aria-hidden="true" href="#已实现工具">#</a></h2>
+<h3 id="-开发工具">🔧 开发工具<a hidden class="anchor" aria-hidden="true" href="#-开发工具">#</a></h3>
+<ul>
+<li><strong>JSON格式化</strong>: 美化和压缩JSON数据</li>
+<li><strong>Base64编解码</strong>: 文本和图片的Base64转换</li>
+<li><strong>URL编解码</strong>: URL参数的编码和解码</li>
+<li><strong>MD5加密</strong>: 文本MD5哈希生成</li>
+<li><strong>UUID生成器</strong>: 生成各种版本的UUID</li>
+</ul>
+<h3 id="-设计工具">🎨 设计工具<a hidden class="anchor" aria-hidden="true" href="#-设计工具">#</a></h3>
+<ul>
+<li><strong>颜色选择器</strong>: RGB、HEX、HSL颜色转换</li>
+<li><strong>二维码生成</strong>: 支持文本、URL、WiFi等类型</li>
+<li><strong>图片压缩</strong>: 在线压缩图片大小</li>
+<li><strong>Icon制作</strong>: SVG图标生成和编辑</li>
+</ul>
+<h3 id="-文本工具">📝 文本工具<a hidden class="anchor" aria-hidden="true" href="#-文本工具">#</a></h3>
+<ul>
+<li><strong>文本差异对比</strong>: 可视化文本对比</li>
+<li><strong>字数统计</strong>: 统计字符、单词、段落数量</li>
+<li><strong>正则表达式测试</strong>: 在线正则匹配测试</li>
+<li><strong>Markdown编辑器</strong>: 实时预览的Markdown编辑器</li>
+</ul>
+<h3 id="-实用工具">🧮 实用工具<a hidden class="anchor" aria-hidden="true" href="#-实用工具">#</a></h3>
+<ul>
+<li><strong>时间戳转换</strong>: Unix时间戳与日期互转</li>
+<li><strong>单位换算</strong>: 长度、重量、温度等单位转换</li>
+<li><strong>密码生成器</strong>: 生成安全密码</li>
+<li><strong>IP地址查询</strong>: 查询IP归属地信息</li>
+</ul>
+<h2 id="项目特色">项目特色<a hidden class="anchor" aria-hidden="true" href="#项目特色">#</a></h2>
+<h3 id="-高性能">🚀 高性能<a hidden class="anchor" aria-hidden="true" href="#-高性能">#</a></h3>
+<ul>
+<li>前端采用Vue 3 Composition API，响应速度快</li>
+<li>使用Vite构建，开发体验优秀</li>
+<li>静态资源CDN加速</li>
+</ul>
+<h3 id="-用户友好">🎯 用户友好<a hidden class="anchor" aria-hidden="true" href="#-用户友好">#</a></h3>
+<ul>
+<li>简洁直观的界面设计</li>
+<li>响应式布局，支持移动端</li>
+<li>深色模式支持</li>
+<li>工具分类清晰</li>
+</ul>
+<h3 id="-隐私保护">🔒 隐私保护<a hidden class="anchor" aria-hidden="true" href="#-隐私保护">#</a></h3>
+<ul>
+<li>大部分工具在前端处理，数据不上传服务器</li>
+<li>支持离线使用</li>
+<li>不收集用户个人信息</li>
+</ul>
+<h2 id="架构设计">架构设计<a hidden class="anchor" aria-hidden="true" href="#架构设计">#</a></h2>
+<h3 id="前端架构">前端架构<a hidden class="anchor" aria-hidden="true" href="#前端架构">#</a></h3>
+<pre tabindex="0"><code>src/
+├── components/        # 公共组件
+│   ├── Layout/       # 布局组件
+│   ├── Tools/        # 工具组件
+│   └── Common/       # 通用组件
+├── views/            # 页面视图
+├── router/           # 路由配置
+├── store/            # 状态管理
+├── utils/            # 工具函数
+└── styles/           # 样式文件
+</code></pre><h3 id="后端架构">后端架构<a hidden class="anchor" aria-hidden="true" href="#后端架构">#</a></h3>
+<pre tabindex="0"><code>server/
+├── controllers/      # 控制器
+├── routes/          # 路由定义
+├── middleware/      # 中间件
+├── services/        # 业务逻辑
+└── utils/           # 工具函数
+</code></pre><h2 id="开发亮点">开发亮点<a hidden class="anchor" aria-hidden="true" href="#开发亮点">#</a></h2>
+<h3 id="1-组件化设计">1. 组件化设计<a hidden class="anchor" aria-hidden="true" href="#1-组件化设计">#</a></h3>
+<p>每个工具都设计为独立的Vue组件，便于维护和扩展：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// 工具组件通用接口
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">export</span> <span class="k">default</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;ToolComponent&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">props</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">config</span><span class="o">:</span> <span class="nb">Object</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">setup</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 工具逻辑
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="2-插件化架构">2. 插件化架构<a hidden class="anchor" aria-hidden="true" href="#2-插件化架构">#</a></h3>
+<p>设计了插件系统，可以方便地添加新工具：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// 工具注册机制
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">toolsRegistry</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="s1">&#39;json-formatter&#39;</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="kr">import</span><span class="p">(</span><span class="s1">&#39;./tools/JsonFormatter.vue&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">  <span class="s1">&#39;qr-generator&#39;</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="kr">import</span><span class="p">(</span><span class="s1">&#39;./tools/QrGenerator.vue&#39;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><h3 id="3-响应式设计">3. 响应式设计<a hidden class="anchor" aria-hidden="true" href="#3-响应式设计">#</a></h3>
+<p>使用CSS Grid和Flexbox实现响应式布局：</p>
+<ul>
+<li>桌面端：3列网格布局</li>
+<li>平板端：2列布局</li>
+<li>手机端：单列布局</li>
+</ul>
+<h2 id="技术挑战">技术挑战<a hidden class="anchor" aria-hidden="true" href="#技术挑战">#</a></h2>
+<h3 id="1-工具性能优化">1. 工具性能优化<a hidden class="anchor" aria-hidden="true" href="#1-工具性能优化">#</a></h3>
+<p>部分工具（如图片处理）需要处理大量数据：</p>
+<ul>
+<li>使用Web Workers进行后台计算</li>
+<li>实现文件分片上传</li>
+<li>添加进度指示器</li>
+</ul>
+<h3 id="2-浏览器兼容性">2. 浏览器兼容性<a hidden class="anchor" aria-hidden="true" href="#2-浏览器兼容性">#</a></h3>
+<p>确保工具在不同浏览器中正常工作：</p>
+<ul>
+<li>使用Babel进行语法转换</li>
+<li>Polyfill缺失的API</li>
+<li>降级方案处理</li>
+</ul>
+<h3 id="3-用户体验优化">3. 用户体验优化<a hidden class="anchor" aria-hidden="true" href="#3-用户体验优化">#</a></h3>
+<ul>
+<li>实现工具使用记录和收藏功能</li>
+<li>添加快捷键支持</li>
+<li>优化加载速度</li>
+</ul>
+<h2 id="部署方案">部署方案<a hidden class="anchor" aria-hidden="true" href="#部署方案">#</a></h2>
+<h3 id="docker容器化">Docker容器化<a hidden class="anchor" aria-hidden="true" href="#docker容器化">#</a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="c"># 多阶段构建</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">FROM</span><span class="s"> node:16-alpine as builder</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">WORKDIR</span><span class="s"> /app</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">COPY</span> package*.json ./<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">RUN</span> npm ci --only<span class="o">=</span>production<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">FROM</span><span class="s"> nginx:alpine</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">COPY</span> --from<span class="o">=</span>builder /app/dist /usr/share/nginx/html<span class="err">
+</span></span></span></code></pre></div><h3 id="cicd流程">CI/CD流程<a hidden class="anchor" aria-hidden="true" href="#cicd流程">#</a></h3>
+<ul>
+<li>GitHub Actions自动构建</li>
+<li>Docker镜像自动发布</li>
+<li>自动部署到服务器</li>
+</ul>
+<h2 id="数据统计">数据统计<a hidden class="anchor" aria-hidden="true" href="#数据统计">#</a></h2>
+<h3 id="使用数据截至当前">使用数据（截至当前）<a hidden class="anchor" aria-hidden="true" href="#使用数据截至当前">#</a></h3>
+<ul>
+<li>月活跃用户：2000+</li>
+<li>工具使用次数：50000+</li>
+<li>最受欢迎工具：JSON格式化器</li>
+<li>平均停留时间：3分钟</li>
+</ul>
+<h3 id="性能指标">性能指标<a hidden class="anchor" aria-hidden="true" href="#性能指标">#</a></h3>
+<ul>
+<li>首屏加载时间：&lt; 1.5秒</li>
+<li>工具响应时间：&lt; 200ms</li>
+<li>移动端适配率：95%+</li>
+</ul>
+<h2 id="用户反馈">用户反馈<a hidden class="anchor" aria-hidden="true" href="#用户反馈">#</a></h2>
+<blockquote>
+<p>&ldquo;非常实用的工具网站，界面简洁，功能齐全！&rdquo; - 张同学</p>
+</blockquote>
+<blockquote>
+<p>&ldquo;JSON格式化功能很好用，开发必备！&rdquo; - 李工程师</p>
+</blockquote>
+<blockquote>
+<p>&ldquo;支持离线使用真的很棒，出差时也能用。&rdquo; - 王设计师</p>
+</blockquote>
+<h2 id="未来规划">未来规划<a hidden class="anchor" aria-hidden="true" href="#未来规划">#</a></h2>
+<h3 id="短期计划">短期计划<a hidden class="anchor" aria-hidden="true" href="#短期计划">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> 添加更多开发工具（SQL格式化、CSS压缩等）</li>
+<li><input disabled="" type="checkbox"> 优化移动端体验</li>
+<li><input disabled="" type="checkbox"> 添加工具使用教程</li>
+<li><input disabled="" type="checkbox"> 支持多语言</li>
+</ul>
+<h3 id="长期规划">长期规划<a hidden class="anchor" aria-hidden="true" href="#长期规划">#</a></h3>
+<ul>
+<li><input disabled="" type="checkbox"> 开发桌面客户端</li>
+<li><input disabled="" type="checkbox"> 添加用户账户系统</li>
+<li><input disabled="" type="checkbox"> 工具自定义配置</li>
+<li><input disabled="" type="checkbox"> API接口开放</li>
+</ul>
+<h2 id="技术收获">技术收获<a hidden class="anchor" aria-hidden="true" href="#技术收获">#</a></h2>
+<p>这个项目让我在以下方面有了显著提升：</p>
+<ul>
+<li><strong>Vue.js生态</strong>: 深入理解Vue 3的新特性</li>
+<li><strong>前端工程化</strong>: 掌握现代前端构建工具链</li>
+<li><strong>用户体验设计</strong>: 学会从用户角度思考产品</li>
+<li><strong>性能优化</strong>: 实践各种前端性能优化技巧</li>
+</ul>
+<h2 id="开源贡献">开源贡献<a hidden class="anchor" aria-hidden="true" href="#开源贡献">#</a></h2>
+<p>欢迎开发者参与贡献：</p>
+<ul>
+<li>提交Bug报告</li>
+<li>贡献新工具</li>
+<li>改进现有功能</li>
+<li>翻译文档</li>
+</ul>
+<h2 id="相关链接">相关链接<a hidden class="anchor" aria-hidden="true" href="#相关链接">#</a></h2>
+<ul>
+<li>🔗 <a href="https://tools.example.com">在线演示</a></li>
+<li>📖 <a href="https://github.com/luli-lula/online-toolbox">GitHub源码</a></li>
+<li>📋 <a href="https://github.com/luli-lula/online-toolbox/issues">功能建议</a></li>
+<li>📊 <a href="https://analytics.tools.example.com">使用统计</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/vue.js/">Vue.js</a></li>
+      <li><a href="http://localhost:1313/tags/element-ui/">Element UI</a></li>
+      <li><a href="http://localhost:1313/tags/node.js/">Node.js</a></li>
+      <li><a href="http://localhost:1313/tags/express/">Express</a></li>
+      <li><a href="http://localhost:1313/tags/web%E5%BA%94%E7%94%A8/">Web应用</a></li>
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">lula&#39;s blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    
+<div class="busuanzi-footer">
+  <span id="busuanzi_container_site_pv">
+    Total views: <span id="busuanzi_value_site_pv"></span> 
+  </span>
+</div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

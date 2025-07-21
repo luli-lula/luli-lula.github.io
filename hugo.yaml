@@ -50,6 +50,8 @@ languages:
         # imageHeight: 120
         subtitle: " 🦌Indie Maker | 📱 ex-Product Manager | 👩🏻‍💻 Learning to code| 🌲 Loving Nature"
         buttons:
+          - name: Projects
+            url: projects/
           - name: Blog
             url: posts
           - name: Movies

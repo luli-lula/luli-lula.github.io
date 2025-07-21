@@ -1,0 +1,10 @@
+---
+title: "我的项目"
+layout: "projects"
+url: "/projects/"
+description: "我做的一些有趣的Side Projects"
+---
+
+这里展示了我在业余时间开发的一些Side Projects，涵盖了网页应用、移动App和小程序等不同类型。每个项目都凝聚了我对技术的探索和对用户体验的思考。
+
+点击项目卡片可以查看详细介绍，包括技术方案、开发过程中的思考以及遇到的挑战。 
