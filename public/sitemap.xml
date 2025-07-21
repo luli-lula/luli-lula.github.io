@@ -35,6 +35,9 @@
     <loc>https://ailula.top/tags/life/</loc>
     <lastmod>2024-08-03T11:30:03+00:00</lastmod>
   </url><url>
+    <loc>https://ailula.top/projects/</loc>
+    <lastmod>2024-03-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://ailula.top/tags/css/</loc>
     <lastmod>2024-03-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -180,7 +183,5 @@
     <loc>https://ailula.top/movies/</loc>
   </url><url>
     <loc>https://ailula.top/books/</loc>
-  </url><url>
-    <loc>https://ailula.top/projects/</loc>
   </url>
 </urlset>

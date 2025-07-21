@@ -2511,12 +2511,5 @@ PS：之前的图床挂了，最后还是从邮箱里面找到PDF重新转上来
       <guid>https://ailula.top/books/</guid>
       <description>douban</description>
     </item>
-    <item>
-      <title>我的项目</title>
-      <link>https://ailula.top/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ailula.top/projects/</guid>
-      <description>我做的一些有趣的Side Projects</description>
-    </item>
   </channel>
 </rss>
