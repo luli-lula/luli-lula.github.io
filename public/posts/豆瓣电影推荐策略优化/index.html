@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -119,18 +119,18 @@ TOP250
 好的体验：想看电影在推荐里面发现挺有兴趣——很容易找到资源——看了之后发现真不错（豆瓣推荐的电影，这套流程非常长。
 ">
 <meta name="author" content="lula">
-<link rel="canonical" href="https://ailula.top/posts/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96/">
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link rel="canonical" href="http://localhost:1313/posts/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96/">
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <meta name="referrer" content="no-referrer-when-downgrade">
-<link crossorigin="anonymous" href="https://ailula.top/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://ailula.top/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://ailula.top/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://ailula.top/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://ailula.top/apple-touch-icon.png">
-<link rel="mask-icon" href="https://ailula.top/safari-pinned-tab.svg">
+<link crossorigin="anonymous" href="http://localhost:1313/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://ailula.top/posts/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96/">
 <noscript>
     <style>
         #theme-toggle,
@@ -181,7 +181,7 @@ TOP250
           gtag('js', new Date());
           gtag('config', 'G-WMC06JHFDG');
         }
-      </script><meta property="og:url" content="https://ailula.top/posts/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96/">
+      </script><meta property="og:url" content="http://localhost:1313/posts/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96/">
   <meta property="og:site_name" content="lula&#39;s blog">
   <meta property="og:title" content="豆瓣电影推荐策略优化">
   <meta property="og:description" content="问题：豆瓣电影的网页「喜欢这部电影的人也喜欢」模块的策略优化 推荐模块的理想态：帮助用户发现「想看」的电影 衡量指标：推荐列表的用户点击率（感兴趣）；点击后标记想看的比例（想看） 需求理解： 用户想看电影的影响因素（用户偏好，电影特征，其他用户相关行为） 喜欢XX的人也喜欢其实本质上是相关推荐，也就是每个电影本身与另外一部电影的相关性，被同一个用户都标记为喜欢的比例。 阶段性调研：抽取我自己最近看的一些10部电影查看推荐列表分析是否满足我的需求，没有能引发我进一步标记想看的推荐列表。如果在内部可以抽取推荐列表中用户点击和未点击的进行对比。 推测现有的推荐策略逻辑 用户特征：未采用；是否登陆账号并不影响推荐结果（豆瓣竟然不是个性化推荐！一个比较大的Bug是没有引入这个导致有些类别推荐的电影我都看过了） 电影类别：强特征；基本上推荐的10部均为同类型电影 电影标签：强特征；其实用户标签本身就包含了其他认为抽象特征的，具有很强的相关性 导演名称：中特征；部分电影推荐的同导演的电影有些并未排到特别靠前 电影时间：弱特征；部分老电影推荐的时间跨度也比较大 国家：弱特征；没有看出来特别强的相关性，不太确定是否有关联 评分/评分人数：这个有些意外，基本上推荐的都是评分正负1之内的，所以啊看好电影才会推荐好电影啊 豆列：弱特征；尝试的几个没找到相同豆列，可能电影比较冷门 推测未达到理想态原因（扩充量与用户点击数据，可以给出每种原因的占比和解法）
@@ -192,7 +192,7 @@ TOP250
 喜欢这部电影的人也喜欢 展示电影评分信息方便选择 前置点击操作想看，看过的会把推荐标记为「看过」（有点纳闷为什么会推荐看过的电影，推测可能是强化用户标记的成就感） 电影首页为你推荐（个性化推荐）
 片单推荐（温情片/文艺片/法国电影）～ 运营编辑的类型推荐 电影推荐（海报&#43;电影剧照&#43;评分&#43;推荐评论&#43;推荐原因标签） 想看操作前置 推荐标签：喜欢XXX的也喜欢，中国大陆 温情 家庭，2016年度冷门佳片，伍迪艾伦导演，真实事件改编，2017年评分最高的日本电影，评分最高的历史片 排行榜（从众心理）
 TOP250 分类TOP20 年度榜单（分类） 一周口碑榜 实时热门电影 后续想法 个性化推荐中口碑比较好的一个是豆瓣FM和后期的网易云音乐，一个是现在的头条（技术而已） 音乐和资讯的推荐相对电影更简单，因为电影的验证成本比较高（2个小时&#43;可以观看），所以难度也更大 好的体验：想看电影在推荐里面发现挺有兴趣——很容易找到资源——看了之后发现真不错（豆瓣推荐的电影，这套流程非常长。 ">
-  <meta property="og:locale" content="en">
+  <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2020-04-03T10:23:12+00:00">
@@ -322,13 +322,13 @@ TOP250
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "https://ailula.top/posts/"
+      "item": "http://localhost:1313/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "豆瓣电影推荐策略优化",
-      "item": "https://ailula.top/posts/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96/"
+      "item": "http://localhost:1313/posts/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96/"
     }
   ]
 }
@@ -354,14 +354,14 @@ TOP250
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://ailula.top/posts/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96/"
+    "@id": "http://localhost:1313/posts/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "lula's blog",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://ailula.top/favicon.ico"
+      "url": "http://localhost:1313/favicon.ico"
     }
   }
 }
@@ -383,7 +383,7 @@ TOP250
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://ailula.top/" accesskey="h" title="lula&#39;s blog (Alt + H)">lula&#39;s blog</a>
+            <a href="http://localhost:1313/" accesskey="h" title="lula&#39;s blog (Alt + H)">lula&#39;s blog</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -405,26 +405,37 @@ TOP250
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="http://localhost:1313/zh/" title="中文"
+                            aria-label="中文">中文</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <ul id="menu">
             <li>
-                <a href="https://ailula.top/archives" title="Archive">
+                <a href="http://localhost:1313/archives" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
             <li>
-                <a href="https://ailula.top/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="https://ailula.top/tags/" title="Tags">
+                <a href="http://localhost:1313/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
             <li>
-                <a href="https://ailula.top/about/" title="About">
+                <a href="http://localhost:1313/about/" title="About">
                     <span>About</span>
                 </a>
             </li>
@@ -435,7 +446,7 @@ TOP250
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://ailula.top/">Home</a>&nbsp;»&nbsp;<a href="https://ailula.top/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       豆瓣电影推荐策略优化
     </h1>
@@ -580,15 +591,15 @@ TOP250
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://ailula.top/tags/%E4%BA%A7%E5%93%81/">产品</a></li>
+      <li><a href="http://localhost:1313/tags/%E4%BA%A7%E5%93%81/">产品</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://ailula.top/posts/%E6%89%8B%E6%8A%84%E6%8A%A5/">
+  <a class="prev" href="http://localhost:1313/posts/%E6%89%8B%E6%8A%84%E6%8A%A5/">
     <span class="title">« Prev</span>
     <br>
     <span>手抄报20200418</span>
   </a>
-  <a class="next" href="https://ailula.top/posts/%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E5%AE%9E%E4%BE%8B/">
+  <a class="next" href="http://localhost:1313/posts/%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E5%AE%9E%E4%BE%8B/">
     <span class="title">Next »</span>
     <br>
     <span>策略产品实例</span>
@@ -600,7 +611,7 @@ TOP250
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://ailula.top/">lula&#39;s blog</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">lula&#39;s blog</a></span> · 
 
     <span>
         Powered by

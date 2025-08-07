@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>旧Kindle安装微信读书防踩坑全流程 | lula的博客</title>
+<meta name="keywords" content="Share">
+<meta name="description" content="
+上个月重新开始使用微信读书，又开始了30天的赌博（连续30天&#43;阅读30小时可以换取30天的会员卡活动），这就导致Kindle上看非常不方便，iPad又很难集中注意力，虽然Kindle上也支持网页，但是必须一直联网在线&#43;翻页延迟效果很不好，所以开始找解决方案。
+
+直接换开放系统的墨水屏，比如文石之类的 —— 1000&#43;有些小纠结，再加上海运过来时效太久
+Kindle刷安卓安装微信读书 —— 非常折腾，有可能变砖
+
+纠结了一段时间之后，一鼓作气尝试了#2，回头看当时可能也不知道有这么多步骤。其实一共分为三步，越狱（变为开放系统），刷机（安装安卓系统），安装匹配版本的软件。每一步网上都有挺多失败案例导致Kindle无法使用的劝退帖，但是实际走一遍之后发现其实并没有那么可怕，每一步基本上都有回滚的重新刷回原系统的方案，所以也不用太担心。
+最后安装好的效果个人感觉还不错，离线下载图书之后翻页效果好很多。掉电有些快，没有详细测量，下载之后关闭Wi-Fi的话可以几天充一次，打开Wi-Fi的话可能一两天就得充了。
+决策是不是要走这一遍之前，建议评估一下以下
+
+以下是全部完成之后的翻页效果，觉得效果能接受就可以开始https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click&amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9
+需要准备：适配的Kindle版本（我的是kpw3，太老的不建议搞会很卡） &#43; kindle连接电脑数据线 &#43; windows系统的PC（主要是步骤二刷机程序是exe文件）
+时间预估：全部顺利的话最多1小时完成，不顺利的话可能好几天。。。。
+
+OK开始整体教程以及踩坑记录
+1. Kindle越狱（3分钟）
+
+全流程参考书伴的攻略即可，非常详细基本上不会有问题，全程顺利的话3分钟完成
+
+Kpw3是要求Kindle 固件版本小于等于 5.16.2.1.1，我的设备信息里看正好是这个版本就直接开始了，按照四越狱步骤开始就行，书伴写的非常详细其实也就三步，正式开始之前可以B站找个视频几分钟看一下整个流程然后开始，这样就不用一步一步对着文字看。
+
+;enter_demo 并按回车加上秘密手势进入【演示模式】（这一步我是一次成功的，不行多尝试几次就行），这个名字真的好好笑
+;demo 按回车进入“演示菜单”界面，安装对应语言的越狱文件（这一步有一个需要快速拷贝文件的时间窗口，其实也不用紧张，提前插好USB一次成功）
+拷贝热修复补丁文件到Kindle，整个流程就完成了
+
+2. 刷安卓系统（5分钟）
+
+全程参考的这个刷机程序的作者教程
+
+我是这个步骤卡住了好久，第一步我是全部在Mac系统完成没有问题，这一步刷机文件是exe程序，必须要windows系统，然后就进入了多年之前折腾安卓手机的噩梦。
+这个刷机程序的作者是一个中国人，在论坛有发完整教程和文件，也有B站完整流程，据说淘宝有人用他的刷机包卖钱，导致他直接删除了B站的下载链接，不过原始论坛的内容都还在可以直接看那个。
+先说一下正常流程
+
+安装**插件程序启动器MRPI&#43;**KUAL（流程继续参考书伴的教程1和2的部分）
+拷贝刷机程序中的插件用KUAL安装完成
+在windows上运行自动刷机程序.exe文件等待重启几次就完成了
+
+这里我踩过的坑如下
+
+
+windows系统无法运行.exe文件（再次吐槽微软自作聪明太恶心了）
+都不是直接报错，而是双击之后显示文件找不到，回到文件夹发现文件消失。找了一下解决方案是关闭windows defender，这一步又发现我用的这台windows不知道为什么无法关闭，中间又尝试了一些添加不过滤exe文件的规则，以毒攻毒想用360杀毒来关闭windows denfender的方法都失败了。最后只能重装系统，最开始有尝试win7（因为下一个问题是驱动识别Kindle），但是后来发现新系统网卡问题一直无法联网，最后还是换回了win11的系统，成功关闭windows defender之后终于可以打开刷机程序了。
+
+
+驱动识别Kindle问题
+主要表现在运行刷机的exe文件之后，一直没有出现“识别出设备”，不停出现连接弹出设备提示音问题。B站评论有解释，但是都太复杂了，其实按照论坛英文版本的攻略走就行，下载并且安装驱动识别程序就行adb-setup-1.4.2，安装完成重试一次就OK了，后面就是等待重启完成
+
+
+3. 安装微信读书
+看网友们尝试大部分推荐1.5.2的版本，大概是好几年前的旧版本，豌豆荚啥的都下载不到了。最后搜索到墨水屏版的这个拷贝到Kindle中之后，在kindle文件管理程序中打开就自动安装了，和安卓手机装软件类似。然后就可以开心阅读啦。
+最后的最后这个系统可以支持10张自定义的wallpaper，直接拷贝文件到wallpaper文件夹就行，非常方便，推荐这个kindle原始作家系列的壁纸 https://www.douban.com/photos/album/124589122/，如果自己有兴趣的话也可以自制一些，Google slides中设置1448 * 1072 尺寸，把自己希望的文字换个字体之类的输出为jpg就行。">
+<meta name="author" content="lula">
+<link rel="canonical" href="http://localhost:1313/zh/posts/%E6%97%A7kindle%E5%AE%89%E8%A3%85%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E9%98%B2%E8%B8%A9%E5%9D%91%E5%85%A8%E6%B5%81%E7%A8%8B/">
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/zh/posts/%E6%97%A7kindle%E5%AE%89%E8%A3%85%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E9%98%B2%E8%B8%A9%E5%9D%91%E5%85%A8%E6%B5%81%E7%A8%8B/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMC06JHFDG"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WMC06JHFDG');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/zh/posts/%E6%97%A7kindle%E5%AE%89%E8%A3%85%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E9%98%B2%E8%B8%A9%E5%9D%91%E5%85%A8%E6%B5%81%E7%A8%8B/">
+  <meta property="og:site_name" content="lula的博客">
+  <meta property="og:title" content="旧Kindle安装微信读书防踩坑全流程">
+  <meta property="og:description" content=" 上个月重新开始使用微信读书，又开始了30天的赌博（连续30天&#43;阅读30小时可以换取30天的会员卡活动），这就导致Kindle上看非常不方便，iPad又很难集中注意力，虽然Kindle上也支持网页，但是必须一直联网在线&#43;翻页延迟效果很不好，所以开始找解决方案。
+直接换开放系统的墨水屏，比如文石之类的 —— 1000&#43;有些小纠结，再加上海运过来时效太久 Kindle刷安卓安装微信读书 —— 非常折腾，有可能变砖 纠结了一段时间之后，一鼓作气尝试了#2，回头看当时可能也不知道有这么多步骤。其实一共分为三步，越狱（变为开放系统），刷机（安装安卓系统），安装匹配版本的软件。每一步网上都有挺多失败案例导致Kindle无法使用的劝退帖，但是实际走一遍之后发现其实并没有那么可怕，每一步基本上都有回滚的重新刷回原系统的方案，所以也不用太担心。
+最后安装好的效果个人感觉还不错，离线下载图书之后翻页效果好很多。掉电有些快，没有详细测量，下载之后关闭Wi-Fi的话可以几天充一次，打开Wi-Fi的话可能一两天就得充了。
+决策是不是要走这一遍之前，建议评估一下以下
+以下是全部完成之后的翻页效果，觉得效果能接受就可以开始https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click&amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9 需要准备：适配的Kindle版本（我的是kpw3，太老的不建议搞会很卡） &#43; kindle连接电脑数据线 &#43; windows系统的PC（主要是步骤二刷机程序是exe文件） 时间预估：全部顺利的话最多1小时完成，不顺利的话可能好几天。。。。 OK开始整体教程以及踩坑记录
+1. Kindle越狱（3分钟） 全流程参考书伴的攻略即可，非常详细基本上不会有问题，全程顺利的话3分钟完成
+Kpw3是要求Kindle 固件版本小于等于 5.16.2.1.1，我的设备信息里看正好是这个版本就直接开始了，按照四越狱步骤开始就行，书伴写的非常详细其实也就三步，正式开始之前可以B站找个视频几分钟看一下整个流程然后开始，这样就不用一步一步对着文字看。
+;enter_demo 并按回车加上秘密手势进入【演示模式】（这一步我是一次成功的，不行多尝试几次就行），这个名字真的好好笑 ;demo 按回车进入“演示菜单”界面，安装对应语言的越狱文件（这一步有一个需要快速拷贝文件的时间窗口，其实也不用紧张，提前插好USB一次成功） 拷贝热修复补丁文件到Kindle，整个流程就完成了 2. 刷安卓系统（5分钟） 全程参考的这个刷机程序的作者教程
+我是这个步骤卡住了好久，第一步我是全部在Mac系统完成没有问题，这一步刷机文件是exe程序，必须要windows系统，然后就进入了多年之前折腾安卓手机的噩梦。
+这个刷机程序的作者是一个中国人，在论坛有发完整教程和文件，也有B站完整流程，据说淘宝有人用他的刷机包卖钱，导致他直接删除了B站的下载链接，不过原始论坛的内容都还在可以直接看那个。
+先说一下正常流程
+安装**插件程序启动器MRPI&#43;**KUAL（流程继续参考书伴的教程1和2的部分） 拷贝刷机程序中的插件用KUAL安装完成 在windows上运行自动刷机程序.exe文件等待重启几次就完成了 这里我踩过的坑如下
+windows系统无法运行.exe文件（再次吐槽微软自作聪明太恶心了）
+都不是直接报错，而是双击之后显示文件找不到，回到文件夹发现文件消失。找了一下解决方案是关闭windows defender，这一步又发现我用的这台windows不知道为什么无法关闭，中间又尝试了一些添加不过滤exe文件的规则，以毒攻毒想用360杀毒来关闭windows denfender的方法都失败了。最后只能重装系统，最开始有尝试win7（因为下一个问题是驱动识别Kindle），但是后来发现新系统网卡问题一直无法联网，最后还是换回了win11的系统，成功关闭windows defender之后终于可以打开刷机程序了。
+驱动识别Kindle问题
+主要表现在运行刷机的exe文件之后，一直没有出现“识别出设备”，不停出现连接弹出设备提示音问题。B站评论有解释，但是都太复杂了，其实按照论坛英文版本的攻略走就行，下载并且安装驱动识别程序就行adb-setup-1.4.2，安装完成重试一次就OK了，后面就是等待重启完成
+3. 安装微信读书 看网友们尝试大部分推荐1.5.2的版本，大概是好几年前的旧版本，豌豆荚啥的都下载不到了。最后搜索到墨水屏版的这个拷贝到Kindle中之后，在kindle文件管理程序中打开就自动安装了，和安卓手机装软件类似。然后就可以开心阅读啦。
+最后的最后这个系统可以支持10张自定义的wallpaper，直接拷贝文件到wallpaper文件夹就行，非常方便，推荐这个kindle原始作家系列的壁纸 https://www.douban.com/photos/album/124589122/，如果自己有兴趣的话也可以自制一些，Google slides中设置1448 * 1072 尺寸，把自己希望的文字换个字体之类的输出为jpg就行。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-10-16T11:30:03+00:00">
+    <meta property="article:modified_time" content="2024-10-16T11:30:03+00:00">
+    <meta property="article:tag" content="Share">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="旧Kindle安装微信读书防踩坑全流程">
+<meta name="twitter:description" content="
+上个月重新开始使用微信读书，又开始了30天的赌博（连续30天&#43;阅读30小时可以换取30天的会员卡活动），这就导致Kindle上看非常不方便，iPad又很难集中注意力，虽然Kindle上也支持网页，但是必须一直联网在线&#43;翻页延迟效果很不好，所以开始找解决方案。
+
+直接换开放系统的墨水屏，比如文石之类的 —— 1000&#43;有些小纠结，再加上海运过来时效太久
+Kindle刷安卓安装微信读书 —— 非常折腾，有可能变砖
+
+纠结了一段时间之后，一鼓作气尝试了#2，回头看当时可能也不知道有这么多步骤。其实一共分为三步，越狱（变为开放系统），刷机（安装安卓系统），安装匹配版本的软件。每一步网上都有挺多失败案例导致Kindle无法使用的劝退帖，但是实际走一遍之后发现其实并没有那么可怕，每一步基本上都有回滚的重新刷回原系统的方案，所以也不用太担心。
+最后安装好的效果个人感觉还不错，离线下载图书之后翻页效果好很多。掉电有些快，没有详细测量，下载之后关闭Wi-Fi的话可以几天充一次，打开Wi-Fi的话可能一两天就得充了。
+决策是不是要走这一遍之前，建议评估一下以下
+
+以下是全部完成之后的翻页效果，觉得效果能接受就可以开始https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click&amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9
+需要准备：适配的Kindle版本（我的是kpw3，太老的不建议搞会很卡） &#43; kindle连接电脑数据线 &#43; windows系统的PC（主要是步骤二刷机程序是exe文件）
+时间预估：全部顺利的话最多1小时完成，不顺利的话可能好几天。。。。
+
+OK开始整体教程以及踩坑记录
+1. Kindle越狱（3分钟）
+
+全流程参考书伴的攻略即可，非常详细基本上不会有问题，全程顺利的话3分钟完成
+
+Kpw3是要求Kindle 固件版本小于等于 5.16.2.1.1，我的设备信息里看正好是这个版本就直接开始了，按照四越狱步骤开始就行，书伴写的非常详细其实也就三步，正式开始之前可以B站找个视频几分钟看一下整个流程然后开始，这样就不用一步一步对着文字看。
+
+;enter_demo 并按回车加上秘密手势进入【演示模式】（这一步我是一次成功的，不行多尝试几次就行），这个名字真的好好笑
+;demo 按回车进入“演示菜单”界面，安装对应语言的越狱文件（这一步有一个需要快速拷贝文件的时间窗口，其实也不用紧张，提前插好USB一次成功）
+拷贝热修复补丁文件到Kindle，整个流程就完成了
+
+2. 刷安卓系统（5分钟）
+
+全程参考的这个刷机程序的作者教程
+
+我是这个步骤卡住了好久，第一步我是全部在Mac系统完成没有问题，这一步刷机文件是exe程序，必须要windows系统，然后就进入了多年之前折腾安卓手机的噩梦。
+这个刷机程序的作者是一个中国人，在论坛有发完整教程和文件，也有B站完整流程，据说淘宝有人用他的刷机包卖钱，导致他直接删除了B站的下载链接，不过原始论坛的内容都还在可以直接看那个。
+先说一下正常流程
+
+安装**插件程序启动器MRPI&#43;**KUAL（流程继续参考书伴的教程1和2的部分）
+拷贝刷机程序中的插件用KUAL安装完成
+在windows上运行自动刷机程序.exe文件等待重启几次就完成了
+
+这里我踩过的坑如下
+
+
+windows系统无法运行.exe文件（再次吐槽微软自作聪明太恶心了）
+都不是直接报错，而是双击之后显示文件找不到，回到文件夹发现文件消失。找了一下解决方案是关闭windows defender，这一步又发现我用的这台windows不知道为什么无法关闭，中间又尝试了一些添加不过滤exe文件的规则，以毒攻毒想用360杀毒来关闭windows denfender的方法都失败了。最后只能重装系统，最开始有尝试win7（因为下一个问题是驱动识别Kindle），但是后来发现新系统网卡问题一直无法联网，最后还是换回了win11的系统，成功关闭windows defender之后终于可以打开刷机程序了。
+
+
+驱动识别Kindle问题
+主要表现在运行刷机的exe文件之后，一直没有出现“识别出设备”，不停出现连接弹出设备提示音问题。B站评论有解释，但是都太复杂了，其实按照论坛英文版本的攻略走就行，下载并且安装驱动识别程序就行adb-setup-1.4.2，安装完成重试一次就OK了，后面就是等待重启完成
+
+
+3. 安装微信读书
+看网友们尝试大部分推荐1.5.2的版本，大概是好几年前的旧版本，豌豆荚啥的都下载不到了。最后搜索到墨水屏版的这个拷贝到Kindle中之后，在kindle文件管理程序中打开就自动安装了，和安卓手机装软件类似。然后就可以开心阅读啦。
+最后的最后这个系统可以支持10张自定义的wallpaper，直接拷贝文件到wallpaper文件夹就行，非常方便，推荐这个kindle原始作家系列的壁纸 https://www.douban.com/photos/album/124589122/，如果自己有兴趣的话也可以自制一些，Google slides中设置1448 * 1072 尺寸，把自己希望的文字换个字体之类的输出为jpg就行。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "旧Kindle安装微信读书防踩坑全流程",
+      "item": "http://localhost:1313/zh/posts/%E6%97%A7kindle%E5%AE%89%E8%A3%85%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E9%98%B2%E8%B8%A9%E5%9D%91%E5%85%A8%E6%B5%81%E7%A8%8B/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "旧Kindle安装微信读书防踩坑全流程",
+  "name": "旧Kindle安装微信读书防踩坑全流程",
+  "description": " 上个月重新开始使用微信读书，又开始了30天的赌博（连续30天+阅读30小时可以换取30天的会员卡活动），这就导致Kindle上看非常不方便，iPad又很难集中注意力，虽然Kindle上也支持网页，但是必须一直联网在线+翻页延迟效果很不好，所以开始找解决方案。\n直接换开放系统的墨水屏，比如文石之类的 —— 1000+有些小纠结，再加上海运过来时效太久 Kindle刷安卓安装微信读书 —— 非常折腾，有可能变砖 纠结了一段时间之后，一鼓作气尝试了#2，回头看当时可能也不知道有这么多步骤。其实一共分为三步，越狱（变为开放系统），刷机（安装安卓系统），安装匹配版本的软件。每一步网上都有挺多失败案例导致Kindle无法使用的劝退帖，但是实际走一遍之后发现其实并没有那么可怕，每一步基本上都有回滚的重新刷回原系统的方案，所以也不用太担心。\n最后安装好的效果个人感觉还不错，离线下载图书之后翻页效果好很多。掉电有些快，没有详细测量，下载之后关闭Wi-Fi的话可以几天充一次，打开Wi-Fi的话可能一两天就得充了。\n决策是不是要走这一遍之前，建议评估一下以下\n以下是全部完成之后的翻页效果，觉得效果能接受就可以开始https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click\u0026amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9 需要准备：适配的Kindle版本（我的是kpw3，太老的不建议搞会很卡） + kindle连接电脑数据线 + windows系统的PC（主要是步骤二刷机程序是exe文件） 时间预估：全部顺利的话最多1小时完成，不顺利的话可能好几天。。。。 OK开始整体教程以及踩坑记录\n1. Kindle越狱（3分钟） 全流程参考书伴的攻略即可，非常详细基本上不会有问题，全程顺利的话3分钟完成\nKpw3是要求Kindle 固件版本小于等于 5.16.2.1.1，我的设备信息里看正好是这个版本就直接开始了，按照四越狱步骤开始就行，书伴写的非常详细其实也就三步，正式开始之前可以B站找个视频几分钟看一下整个流程然后开始，这样就不用一步一步对着文字看。\n;enter_demo 并按回车加上秘密手势进入【演示模式】（这一步我是一次成功的，不行多尝试几次就行），这个名字真的好好笑 ;demo 按回车进入“演示菜单”界面，安装对应语言的越狱文件（这一步有一个需要快速拷贝文件的时间窗口，其实也不用紧张，提前插好USB一次成功） 拷贝热修复补丁文件到Kindle，整个流程就完成了 2. 刷安卓系统（5分钟） 全程参考的这个刷机程序的作者教程\n我是这个步骤卡住了好久，第一步我是全部在Mac系统完成没有问题，这一步刷机文件是exe程序，必须要windows系统，然后就进入了多年之前折腾安卓手机的噩梦。\n这个刷机程序的作者是一个中国人，在论坛有发完整教程和文件，也有B站完整流程，据说淘宝有人用他的刷机包卖钱，导致他直接删除了B站的下载链接，不过原始论坛的内容都还在可以直接看那个。\n先说一下正常流程\n安装**插件程序启动器MRPI+**KUAL（流程继续参考书伴的教程1和2的部分） 拷贝刷机程序中的插件用KUAL安装完成 在windows上运行自动刷机程序.exe文件等待重启几次就完成了 这里我踩过的坑如下\nwindows系统无法运行.exe文件（再次吐槽微软自作聪明太恶心了）\n都不是直接报错，而是双击之后显示文件找不到，回到文件夹发现文件消失。找了一下解决方案是关闭windows defender，这一步又发现我用的这台windows不知道为什么无法关闭，中间又尝试了一些添加不过滤exe文件的规则，以毒攻毒想用360杀毒来关闭windows denfender的方法都失败了。最后只能重装系统，最开始有尝试win7（因为下一个问题是驱动识别Kindle），但是后来发现新系统网卡问题一直无法联网，最后还是换回了win11的系统，成功关闭windows defender之后终于可以打开刷机程序了。\n驱动识别Kindle问题\n主要表现在运行刷机的exe文件之后，一直没有出现“识别出设备”，不停出现连接弹出设备提示音问题。B站评论有解释，但是都太复杂了，其实按照论坛英文版本的攻略走就行，下载并且安装驱动识别程序就行adb-setup-1.4.2，安装完成重试一次就OK了，后面就是等待重启完成\n3. 安装微信读书 看网友们尝试大部分推荐1.5.2的版本，大概是好几年前的旧版本，豌豆荚啥的都下载不到了。最后搜索到墨水屏版的这个拷贝到Kindle中之后，在kindle文件管理程序中打开就自动安装了，和安卓手机装软件类似。然后就可以开心阅读啦。\n最后的最后这个系统可以支持10张自定义的wallpaper，直接拷贝文件到wallpaper文件夹就行，非常方便，推荐这个kindle原始作家系列的壁纸 https://www.douban.com/photos/album/124589122/，如果自己有兴趣的话也可以自制一些，Google slides中设置1448 * 1072 尺寸，把自己希望的文字换个字体之类的输出为jpg就行。\n",
+  "keywords": [
+    "Share"
+  ],
+  "articleBody": " 上个月重新开始使用微信读书，又开始了30天的赌博（连续30天+阅读30小时可以换取30天的会员卡活动），这就导致Kindle上看非常不方便，iPad又很难集中注意力，虽然Kindle上也支持网页，但是必须一直联网在线+翻页延迟效果很不好，所以开始找解决方案。\n直接换开放系统的墨水屏，比如文石之类的 —— 1000+有些小纠结，再加上海运过来时效太久 Kindle刷安卓安装微信读书 —— 非常折腾，有可能变砖 纠结了一段时间之后，一鼓作气尝试了#2，回头看当时可能也不知道有这么多步骤。其实一共分为三步，越狱（变为开放系统），刷机（安装安卓系统），安装匹配版本的软件。每一步网上都有挺多失败案例导致Kindle无法使用的劝退帖，但是实际走一遍之后发现其实并没有那么可怕，每一步基本上都有回滚的重新刷回原系统的方案，所以也不用太担心。\n最后安装好的效果个人感觉还不错，离线下载图书之后翻页效果好很多。掉电有些快，没有详细测量，下载之后关闭Wi-Fi的话可以几天充一次，打开Wi-Fi的话可能一两天就得充了。\n决策是不是要走这一遍之前，建议评估一下以下\n以下是全部完成之后的翻页效果，觉得效果能接受就可以开始https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click\u0026vd_source=2c6e07879db54a9bde4cb5508b5cb7f9 需要准备：适配的Kindle版本（我的是kpw3，太老的不建议搞会很卡） + kindle连接电脑数据线 + windows系统的PC（主要是步骤二刷机程序是exe文件） 时间预估：全部顺利的话最多1小时完成，不顺利的话可能好几天。。。。 OK开始整体教程以及踩坑记录\n1. Kindle越狱（3分钟） 全流程参考书伴的攻略即可，非常详细基本上不会有问题，全程顺利的话3分钟完成\nKpw3是要求Kindle 固件版本小于等于 5.16.2.1.1，我的设备信息里看正好是这个版本就直接开始了，按照四越狱步骤开始就行，书伴写的非常详细其实也就三步，正式开始之前可以B站找个视频几分钟看一下整个流程然后开始，这样就不用一步一步对着文字看。\n;enter_demo 并按回车加上秘密手势进入【演示模式】（这一步我是一次成功的，不行多尝试几次就行），这个名字真的好好笑 ;demo 按回车进入“演示菜单”界面，安装对应语言的越狱文件（这一步有一个需要快速拷贝文件的时间窗口，其实也不用紧张，提前插好USB一次成功） 拷贝热修复补丁文件到Kindle，整个流程就完成了 2. 刷安卓系统（5分钟） 全程参考的这个刷机程序的作者教程\n我是这个步骤卡住了好久，第一步我是全部在Mac系统完成没有问题，这一步刷机文件是exe程序，必须要windows系统，然后就进入了多年之前折腾安卓手机的噩梦。\n这个刷机程序的作者是一个中国人，在论坛有发完整教程和文件，也有B站完整流程，据说淘宝有人用他的刷机包卖钱，导致他直接删除了B站的下载链接，不过原始论坛的内容都还在可以直接看那个。\n先说一下正常流程\n安装**插件程序启动器MRPI+**KUAL（流程继续参考书伴的教程1和2的部分） 拷贝刷机程序中的插件用KUAL安装完成 在windows上运行自动刷机程序.exe文件等待重启几次就完成了 这里我踩过的坑如下\nwindows系统无法运行.exe文件（再次吐槽微软自作聪明太恶心了）\n都不是直接报错，而是双击之后显示文件找不到，回到文件夹发现文件消失。找了一下解决方案是关闭windows defender，这一步又发现我用的这台windows不知道为什么无法关闭，中间又尝试了一些添加不过滤exe文件的规则，以毒攻毒想用360杀毒来关闭windows denfender的方法都失败了。最后只能重装系统，最开始有尝试win7（因为下一个问题是驱动识别Kindle），但是后来发现新系统网卡问题一直无法联网，最后还是换回了win11的系统，成功关闭windows defender之后终于可以打开刷机程序了。\n驱动识别Kindle问题\n主要表现在运行刷机的exe文件之后，一直没有出现“识别出设备”，不停出现连接弹出设备提示音问题。B站评论有解释，但是都太复杂了，其实按照论坛英文版本的攻略走就行，下载并且安装驱动识别程序就行adb-setup-1.4.2，安装完成重试一次就OK了，后面就是等待重启完成\n3. 安装微信读书 看网友们尝试大部分推荐1.5.2的版本，大概是好几年前的旧版本，豌豆荚啥的都下载不到了。最后搜索到墨水屏版的这个拷贝到Kindle中之后，在kindle文件管理程序中打开就自动安装了，和安卓手机装软件类似。然后就可以开心阅读啦。\n最后的最后这个系统可以支持10张自定义的wallpaper，直接拷贝文件到wallpaper文件夹就行，非常方便，推荐这个kindle原始作家系列的壁纸 https://www.douban.com/photos/album/124589122/，如果自己有兴趣的话也可以自制一些，Google slides中设置1448 * 1072 尺寸，把自己希望的文字换个字体之类的输出为jpg就行。\n",
+  "wordCount" : "55",
+  "inLanguage": "zh",
+  "datePublished": "2024-10-16T11:30:03Z",
+  "dateModified": "2024-10-16T11:30:03Z",
+  "author":{
+    "@type": "Person",
+    "name": "lula"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/zh/posts/%E6%97%A7kindle%E5%AE%89%E8%A3%85%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E9%98%B2%E8%B8%A9%E5%9D%91%E5%85%A8%E6%B5%81%E7%A8%8B/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "lula的博客",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/zh/" accesskey="h" title="lula的博客 (Alt + H)">lula的博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="http://localhost:1313/" title="English"
+                            aria-label="English">English</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/zh/archives" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/projects/" title="项目">
+                    <span>项目</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/zh/">主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/zh/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      旧Kindle安装微信读书防踩坑全流程
+    </h1>
+    <div class="post-meta"><span title='2024-10-16 11:30:03 +0000 +0000'>十月 16, 2024</span>&nbsp;·&nbsp;lula
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#1-kindle%e8%b6%8a%e7%8b%b13%e5%88%86%e9%92%9f" aria-label="1. Kindle越狱（3分钟）">1. Kindle越狱（3分钟）</a></li>
+                <li>
+                    <a href="#2-%e5%88%b7%e5%ae%89%e5%8d%93%e7%b3%bb%e7%bb%9f5%e5%88%86%e9%92%9f" aria-label="2. 刷安卓系统（5分钟）">2. 刷安卓系统（5分钟）</a></li>
+                <li>
+                    <a href="#3-%e5%ae%89%e8%a3%85%e5%be%ae%e4%bf%a1%e8%af%bb%e4%b9%a6" aria-label="3. 安装微信读书">3. 安装微信读书</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="heading"><a hidden class="anchor" aria-hidden="true" href="#heading">#</a></h1>
+<p>上个月重新开始使用微信读书，又开始了30天的赌博（连续30天+阅读30小时可以换取30天的会员卡活动），这就导致Kindle上看非常不方便，iPad又很难集中注意力，虽然Kindle上也支持网页，但是必须一直联网在线+翻页延迟效果很不好，所以开始找解决方案。</p>
+<ol>
+<li>直接换开放系统的墨水屏，比如文石之类的 —— 1000+有些小纠结，再加上海运过来时效太久</li>
+<li>Kindle刷安卓安装微信读书 —— 非常折腾，有可能变砖</li>
+</ol>
+<p>纠结了一段时间之后，一鼓作气尝试了#2，回头看当时可能也不知道有这么多步骤。其实一共分为三步，越狱（变为开放系统），刷机（安装安卓系统），安装匹配版本的软件。每一步网上都有挺多失败案例导致Kindle无法使用的劝退帖，但是实际走一遍之后发现其实并没有那么可怕，每一步基本上都有回滚的重新刷回原系统的方案，所以也不用太担心。</p>
+<p>最后安装好的效果个人感觉还不错，离线下载图书之后翻页效果好很多。掉电有些快，没有详细测量，下载之后关闭Wi-Fi的话可以几天充一次，打开Wi-Fi的话可能一两天就得充了。</p>
+<p>决策是不是要走这一遍之前，建议评估一下以下</p>
+<ol>
+<li>以下是全部完成之后的翻页效果，觉得效果能接受就可以开始<a href="https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click&amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9">https://www.bilibili.com/video/BV1yu4y1q7ao/?spm_id_from=333.337.search-card.all.click&amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9</a></li>
+<li>需要准备：适配的Kindle版本（我的是kpw3，太老的不建议搞会很卡） + kindle连接电脑数据线 + windows系统的PC（主要是步骤二刷机程序是exe文件）</li>
+<li>时间预估：全部顺利的话最多1小时完成，不顺利的话可能好几天。。。。</li>
+</ol>
+<p>OK开始整体教程以及踩坑记录</p>
+<h1 id="1-kindle越狱3分钟">1. Kindle越狱（3分钟）<a hidden class="anchor" aria-hidden="true" href="#1-kindle越狱3分钟">#</a></h1>
+<blockquote>
+<p>全流程参考<a href="https://bookfere.com/post/1075.html">书伴的攻略</a>即可，非常详细基本上不会有问题，全程顺利的话3分钟完成</p>
+</blockquote>
+<p>Kpw3是要求Kindle 固件版本<strong>小于等于 5.16.2.1.1</strong>，我的设备信息里看正好是这个版本就直接开始了，按照四越狱步骤开始就行，书伴写的非常详细其实也就三步，正式开始之前可以<a href="https://www.bilibili.com/video/BV1PN4y1279z/?spm_id_from=333.337.search-card.all.click&amp;vd_source=2c6e07879db54a9bde4cb5508b5cb7f9">B站找个视频几分钟</a>看一下整个流程然后开始，这样就不用一步一步对着文字看。</p>
+<ol>
+<li><code>;enter_demo</code> 并按回车加上秘密手势进入【演示模式】（这一步我是一次成功的，不行多尝试几次就行），这个名字真的好好笑</li>
+<li><code>;demo</code> 按回车进入“演示菜单”界面，安装对应语言的越狱文件（这一步有一个需要快速拷贝文件的时间窗口，其实也不用紧张，提前插好USB一次成功）</li>
+<li>拷贝热修复补丁文件到Kindle，整个流程就完成了</li>
+</ol>
+<h1 id="2-刷安卓系统5分钟">2. 刷安卓系统（5分钟）<a hidden class="anchor" aria-hidden="true" href="#2-刷安卓系统5分钟">#</a></h1>
+<blockquote>
+<p>全程参考的这个刷机程序的作者<a href="https://xdaforums.com/t/guide-installing-android-on-your-aging-kindle-e-reader.4450117/">教程</a></p>
+</blockquote>
+<p>我是这个步骤卡住了好久，第一步我是全部在Mac系统完成没有问题，这一步刷机文件是exe程序，必须要windows系统，然后就进入了多年之前折腾安卓手机的噩梦。</p>
+<p>这个刷机程序的作者是一个中国人，在<a href="https://xdaforums.com/t/guide-installing-android-on-your-aging-kindle-e-reader.4450117/">论坛有发完整教程和文件</a>，也有<a href="https://www.bilibili.com/video/BV1tG411x7BU/?spm_id_from=333.337.search-card.all.click">B站完整流程</a>，据说淘宝有人用他的刷机包卖钱，导致他直接删除了B站的下载链接，不过原始论坛的内容都还在可以直接看那个。</p>
+<p>先说一下正常流程</p>
+<ol>
+<li>安装**插件程序启动器MRPI+**KUAL（流程继续参考<a href="https://bookfere.com/post/311.html">书伴的教程1和2</a>的部分）</li>
+<li>拷贝刷机程序中的插件用KUAL安装完成</li>
+<li>在windows上运行自动刷机程序.exe文件等待重启几次就完成了</li>
+</ol>
+<p>这里我踩过的坑如下</p>
+<ol>
+<li>
+<p><strong>windows系统无法运行.exe文件</strong>（再次吐槽微软自作聪明太恶心了）</p>
+<p>都不是直接报错，而是双击之后显示文件找不到，回到文件夹发现文件消失。找了一下解决方案是关闭windows defender，这一步又发现我用的这台windows不知道为什么无法关闭，中间又尝试了一些添加不过滤exe文件的规则，以毒攻毒想用360杀毒来关闭windows denfender的方法都失败了。最后只能重装系统，最开始有尝试win7（因为下一个问题是驱动识别Kindle），但是后来发现新系统网卡问题一直无法联网，最后还是换回了win11的系统，成功关闭windows defender之后终于可以打开刷机程序了。</p>
+</li>
+<li>
+<p><strong>驱动识别Kindle问题</strong></p>
+<p>主要表现在运行刷机的exe文件之后，一直没有出现“识别出设备”，不停出现连接弹出设备提示音问题。B站评论有解释，但是都太复杂了，其实按照论坛英文版本的攻略走就行，下载并且安装驱动识别程序就行adb-setup-1.4.2，安装完成重试一次就OK了，后面就是等待重启完成</p>
+</li>
+</ol>
+<h1 id="3-安装微信读书">3. 安装微信读书<a hidden class="anchor" aria-hidden="true" href="#3-安装微信读书">#</a></h1>
+<p>看网友们尝试大部分推荐1.5.2的版本，大概是好几年前的旧版本，豌豆荚啥的都下载不到了。最后搜索到<a href="https://pan.baidu.com/s/1N0gudJigb4Tz_yTTtU7GHQ?pwd=mf7h">墨水屏版</a>的这个拷贝到Kindle中之后，在kindle文件管理程序中打开就自动安装了，和安卓手机装软件类似。然后就可以开心阅读啦。</p>
+<p>最后的最后这个系统可以支持10张自定义的wallpaper，直接拷贝文件到wallpaper文件夹就行，非常方便，推荐这个kindle原始作家系列的壁纸 <a href="https://www.douban.com/photos/album/124589122/">https://www.douban.com/photos/album/124589122/</a>，如果自己有兴趣的话也可以自制一些，Google slides中设置1448 * 1072 尺寸，把自己希望的文字换个字体之类的输出为jpg就行。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/zh/tags/share/">Share</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/zh/posts/%E5%A5%BD%E7%9A%84%E4%BA%A7%E5%93%81%E9%81%8D%E5%9C%B0%E9%83%BD%E6%98%AF/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>好的产品遍地都是</span>
+  </a>
+  <a class="next" href="http://localhost:1313/zh/posts/2024-starting-blogging-again/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>2024年又重新开始写博客</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/zh/">lula的博客</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    
+<div class="busuanzi-footer">
+  <span id="busuanzi_container_site_pv">
+    Total views: <span id="busuanzi_value_site_pv"></span> 
+  </span>
+</div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

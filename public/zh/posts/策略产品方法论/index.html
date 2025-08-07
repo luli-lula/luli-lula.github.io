@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>策略产品方法论 | lula的博客</title>
+<meta name="keywords" content="产品">
+<meta name="description" content="
+三节课在二月份限免了一些课程，当时随手领取之后就忘了，结果还有两天课程结束时才想起来又开始看
+课程导师是原来在百度/滴滴的产品，其实方法论很简单，但是课程内容有很多简化版的例子对于想要了解其他行业的策略还是很好的入门
+因此就记录下自己悟到的内容，不再像之前记笔记那么详细。
+
+
+
+什么是策略产品
+
+
+策略产品可以和功能产品对比理解，策略和功能都是产品经理实现目标解决问题的手段。
+策略产品是团队精细化分工衍生而来的
+
+差异：
+
+需求：功能产品面对的是一个人相对聚焦的需求；策略产品面对的是不同用户不同场景下的精细化需求
+解决方案：功能产品收敛的解决方案，通过流程和原型来表达；策略产品解决方案是发散的，通过逻辑描述和效果示例表达产品实现效果。
+跟进研发：功能产品更关注结果，效果验收；策略产品需要参与过程，多轮评估，与研发持续一起持续分析迭代。
+上线后：功能产品更快达到理想态，完成此次产品需求；策略产品可能是永无止境的循环，面对复杂限制条件进行权衡，不断逼近最优解。
+
+
+策略产品的优势
+
+
+更善于解决复杂问题：通常面对的是一群人的不同需求
+极强的逻辑思维能力：需要把需求影响因素拆解的非常清楚
+较强的数据敏感度：善于从数据中发现问题，引导进入新的产品循环
+拥抱不确定性：持续在迭代的黑暗中寻找通路
+
+
+
+策略方法论
+
+
+定义理想态：以数字化的指标或其他明确标准来衡量
+拆解未达成理想态的情况：将所有不到理想态的case抽样分析，并做统计分类，明确满足不好的原因
+提出解决方案：汇总问题，综合影响面、问题严重程度和解决成本确定优先级，作为接下来的项目计划
+验证是否解决：
+
+
+策略方法论：如何找到产品理想态
+产品的理想态即给出的方案确实解决了用户的问题，理想态都是以阶段性的产品目标服务的。
+
+
+简单产品：以「帮用户解决了问题」作为理想态，并找到单一的数据指标来衡量
+复杂产品：难以通过单一指标来衡量最终效果，如搜索/推荐产品通常以平台当前能够给出的最佳产品方案作为理想态，评估搜索/推荐出的结果在所有候选集合中是否是最佳结果，用户行为指标作为发现问题的辅助手段。
+
+
+策略方法论：如何拆解问题
+确定调研目标→确定抽样对象→选择抽样方法→确定抽样数量→样本分析标注→整理汇总问题
+
+
+抽样对象需要根据目标保证全面，经常出现的错误就是Case抽取有偏
+分析标注：分析标注前有最初的预设，标注过程中会不断调整
+整体汇总：需要合理的框架！！！抽象总结总分关系
+
+
+策略方法论：优先级（ROI）
+项目收益：待解决问题影响面 * 解决后体验提升程度 * 预期解决比例
+项目成本：研发成本/上线周期
+
+
+如何提升网约车叫车成功率？
+
+
+
+理想态：用户发出需求后有司机应答，核心指标：成交率= 完单量/发单量
+
+
+拆解未达到理想态原因：
+
+流程梳理：乘客发单（乘客发单取消）——司机应答（司机无应答）——接驾（司机/乘客应答后取消）——司机乘客碰面
+影响面分析：抽取1000个未成交Case分析原因
+
+
+
+
+提出解决方案：
+
+
+
+
+
+如何提高百度搜索结果的效果？
+
+
+理想态：用户以最低成本找到了想要的东西
+核心指标：哪些场景概下用户得到了满足？
+搜索一次后用户通过结果摘要满足，没有其他行为
+搜索后点击了一条满足需求的搜索结果，无后续行为
+拆解未达到理想态原因：
+随机抽取5000个用户搜索行为，人工分析其是否满足需求，其中1500个不满足的确定原因是什么
+
+提出解决方案：
+
+
+
+
+策略产品的工作流程
+
+
+发现问题：用户反馈；系统监控；效果回归；阶段性调研
+撰写需求发起项目
+跟进开发评估
+上线后效果回归
+
+
+发现问题
+
+
+定义理想态
+抽样分析未达理想态的原因
+对所有的问题进行归类统计，确定优化方向和项目优先级
+
+
+策略产品发现问题的方法
+
+
+用户反馈渠道：这个日常工作每天都在搜集分析。
+问题：收集到的问题比较随机，很难反映产品现状的全局。虽然可能代表一类问题，但是问题的影响面和优先级比较难判断。
+总结：每一个反馈背后都是一个真实用户的情感表达，以敬畏心态深入分析每一个问题。
+指标监控：监控指标/报警，这个日常主要是工程观测，问题发现从已有指标来的并不多
+效果回归：在上次一次产品迭代后发现效果不达标或者发现新的问题时产生。
+阶段性调研：针对产品现状的系统性调研，有效指导下阶段的工作。参考策略基础方法论
+
+
+撰写需求发起项目
+
+
+以逻辑描述和Case示例的方式描述待解决问题和解决后的效果期望
+
+
+简单策略：直接给出规则（已有数据积累时，基于数据分析判断，如银行APP中断操作时，重新输入密码的时间间隔；从0到1时，参照竞品给出，如多次重复尝试竞品给出），开发成本较小
+复杂策略：详细描述待解决问题/输入因素/输出效果/总结概述/示例Case
+
+
+策略文档
+
+从0到1的项目：更多描述理想态，在怎样的输入下要达成怎样的输出效果
+策略迭代的项目：更多描述策略现状，待解决问题是什么，针对这些问题，理想的输出结果是什么
+
+
+
+
+项目背景：为什么要启动这个项目？
+项目目标：理想态OR考核指标是什么
+需求概述：理解整个文档的需求框架
+需求详述：所有产品细节是怎么的？触发条件/考虑因素/特殊情况/Case示例
+（统计需求、监控需求：非通用，0到1的需求不需要，修复bug的需求不需要）
+
+
+跟进开发评估">
+<meta name="author" content="lula">
+<link rel="canonical" href="http://localhost:1313/zh/posts/%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E6%96%B9%E6%B3%95%E8%AE%BA/">
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/zh/posts/%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E6%96%B9%E6%B3%95%E8%AE%BA/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMC06JHFDG"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WMC06JHFDG');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/zh/posts/%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E6%96%B9%E6%B3%95%E8%AE%BA/">
+  <meta property="og:site_name" content="lula的博客">
+  <meta property="og:title" content="策略产品方法论">
+  <meta property="og:description" content=" 三节课在二月份限免了一些课程，当时随手领取之后就忘了，结果还有两天课程结束时才想起来又开始看 课程导师是原来在百度/滴滴的产品，其实方法论很简单，但是课程内容有很多简化版的例子对于想要了解其他行业的策略还是很好的入门 因此就记录下自己悟到的内容，不再像之前记笔记那么详细。 什么是策略产品
+策略产品可以和功能产品对比理解，策略和功能都是产品经理实现目标解决问题的手段。 策略产品是团队精细化分工衍生而来的 差异：
+需求：功能产品面对的是一个人相对聚焦的需求；策略产品面对的是不同用户不同场景下的精细化需求 解决方案：功能产品收敛的解决方案，通过流程和原型来表达；策略产品解决方案是发散的，通过逻辑描述和效果示例表达产品实现效果。 跟进研发：功能产品更关注结果，效果验收；策略产品需要参与过程，多轮评估，与研发持续一起持续分析迭代。 上线后：功能产品更快达到理想态，完成此次产品需求；策略产品可能是永无止境的循环，面对复杂限制条件进行权衡，不断逼近最优解。 策略产品的优势
+更善于解决复杂问题：通常面对的是一群人的不同需求 极强的逻辑思维能力：需要把需求影响因素拆解的非常清楚 较强的数据敏感度：善于从数据中发现问题，引导进入新的产品循环 拥抱不确定性：持续在迭代的黑暗中寻找通路 策略方法论
+定义理想态：以数字化的指标或其他明确标准来衡量 拆解未达成理想态的情况：将所有不到理想态的case抽样分析，并做统计分类，明确满足不好的原因 提出解决方案：汇总问题，综合影响面、问题严重程度和解决成本确定优先级，作为接下来的项目计划 验证是否解决： 策略方法论：如何找到产品理想态 产品的理想态即给出的方案确实解决了用户的问题，理想态都是以阶段性的产品目标服务的。
+简单产品：以「帮用户解决了问题」作为理想态，并找到单一的数据指标来衡量 复杂产品：难以通过单一指标来衡量最终效果，如搜索/推荐产品通常以平台当前能够给出的最佳产品方案作为理想态，评估搜索/推荐出的结果在所有候选集合中是否是最佳结果，用户行为指标作为发现问题的辅助手段。 策略方法论：如何拆解问题 确定调研目标→确定抽样对象→选择抽样方法→确定抽样数量→样本分析标注→整理汇总问题
+抽样对象需要根据目标保证全面，经常出现的错误就是Case抽取有偏 分析标注：分析标注前有最初的预设，标注过程中会不断调整 整体汇总：需要合理的框架！！！抽象总结总分关系 策略方法论：优先级（ROI） 项目收益：待解决问题影响面 * 解决后体验提升程度 * 预期解决比例 项目成本：研发成本/上线周期
+如何提升网约车叫车成功率？
+理想态：用户发出需求后有司机应答，核心指标：成交率= 完单量/发单量
+拆解未达到理想态原因：
+流程梳理：乘客发单（乘客发单取消）——司机应答（司机无应答）——接驾（司机/乘客应答后取消）——司机乘客碰面 影响面分析：抽取1000个未成交Case分析原因 提出解决方案： 如何提高百度搜索结果的效果？
+理想态：用户以最低成本找到了想要的东西 核心指标：哪些场景概下用户得到了满足？ 搜索一次后用户通过结果摘要满足，没有其他行为 搜索后点击了一条满足需求的搜索结果，无后续行为 拆解未达到理想态原因： 随机抽取5000个用户搜索行为，人工分析其是否满足需求，其中1500个不满足的确定原因是什么 提出解决方案： 策略产品的工作流程
+发现问题：用户反馈；系统监控；效果回归；阶段性调研 撰写需求发起项目 跟进开发评估 上线后效果回归 发现问题
+定义理想态 抽样分析未达理想态的原因 对所有的问题进行归类统计，确定优化方向和项目优先级 策略产品发现问题的方法
+用户反馈渠道：这个日常工作每天都在搜集分析。 问题：收集到的问题比较随机，很难反映产品现状的全局。虽然可能代表一类问题，但是问题的影响面和优先级比较难判断。 总结：每一个反馈背后都是一个真实用户的情感表达，以敬畏心态深入分析每一个问题。 指标监控：监控指标/报警，这个日常主要是工程观测，问题发现从已有指标来的并不多 效果回归：在上次一次产品迭代后发现效果不达标或者发现新的问题时产生。 阶段性调研：针对产品现状的系统性调研，有效指导下阶段的工作。参考策略基础方法论 撰写需求发起项目
+以逻辑描述和Case示例的方式描述待解决问题和解决后的效果期望 简单策略：直接给出规则（已有数据积累时，基于数据分析判断，如银行APP中断操作时，重新输入密码的时间间隔；从0到1时，参照竞品给出，如多次重复尝试竞品给出），开发成本较小 复杂策略：详细描述待解决问题/输入因素/输出效果/总结概述/示例Case 策略文档 从0到1的项目：更多描述理想态，在怎样的输入下要达成怎样的输出效果 策略迭代的项目：更多描述策略现状，待解决问题是什么，针对这些问题，理想的输出结果是什么 项目背景：为什么要启动这个项目？ 项目目标：理想态OR考核指标是什么 需求概述：理解整个文档的需求框架 需求详述：所有产品细节是怎么的？触发条件/考虑因素/特殊情况/Case示例 （统计需求、监控需求：非通用，0到1的需求不需要，修复bug的需求不需要） 跟进开发评估">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-04-01T15:51:58+00:00">
+    <meta property="article:modified_time" content="2020-04-01T15:51:58+00:00">
+    <meta property="article:tag" content="产品">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="策略产品方法论">
+<meta name="twitter:description" content="
+三节课在二月份限免了一些课程，当时随手领取之后就忘了，结果还有两天课程结束时才想起来又开始看
+课程导师是原来在百度/滴滴的产品，其实方法论很简单，但是课程内容有很多简化版的例子对于想要了解其他行业的策略还是很好的入门
+因此就记录下自己悟到的内容，不再像之前记笔记那么详细。
+
+
+
+什么是策略产品
+
+
+策略产品可以和功能产品对比理解，策略和功能都是产品经理实现目标解决问题的手段。
+策略产品是团队精细化分工衍生而来的
+
+差异：
+
+需求：功能产品面对的是一个人相对聚焦的需求；策略产品面对的是不同用户不同场景下的精细化需求
+解决方案：功能产品收敛的解决方案，通过流程和原型来表达；策略产品解决方案是发散的，通过逻辑描述和效果示例表达产品实现效果。
+跟进研发：功能产品更关注结果，效果验收；策略产品需要参与过程，多轮评估，与研发持续一起持续分析迭代。
+上线后：功能产品更快达到理想态，完成此次产品需求；策略产品可能是永无止境的循环，面对复杂限制条件进行权衡，不断逼近最优解。
+
+
+策略产品的优势
+
+
+更善于解决复杂问题：通常面对的是一群人的不同需求
+极强的逻辑思维能力：需要把需求影响因素拆解的非常清楚
+较强的数据敏感度：善于从数据中发现问题，引导进入新的产品循环
+拥抱不确定性：持续在迭代的黑暗中寻找通路
+
+
+
+策略方法论
+
+
+定义理想态：以数字化的指标或其他明确标准来衡量
+拆解未达成理想态的情况：将所有不到理想态的case抽样分析，并做统计分类，明确满足不好的原因
+提出解决方案：汇总问题，综合影响面、问题严重程度和解决成本确定优先级，作为接下来的项目计划
+验证是否解决：
+
+
+策略方法论：如何找到产品理想态
+产品的理想态即给出的方案确实解决了用户的问题，理想态都是以阶段性的产品目标服务的。
+
+
+简单产品：以「帮用户解决了问题」作为理想态，并找到单一的数据指标来衡量
+复杂产品：难以通过单一指标来衡量最终效果，如搜索/推荐产品通常以平台当前能够给出的最佳产品方案作为理想态，评估搜索/推荐出的结果在所有候选集合中是否是最佳结果，用户行为指标作为发现问题的辅助手段。
+
+
+策略方法论：如何拆解问题
+确定调研目标→确定抽样对象→选择抽样方法→确定抽样数量→样本分析标注→整理汇总问题
+
+
+抽样对象需要根据目标保证全面，经常出现的错误就是Case抽取有偏
+分析标注：分析标注前有最初的预设，标注过程中会不断调整
+整体汇总：需要合理的框架！！！抽象总结总分关系
+
+
+策略方法论：优先级（ROI）
+项目收益：待解决问题影响面 * 解决后体验提升程度 * 预期解决比例
+项目成本：研发成本/上线周期
+
+
+如何提升网约车叫车成功率？
+
+
+
+理想态：用户发出需求后有司机应答，核心指标：成交率= 完单量/发单量
+
+
+拆解未达到理想态原因：
+
+流程梳理：乘客发单（乘客发单取消）——司机应答（司机无应答）——接驾（司机/乘客应答后取消）——司机乘客碰面
+影响面分析：抽取1000个未成交Case分析原因
+
+
+
+
+提出解决方案：
+
+
+
+
+
+如何提高百度搜索结果的效果？
+
+
+理想态：用户以最低成本找到了想要的东西
+核心指标：哪些场景概下用户得到了满足？
+搜索一次后用户通过结果摘要满足，没有其他行为
+搜索后点击了一条满足需求的搜索结果，无后续行为
+拆解未达到理想态原因：
+随机抽取5000个用户搜索行为，人工分析其是否满足需求，其中1500个不满足的确定原因是什么
+
+提出解决方案：
+
+
+
+
+策略产品的工作流程
+
+
+发现问题：用户反馈；系统监控；效果回归；阶段性调研
+撰写需求发起项目
+跟进开发评估
+上线后效果回归
+
+
+发现问题
+
+
+定义理想态
+抽样分析未达理想态的原因
+对所有的问题进行归类统计，确定优化方向和项目优先级
+
+
+策略产品发现问题的方法
+
+
+用户反馈渠道：这个日常工作每天都在搜集分析。
+问题：收集到的问题比较随机，很难反映产品现状的全局。虽然可能代表一类问题，但是问题的影响面和优先级比较难判断。
+总结：每一个反馈背后都是一个真实用户的情感表达，以敬畏心态深入分析每一个问题。
+指标监控：监控指标/报警，这个日常主要是工程观测，问题发现从已有指标来的并不多
+效果回归：在上次一次产品迭代后发现效果不达标或者发现新的问题时产生。
+阶段性调研：针对产品现状的系统性调研，有效指导下阶段的工作。参考策略基础方法论
+
+
+撰写需求发起项目
+
+
+以逻辑描述和Case示例的方式描述待解决问题和解决后的效果期望
+
+
+简单策略：直接给出规则（已有数据积累时，基于数据分析判断，如银行APP中断操作时，重新输入密码的时间间隔；从0到1时，参照竞品给出，如多次重复尝试竞品给出），开发成本较小
+复杂策略：详细描述待解决问题/输入因素/输出效果/总结概述/示例Case
+
+
+策略文档
+
+从0到1的项目：更多描述理想态，在怎样的输入下要达成怎样的输出效果
+策略迭代的项目：更多描述策略现状，待解决问题是什么，针对这些问题，理想的输出结果是什么
+
+
+
+
+项目背景：为什么要启动这个项目？
+项目目标：理想态OR考核指标是什么
+需求概述：理解整个文档的需求框架
+需求详述：所有产品细节是怎么的？触发条件/考虑因素/特殊情况/Case示例
+（统计需求、监控需求：非通用，0到1的需求不需要，修复bug的需求不需要）
+
+
+跟进开发评估">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "策略产品方法论",
+      "item": "http://localhost:1313/zh/posts/%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E6%96%B9%E6%B3%95%E8%AE%BA/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "策略产品方法论",
+  "name": "策略产品方法论",
+  "description": " 三节课在二月份限免了一些课程，当时随手领取之后就忘了，结果还有两天课程结束时才想起来又开始看 课程导师是原来在百度/滴滴的产品，其实方法论很简单，但是课程内容有很多简化版的例子对于想要了解其他行业的策略还是很好的入门 因此就记录下自己悟到的内容，不再像之前记笔记那么详细。 什么是策略产品\n策略产品可以和功能产品对比理解，策略和功能都是产品经理实现目标解决问题的手段。 策略产品是团队精细化分工衍生而来的 差异：\n需求：功能产品面对的是一个人相对聚焦的需求；策略产品面对的是不同用户不同场景下的精细化需求 解决方案：功能产品收敛的解决方案，通过流程和原型来表达；策略产品解决方案是发散的，通过逻辑描述和效果示例表达产品实现效果。 跟进研发：功能产品更关注结果，效果验收；策略产品需要参与过程，多轮评估，与研发持续一起持续分析迭代。 上线后：功能产品更快达到理想态，完成此次产品需求；策略产品可能是永无止境的循环，面对复杂限制条件进行权衡，不断逼近最优解。 策略产品的优势\n更善于解决复杂问题：通常面对的是一群人的不同需求 极强的逻辑思维能力：需要把需求影响因素拆解的非常清楚 较强的数据敏感度：善于从数据中发现问题，引导进入新的产品循环 拥抱不确定性：持续在迭代的黑暗中寻找通路 策略方法论\n定义理想态：以数字化的指标或其他明确标准来衡量 拆解未达成理想态的情况：将所有不到理想态的case抽样分析，并做统计分类，明确满足不好的原因 提出解决方案：汇总问题，综合影响面、问题严重程度和解决成本确定优先级，作为接下来的项目计划 验证是否解决： 策略方法论：如何找到产品理想态 产品的理想态即给出的方案确实解决了用户的问题，理想态都是以阶段性的产品目标服务的。\n简单产品：以「帮用户解决了问题」作为理想态，并找到单一的数据指标来衡量 复杂产品：难以通过单一指标来衡量最终效果，如搜索/推荐产品通常以平台当前能够给出的最佳产品方案作为理想态，评估搜索/推荐出的结果在所有候选集合中是否是最佳结果，用户行为指标作为发现问题的辅助手段。 策略方法论：如何拆解问题 确定调研目标→确定抽样对象→选择抽样方法→确定抽样数量→样本分析标注→整理汇总问题\n抽样对象需要根据目标保证全面，经常出现的错误就是Case抽取有偏 分析标注：分析标注前有最初的预设，标注过程中会不断调整 整体汇总：需要合理的框架！！！抽象总结总分关系 策略方法论：优先级（ROI） 项目收益：待解决问题影响面 * 解决后体验提升程度 * 预期解决比例 项目成本：研发成本/上线周期\n如何提升网约车叫车成功率？\n理想态：用户发出需求后有司机应答，核心指标：成交率= 完单量/发单量\n拆解未达到理想态原因：\n流程梳理：乘客发单（乘客发单取消）——司机应答（司机无应答）——接驾（司机/乘客应答后取消）——司机乘客碰面 影响面分析：抽取1000个未成交Case分析原因 提出解决方案： 如何提高百度搜索结果的效果？\n理想态：用户以最低成本找到了想要的东西 核心指标：哪些场景概下用户得到了满足？ 搜索一次后用户通过结果摘要满足，没有其他行为 搜索后点击了一条满足需求的搜索结果，无后续行为 拆解未达到理想态原因： 随机抽取5000个用户搜索行为，人工分析其是否满足需求，其中1500个不满足的确定原因是什么 提出解决方案： 策略产品的工作流程\n发现问题：用户反馈；系统监控；效果回归；阶段性调研 撰写需求发起项目 跟进开发评估 上线后效果回归 发现问题\n定义理想态 抽样分析未达理想态的原因 对所有的问题进行归类统计，确定优化方向和项目优先级 策略产品发现问题的方法\n用户反馈渠道：这个日常工作每天都在搜集分析。 问题：收集到的问题比较随机，很难反映产品现状的全局。虽然可能代表一类问题，但是问题的影响面和优先级比较难判断。 总结：每一个反馈背后都是一个真实用户的情感表达，以敬畏心态深入分析每一个问题。 指标监控：监控指标/报警，这个日常主要是工程观测，问题发现从已有指标来的并不多 效果回归：在上次一次产品迭代后发现效果不达标或者发现新的问题时产生。 阶段性调研：针对产品现状的系统性调研，有效指导下阶段的工作。参考策略基础方法论 撰写需求发起项目\n以逻辑描述和Case示例的方式描述待解决问题和解决后的效果期望 简单策略：直接给出规则（已有数据积累时，基于数据分析判断，如银行APP中断操作时，重新输入密码的时间间隔；从0到1时，参照竞品给出，如多次重复尝试竞品给出），开发成本较小 复杂策略：详细描述待解决问题/输入因素/输出效果/总结概述/示例Case 策略文档 从0到1的项目：更多描述理想态，在怎样的输入下要达成怎样的输出效果 策略迭代的项目：更多描述策略现状，待解决问题是什么，针对这些问题，理想的输出结果是什么 项目背景：为什么要启动这个项目？ 项目目标：理想态OR考核指标是什么 需求概述：理解整个文档的需求框架 需求详述：所有产品细节是怎么的？触发条件/考虑因素/特殊情况/Case示例 （统计需求、监控需求：非通用，0到1的需求不需要，修复bug的需求不需要） 跟进开发评估\n",
+  "keywords": [
+    "产品"
+  ],
+  "articleBody": " 三节课在二月份限免了一些课程，当时随手领取之后就忘了，结果还有两天课程结束时才想起来又开始看 课程导师是原来在百度/滴滴的产品，其实方法论很简单，但是课程内容有很多简化版的例子对于想要了解其他行业的策略还是很好的入门 因此就记录下自己悟到的内容，不再像之前记笔记那么详细。 什么是策略产品\n策略产品可以和功能产品对比理解，策略和功能都是产品经理实现目标解决问题的手段。 策略产品是团队精细化分工衍生而来的 差异：\n需求：功能产品面对的是一个人相对聚焦的需求；策略产品面对的是不同用户不同场景下的精细化需求 解决方案：功能产品收敛的解决方案，通过流程和原型来表达；策略产品解决方案是发散的，通过逻辑描述和效果示例表达产品实现效果。 跟进研发：功能产品更关注结果，效果验收；策略产品需要参与过程，多轮评估，与研发持续一起持续分析迭代。 上线后：功能产品更快达到理想态，完成此次产品需求；策略产品可能是永无止境的循环，面对复杂限制条件进行权衡，不断逼近最优解。 策略产品的优势\n更善于解决复杂问题：通常面对的是一群人的不同需求 极强的逻辑思维能力：需要把需求影响因素拆解的非常清楚 较强的数据敏感度：善于从数据中发现问题，引导进入新的产品循环 拥抱不确定性：持续在迭代的黑暗中寻找通路 策略方法论\n定义理想态：以数字化的指标或其他明确标准来衡量 拆解未达成理想态的情况：将所有不到理想态的case抽样分析，并做统计分类，明确满足不好的原因 提出解决方案：汇总问题，综合影响面、问题严重程度和解决成本确定优先级，作为接下来的项目计划 验证是否解决： 策略方法论：如何找到产品理想态 产品的理想态即给出的方案确实解决了用户的问题，理想态都是以阶段性的产品目标服务的。\n简单产品：以「帮用户解决了问题」作为理想态，并找到单一的数据指标来衡量 复杂产品：难以通过单一指标来衡量最终效果，如搜索/推荐产品通常以平台当前能够给出的最佳产品方案作为理想态，评估搜索/推荐出的结果在所有候选集合中是否是最佳结果，用户行为指标作为发现问题的辅助手段。 策略方法论：如何拆解问题 确定调研目标→确定抽样对象→选择抽样方法→确定抽样数量→样本分析标注→整理汇总问题\n抽样对象需要根据目标保证全面，经常出现的错误就是Case抽取有偏 分析标注：分析标注前有最初的预设，标注过程中会不断调整 整体汇总：需要合理的框架！！！抽象总结总分关系 策略方法论：优先级（ROI） 项目收益：待解决问题影响面 * 解决后体验提升程度 * 预期解决比例 项目成本：研发成本/上线周期\n如何提升网约车叫车成功率？\n理想态：用户发出需求后有司机应答，核心指标：成交率= 完单量/发单量\n拆解未达到理想态原因：\n流程梳理：乘客发单（乘客发单取消）——司机应答（司机无应答）——接驾（司机/乘客应答后取消）——司机乘客碰面 影响面分析：抽取1000个未成交Case分析原因 提出解决方案： 如何提高百度搜索结果的效果？\n理想态：用户以最低成本找到了想要的东西 核心指标：哪些场景概下用户得到了满足？ 搜索一次后用户通过结果摘要满足，没有其他行为 搜索后点击了一条满足需求的搜索结果，无后续行为 拆解未达到理想态原因： 随机抽取5000个用户搜索行为，人工分析其是否满足需求，其中1500个不满足的确定原因是什么 提出解决方案： 策略产品的工作流程\n发现问题：用户反馈；系统监控；效果回归；阶段性调研 撰写需求发起项目 跟进开发评估 上线后效果回归 发现问题\n定义理想态 抽样分析未达理想态的原因 对所有的问题进行归类统计，确定优化方向和项目优先级 策略产品发现问题的方法\n用户反馈渠道：这个日常工作每天都在搜集分析。 问题：收集到的问题比较随机，很难反映产品现状的全局。虽然可能代表一类问题，但是问题的影响面和优先级比较难判断。 总结：每一个反馈背后都是一个真实用户的情感表达，以敬畏心态深入分析每一个问题。 指标监控：监控指标/报警，这个日常主要是工程观测，问题发现从已有指标来的并不多 效果回归：在上次一次产品迭代后发现效果不达标或者发现新的问题时产生。 阶段性调研：针对产品现状的系统性调研，有效指导下阶段的工作。参考策略基础方法论 撰写需求发起项目\n以逻辑描述和Case示例的方式描述待解决问题和解决后的效果期望 简单策略：直接给出规则（已有数据积累时，基于数据分析判断，如银行APP中断操作时，重新输入密码的时间间隔；从0到1时，参照竞品给出，如多次重复尝试竞品给出），开发成本较小 复杂策略：详细描述待解决问题/输入因素/输出效果/总结概述/示例Case 策略文档 从0到1的项目：更多描述理想态，在怎样的输入下要达成怎样的输出效果 策略迭代的项目：更多描述策略现状，待解决问题是什么，针对这些问题，理想的输出结果是什么 项目背景：为什么要启动这个项目？ 项目目标：理想态OR考核指标是什么 需求概述：理解整个文档的需求框架 需求详述：所有产品细节是怎么的？触发条件/考虑因素/特殊情况/Case示例 （统计需求、监控需求：非通用，0到1的需求不需要，修复bug的需求不需要） 跟进开发评估\n验证每一版策略是否解决了所有问题： 达到目标：策略上线 未达目标：问题是什么，接下来的迭代计划是什么 策略需求评审——策略开发——策略评估——未达预期策略优化——策略评估——达到预期——代码正式化——项目上线 这也是策略和功能的一个显著区别：策略是在黑暗中寻找通路，很难一蹴而就达到理想态 策略评估分为：质量评估和DIFF评估两类 策略质量评估主要是针对策略本身的效果情况进行评估 召回率：理想被覆盖的案例中，实际被覆盖的案例 / 理想被覆盖的案例（问题的解决度） 准确率：实际被覆盖的案例中，理想被覆盖的案例 / 实际被覆盖的案例（策略的误伤） DIFF评估：关注复杂系统中的某个策略上线后，对用户体验的真正影响 good:same:bad（简称g:s:b）：随机抽样有变化的case，站在用户体验角度评估效果是变好了、无变化、还是变差了 上线后效果回归 验证是否符合上线前预期：\n达到目标：产品循环暂时终止，有没有进一步的优化空间？有没有引入新的问题？优化/解决手段是什么 未达目标：问题是什么，开启新的产品循环，如果要达到目标要做什么？ 核心在于项目启动前的指标体系建设，上线后才能进行验证\n核心指标：问题和目标是什么 过程指标：解决问题和实现问题的关键路径是什么 观察指标：新的路径伤害了谁 【例子】如果降低搜索中用户的输入成本？\n核心指标：用户输入时间，预期降低2秒 过程指标：通过梳理流程确定用户输入效率的影响因素：Sug展现率，首次展示sug时的输入长度，Sug是否被用点击，平均输入长度 观察指标：Sug输入query的搜索结果满意度 用策略解决问题的优势\n精细化：考虑不同因素提供不同的方案 自我迭代进化：基于反馈的推荐系统，在闭环的系统中进行进化 适合的方向\n个性化服务：解决一群人的问题，发现每个用户的不同兴趣点，如输入法/搜索/头条 效率提升：发现系统中随机的低效点，如增长/促销/出行 策略分类：\n功能导向性：单一用户群的需求解决方案，定义规则区分不同用户群/场景规则，定义每个场景好的体验标准和指标。3R：细分好用户/场景Requirement，设计好把什么资源给到什么用户的Rule，准备好用来细分和满足需求的资源Resource. 业务导向型：需要考虑多个存在显著需求差异甚至利益冲突的用户群，策略在多个利益群之间寻找合适解决路径，使得群体利益最大化。随着阶段性目标变化，策略路径也会随之变化。 策略框架：是多个功能导向型框架的集合；寻求各个群体间共同的利益点，作为不同小框架的结合点，最终的目的是生态繁荣。\n平衡是一个生态系统存在的基础；各自成长是生态系统繁荣的必要条件\n增长：更有效率的杠杆；拉新/促活 风控：风控：「最小成本的避免伤害」；反作弊/风险评估\n数据：基础数据/用户画像\n",
+  "wordCount" : "122",
+  "inLanguage": "zh",
+  "datePublished": "2020-04-01T15:51:58Z",
+  "dateModified": "2020-04-01T15:51:58Z",
+  "author":{
+    "@type": "Person",
+    "name": "lula"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/zh/posts/%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E6%96%B9%E6%B3%95%E8%AE%BA/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "lula的博客",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/zh/" accesskey="h" title="lula的博客 (Alt + H)">lula的博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="http://localhost:1313/" title="English"
+                            aria-label="English">English</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/zh/archives" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/projects/" title="项目">
+                    <span>项目</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/zh/">主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/zh/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      策略产品方法论
+    </h1>
+    <div class="post-meta"><span title='2020-04-01 15:51:58 +0000 UTC'>四月 1, 2020</span>&nbsp;·&nbsp;lula
+
+</div>
+  </header> 
+
+  <div class="post-content"><ul>
+<li>三节课在二月份限免了一些课程，当时随手领取之后就忘了，结果还有两天课程结束时才想起来又开始看</li>
+<li>课程导师是原来在百度/滴滴的产品，其实方法论很简单，但是课程内容有很多简化版的例子对于想要了解其他行业的策略还是很好的入门</li>
+<li>因此就记录下自己悟到的内容，不再像之前记笔记那么详细。</li>
+</ul>
+<hr>
+<blockquote>
+<p>什么是策略产品</p>
+</blockquote>
+<ul>
+<li>策略产品可以和功能产品对比理解，策略和功能都是产品经理实现目标解决问题的手段。</li>
+<li>策略产品是团队精细化分工衍生而来的</li>
+</ul>
+<p>差异：</p>
+<ol>
+<li><strong>需求</strong>：功能产品面对的是一个人相对聚焦的需求；策略产品面对的是不同用户不同场景下的精细化需求</li>
+<li><strong>解决方案</strong>：功能产品收敛的解决方案，通过流程和原型来表达；策略产品解决方案是发散的，通过逻辑描述和效果示例表达产品实现效果。</li>
+<li><strong>跟进研发</strong>：功能产品更关注结果，效果验收；策略产品需要参与过程，多轮评估，与研发持续一起持续分析迭代。</li>
+<li><strong>上线后</strong>：功能产品更快达到理想态，完成此次产品需求；策略产品可能是永无止境的循环，面对复杂限制条件进行权衡，不断逼近最优解。</li>
+</ol>
+<blockquote>
+<p>策略产品的优势</p>
+</blockquote>
+<ol>
+<li>更善于解决复杂问题：通常面对的是一群人的不同需求</li>
+<li>极强的逻辑思维能力：需要把需求影响因素拆解的非常清楚</li>
+<li>较强的数据敏感度：善于从数据中发现问题，引导进入新的产品循环</li>
+<li>拥抱不确定性：持续在迭代的黑暗中寻找通路</li>
+</ol>
+<hr>
+<blockquote>
+<p>策略方法论</p>
+</blockquote>
+<ol>
+<li>定义理想态：以数字化的指标或其他明确标准来衡量</li>
+<li>拆解未达成理想态的情况：将所有不到理想态的case抽样分析，并做统计分类，明确满足不好的原因</li>
+<li>提出解决方案：汇总问题，综合影响面、问题严重程度和解决成本确定优先级，作为接下来的项目计划</li>
+<li>验证是否解决：</li>
+</ol>
+<blockquote>
+<p>策略方法论：如何找到产品理想态
+产品的理想态即给出的方案确实解决了用户的问题，理想态都是以阶段性的产品目标服务的。</p>
+</blockquote>
+<ul>
+<li>简单产品：以「帮用户解决了问题」作为理想态，并找到单一的数据指标来衡量</li>
+<li>复杂产品：难以通过单一指标来衡量最终效果，如搜索/推荐产品通常以平台当前能够给出的最佳产品方案作为理想态，评估搜索/推荐出的结果在所有候选集合中是否是最佳结果，用户行为指标作为发现问题的辅助手段。</li>
+</ul>
+<blockquote>
+<p>策略方法论：如何拆解问题
+确定调研目标→确定抽样对象→选择抽样方法→确定抽样数量→样本分析标注→整理汇总问题</p>
+</blockquote>
+<ol>
+<li>抽样对象需要根据目标保证全面，经常出现的错误就是Case抽取有偏</li>
+<li>分析标注：分析标注前有最初的预设，标注过程中会不断调整</li>
+<li>整体汇总：需要合理的框架！！！抽象总结总分关系</li>
+</ol>
+<blockquote>
+<p>策略方法论：优先级（ROI）
+项目收益：待解决问题影响面 * 解决后体验提升程度 * 预期解决比例
+项目成本：研发成本/上线周期</p>
+</blockquote>
+<blockquote>
+<p>如何提升网约车叫车成功率？</p>
+</blockquote>
+<ol>
+<li>
+<p>理想态：用户发出需求后有司机应答，核心指标：成交率= 完单量/发单量</p>
+</li>
+<li>
+<p>拆解未达到理想态原因：</p>
+<ol>
+<li>流程梳理：乘客发单（乘客发单取消）——司机应答（司机无应答）——接驾（司机/乘客应答后取消）——司机乘客碰面</li>
+<li>影响面分析：抽取1000个未成交Case分析原因
+<img loading="lazy" src="https://lilulula.github.io//post-images/1585811559755.png"></li>
+</ol>
+</li>
+<li>
+<p>提出解决方案：
+<img loading="lazy" src="https://lilulula.github.io//post-images/1585814793870.png">
+<img loading="lazy" src="https://lilulula.github.io//post-images/1585814819565.png"></p>
+</li>
+</ol>
+<blockquote>
+<p>如何提高百度搜索结果的效果？</p>
+</blockquote>
+<ol>
+<li>理想态：用户以最低成本找到了想要的东西
+核心指标：哪些场景概下用户得到了满足？
+搜索一次后用户通过结果摘要满足，没有其他行为
+搜索后点击了一条满足需求的搜索结果，无后续行为</li>
+<li>拆解未达到理想态原因：
+随机抽取5000个用户搜索行为，人工分析其是否满足需求，其中1500个不满足的确定原因是什么
+<img loading="lazy" src="https://lilulula.github.io//post-images/1585815187719.png"></li>
+<li>提出解决方案：
+<img loading="lazy" src="https://lilulula.github.io//post-images/1585815266674.png"></li>
+</ol>
+<hr>
+<blockquote>
+<p>策略产品的工作流程</p>
+</blockquote>
+<ol>
+<li>发现问题：用户反馈；系统监控；效果回归；<strong>阶段性调研</strong></li>
+<li>撰写需求发起项目</li>
+<li>跟进开发评估</li>
+<li>上线后效果回归</li>
+</ol>
+<blockquote>
+<p>发现问题</p>
+</blockquote>
+<ol>
+<li>定义理想态</li>
+<li>抽样分析未达理想态的原因</li>
+<li>对所有的问题进行归类统计，确定优化方向和项目优先级</li>
+</ol>
+<blockquote>
+<p>策略产品发现问题的方法</p>
+</blockquote>
+<ol>
+<li><strong>用户反馈渠道</strong>：这个日常工作每天都在搜集分析。
+<strong>问题</strong>：收集到的问题比较随机，很难反映产品现状的全局。虽然可能代表一类问题，但是问题的影响面和优先级比较难判断。
+<strong>总结</strong>：每一个反馈背后都是一个真实用户的情感表达，以敬畏心态深入分析每一个问题。</li>
+<li><strong>指标监控</strong>：监控指标/报警，这个日常主要是工程观测，问题发现从已有指标来的并不多</li>
+<li><strong>效果回归</strong>：在上次一次产品迭代后发现效果不达标或者发现新的问题时产生。</li>
+<li><strong>阶段性调研</strong>：针对产品现状的系统性调研，有效指导下阶段的工作。参考策略基础方法论</li>
+</ol>
+<blockquote>
+<p>撰写需求发起项目</p>
+</blockquote>
+<ol>
+<li>以逻辑描述和Case示例的方式描述待解决问题和解决后的效果期望</li>
+</ol>
+<ul>
+<li>简单策略：直接给出规则（已有数据积累时，基于数据分析判断，如银行APP中断操作时，重新输入密码的时间间隔；从0到1时，参照竞品给出，如多次重复尝试竞品给出），开发成本较小</li>
+<li>复杂策略：详细描述待解决问题/输入因素/输出效果/总结概述/示例Case</li>
+</ul>
+<ol start="2">
+<li>策略文档
+<ol>
+<li>从0到1的项目：更多描述理想态，在怎样的输入下要达成怎样的输出效果</li>
+<li>策略迭代的项目：更多描述策略现状，待解决问题是什么，针对这些问题，理想的输出结果是什么</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>项目背景：为什么要启动这个项目？</li>
+<li>项目目标：理想态OR考核指标是什么</li>
+<li>需求概述：理解整个文档的需求框架</li>
+<li>需求详述：所有产品细节是怎么的？触发条件/考虑因素/特殊情况/Case示例</li>
+<li>（统计需求、监控需求：非通用，0到1的需求不需要，修复bug的需求不需要）</li>
+</ul>
+<blockquote>
+<p>跟进开发评估</p>
+</blockquote>
+<ol>
+<li>验证每一版策略是否解决了所有问题：</li>
+</ol>
+<ul>
+<li>达到目标：策略上线</li>
+<li>未达目标：问题是什么，接下来的迭代计划是什么</li>
+</ul>
+<ol start="2">
+<li>策略需求评审——策略开发——策略评估——未达预期策略优化——策略评估——达到预期——代码正式化——项目上线</li>
+<li>这也是策略和功能的一个显著区别：策略是在黑暗中寻找通路，很难一蹴而就达到理想态</li>
+<li>策略评估分为：质量评估和DIFF评估两类</li>
+<li>策略质量评估主要是针对策略本身的效果情况进行评估</li>
+</ol>
+<ul>
+<li>召回率：理想被覆盖的案例中，实际被覆盖的案例 / 理想被覆盖的案例（问题的解决度）</li>
+<li>准确率：实际被覆盖的案例中，理想被覆盖的案例 / 实际被覆盖的案例（策略的误伤）</li>
+</ul>
+<ol start="6">
+<li>DIFF评估：关注复杂系统中的某个策略上线后，对用户体验的真正影响
+good:same:bad（简称g:s:b）：随机抽样有变化的case，站在用户体验角度评估效果是变好了、无变化、还是变差了
+<img loading="lazy" src="https://lilulula.github.io//post-images/1585818046538.png"></li>
+</ol>
+<blockquote>
+<p>上线后效果回归
+验证是否符合上线前预期：</p>
+</blockquote>
+<ul>
+<li>达到目标：产品循环暂时终止，有没有进一步的优化空间？有没有引入新的问题？优化/解决手段是什么</li>
+<li>未达目标：问题是什么，开启新的产品循环，如果要达到目标要做什么？</li>
+</ul>
+<p>核心在于项目启动前的指标体系建设，上线后才能进行验证</p>
+<ol>
+<li>核心指标：问题和目标是什么</li>
+<li>过程指标：解决问题和实现问题的关键路径是什么</li>
+<li>观察指标：新的路径伤害了谁</li>
+</ol>
+<blockquote>
+<p>【例子】如果降低搜索中用户的输入成本？</p>
+</blockquote>
+<ol>
+<li>核心指标：用户输入时间，预期降低2秒</li>
+<li>过程指标：通过梳理流程确定用户输入效率的影响因素：Sug展现率，首次展示sug时的输入长度，Sug是否被用点击，平均输入长度</li>
+<li>观察指标：Sug输入query的搜索结果满意度</li>
+</ol>
+<hr>
+<blockquote>
+<p>用策略解决问题的优势</p>
+</blockquote>
+<ol>
+<li>精细化：考虑不同因素提供不同的方案</li>
+<li>自我迭代进化：基于反馈的推荐系统，在闭环的系统中进行进化</li>
+</ol>
+<blockquote>
+<p>适合的方向</p>
+</blockquote>
+<ol>
+<li>个性化服务：解决一群人的问题，发现每个用户的不同兴趣点，如输入法/搜索/头条</li>
+<li>效率提升：发现系统中随机的低效点，如增长/促销/出行</li>
+</ol>
+<blockquote>
+<p>策略分类：</p>
+</blockquote>
+<ol>
+<li>
+<p>功能导向性：单一用户群的需求解决方案，定义规则区分不同用户群/场景规则，定义每个场景好的体验标准和指标。3R：细分好用户/场景Requirement，设计好把什么资源给到什么用户的Rule，准备好用来细分和满足需求的资源Resource.
+<img loading="lazy" src="https://lilulula.github.io//post-images/1585822407440.png"></p>
+</li>
+<li>
+<p>业务导向型：需要考虑多个存在显著需求差异甚至利益冲突的用户群，策略在多个利益群之间寻找合适解决路径，使得群体利益最大化。随着阶段性目标变化，策略路径也会随之变化。
+<img loading="lazy" src="https://lilulula.github.io//post-images/1585822347656.png">
+策略框架：是多个功能导向型框架的集合；寻求各个群体间共同的利益点，作为不同小框架的结合点，最终的目的是生态繁荣。</p>
+</li>
+</ol>
+<p>平衡是一个生态系统存在的基础；各自成长是生态系统繁荣的必要条件</p>
+<ol start="3">
+<li>
+<p>增长：更有效率的杠杆；拉新/促活
+<img loading="lazy" src="https://lilulula.github.io//post-images/1585880445896.png">
+<img loading="lazy" src="https://lilulula.github.io//post-images/1585880519191.png"></p>
+</li>
+<li>
+<p>风控：风控：「最小成本的避免伤害」；反作弊/风险评估</p>
+</li>
+<li>
+<p>数据：基础数据/用户画像</p>
+</li>
+</ol>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/zh/tags/%E4%BA%A7%E5%93%81/">产品</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/zh/posts/%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E5%AE%9E%E4%BE%8B/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>策略产品实例</span>
+  </a>
+  <a class="next" href="http://localhost:1313/zh/posts/%E5%A9%9A%E5%A7%BB%E7%94%9F%E6%B4%BB/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>🎬《婚姻生活》</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/zh/">lula的博客</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    
+<div class="busuanzi-footer">
+  <span id="busuanzi_container_site_pv">
+    Total views: <span id="busuanzi_value_site_pv"></span> 
+  </span>
+</div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

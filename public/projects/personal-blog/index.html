@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>个人博客网站 | lula&#39;s blog</title>
+<meta name="keywords" content="Web Development, Hugo, GitHub Pages">
+<meta name="description" content="基于Hugo和PaperMod主题构建的个人博客网站，托管在GitHub Pages上">
+<meta name="author" content="lula">
+<link rel="canonical" href="http://localhost:1313/projects/personal-blog/">
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/personal-blog/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMC06JHFDG"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WMC06JHFDG');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/projects/personal-blog/">
+  <meta property="og:site_name" content="lula&#39;s blog">
+  <meta property="og:title" content="个人博客网站">
+  <meta property="og:description" content="基于Hugo和PaperMod主题构建的个人博客网站，托管在GitHub Pages上">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2024-01-01T12:00:00+00:00">
+    <meta property="article:modified_time" content="2024-01-01T12:00:00+00:00">
+    <meta property="article:tag" content="Web Development">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="GitHub Pages">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="个人博客网站">
+<meta name="twitter:description" content="基于Hugo和PaperMod主题构建的个人博客网站，托管在GitHub Pages上">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "My Projects",
+      "item": "http://localhost:1313/projects/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "个人博客网站",
+      "item": "http://localhost:1313/projects/personal-blog/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "个人博客网站",
+  "name": "个人博客网站",
+  "description": "基于Hugo和PaperMod主题构建的个人博客网站，托管在GitHub Pages上",
+  "keywords": [
+    "Web Development", "Hugo", "GitHub Pages"
+  ],
+  "articleBody": "项目概述 这是我的个人博客网站项目，使用Hugo静态网站生成器和PaperMod主题构建。网站主要用于分享我的学习笔记、读书心得、电影观后感以及技术文章。\n技术栈 静态网站生成器: Hugo 主题: PaperMod 部署方式: GitHub Pages 自动化: GitHub Actions 域名: 自定义域名 ailula.top 主要功能 📝 博客系统 支持Markdown写作 代码高亮显示 目录自动生成 标签分类系统 🎬 多媒体展示 电影观影记录（集成豆瓣API） 读书笔记展示 图片优化处理 🔍 搜索功能 全站内容搜索 基于Fuse.js的模糊搜索 JSON索引生成 📱 响应式设计 移动端友好 暗黑模式支持 优雅的排版布局 项目结构 luli-lula.github.io/ ├── content/ # 内容文件 │ ├── posts/ # 博客文章 │ ├── projects/ # 项目展示 │ └── about.md # 关于页面 ├── assets/ # 静态资源 │ └── images/ # 图片文件 ├── themes/PaperMod/ # 主题文件 └── hugo.yaml # 配置文件 开发历程 初期搭建 选择Hugo作为静态网站生成器 采用PaperMod主题进行定制 配置GitHub Actions自动部署 功能扩展 添加豆瓣读书/电影展示 集成全站搜索功能 优化SEO和性能 持续优化 图片压缩和优化 加载速度提升 用户体验改进 部署方式 项目使用GitHub Actions实现自动化部署：\n推送代码到main分支 GitHub Actions自动构建Hugo网站 部署到GitHub Pages 自定义域名解析 遇到的挑战 图片管理 问题: 最初将图片放在 static/images/ 目录，导致Hugo无法正确处理图片资源。\n解决方案: 将所有图片迁移到 assets/images/ 目录，并更新引用路径，确保Hugo能够正确处理和优化图片。\n本地与线上不一致 问题: 本地测试正常，但推送到GitHub后线上页面显示异常。\n解决方案:\n检查baseURL配置 确保相对路径正确 验证GitHub Actions构建日志 未来规划 添加评论系统 集成更多第三方服务 优化移动端体验 添加RSS订阅功能 实现文章阅读统计 项目链接 源码: GitHub Repository 在线预览: ailula.top 主题文档: PaperMod Theme 这个项目不仅是我的个人博客，也是我学习前端技术和静态网站开发的实践项目。通过不断的优化和完善，我对Hugo、GitHub Actions、Web性能优化等技术有了更深入的理解。\n",
+  "wordCount" : "134",
+  "inLanguage": "en",
+  "datePublished": "2024-01-01T12:00:00Z",
+  "dateModified": "2024-01-01T12:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "lula"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/projects/personal-blog/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "lula's blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="lula&#39;s blog (Alt + H)">lula&#39;s blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="http://localhost:1313/zh/" title="中文"
+                            aria-label="中文">中文</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/projects/">My Projects</a></div>
+    <h1 class="post-title entry-hint-parent">
+      个人博客网站
+    </h1>
+    <div class="post-description">
+      基于Hugo和PaperMod主题构建的个人博客网站，托管在GitHub Pages上
+    </div>
+    <div class="post-meta"><span title='2024-01-01 12:00:00 +0000 +0000'>January 1, 2024</span>&nbsp;·&nbsp;lula
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#项目概述">项目概述</a></li>
+    <li><a href="#技术栈">技术栈</a></li>
+    <li><a href="#主要功能">主要功能</a>
+      <ul>
+        <li><a href="#-博客系统">📝 博客系统</a></li>
+        <li><a href="#-多媒体展示">🎬 多媒体展示</a></li>
+        <li><a href="#-搜索功能">🔍 搜索功能</a></li>
+        <li><a href="#-响应式设计">📱 响应式设计</a></li>
+      </ul>
+    </li>
+    <li><a href="#项目结构">项目结构</a></li>
+    <li><a href="#开发历程">开发历程</a>
+      <ul>
+        <li><a href="#初期搭建">初期搭建</a></li>
+        <li><a href="#功能扩展">功能扩展</a></li>
+        <li><a href="#持续优化">持续优化</a></li>
+      </ul>
+    </li>
+    <li><a href="#部署方式">部署方式</a></li>
+    <li><a href="#遇到的挑战">遇到的挑战</a>
+      <ul>
+        <li><a href="#图片管理">图片管理</a></li>
+        <li><a href="#本地与线上不一致">本地与线上不一致</a></li>
+      </ul>
+    </li>
+    <li><a href="#未来规划">未来规划</a></li>
+    <li><a href="#项目链接">项目链接</a></li>
+  </ul>
+</nav>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="项目概述">项目概述<a hidden class="anchor" aria-hidden="true" href="#项目概述">#</a></h2>
+<p>这是我的个人博客网站项目，使用Hugo静态网站生成器和PaperMod主题构建。网站主要用于分享我的学习笔记、读书心得、电影观后感以及技术文章。</p>
+<h2 id="技术栈">技术栈<a hidden class="anchor" aria-hidden="true" href="#技术栈">#</a></h2>
+<ul>
+<li><strong>静态网站生成器</strong>: Hugo</li>
+<li><strong>主题</strong>: PaperMod</li>
+<li><strong>部署方式</strong>: GitHub Pages</li>
+<li><strong>自动化</strong>: GitHub Actions</li>
+<li><strong>域名</strong>: 自定义域名 ailula.top</li>
+</ul>
+<h2 id="主要功能">主要功能<a hidden class="anchor" aria-hidden="true" href="#主要功能">#</a></h2>
+<h3 id="-博客系统">📝 博客系统<a hidden class="anchor" aria-hidden="true" href="#-博客系统">#</a></h3>
+<ul>
+<li>支持Markdown写作</li>
+<li>代码高亮显示</li>
+<li>目录自动生成</li>
+<li>标签分类系统</li>
+</ul>
+<h3 id="-多媒体展示">🎬 多媒体展示<a hidden class="anchor" aria-hidden="true" href="#-多媒体展示">#</a></h3>
+<ul>
+<li>电影观影记录（集成豆瓣API）</li>
+<li>读书笔记展示</li>
+<li>图片优化处理</li>
+</ul>
+<h3 id="-搜索功能">🔍 搜索功能<a hidden class="anchor" aria-hidden="true" href="#-搜索功能">#</a></h3>
+<ul>
+<li>全站内容搜索</li>
+<li>基于Fuse.js的模糊搜索</li>
+<li>JSON索引生成</li>
+</ul>
+<h3 id="-响应式设计">📱 响应式设计<a hidden class="anchor" aria-hidden="true" href="#-响应式设计">#</a></h3>
+<ul>
+<li>移动端友好</li>
+<li>暗黑模式支持</li>
+<li>优雅的排版布局</li>
+</ul>
+<h2 id="项目结构">项目结构<a hidden class="anchor" aria-hidden="true" href="#项目结构">#</a></h2>
+<pre tabindex="0"><code>luli-lula.github.io/
+├── content/          # 内容文件
+│   ├── posts/        # 博客文章
+│   ├── projects/     # 项目展示
+│   └── about.md      # 关于页面
+├── assets/           # 静态资源
+│   └── images/       # 图片文件
+├── themes/PaperMod/  # 主题文件
+└── hugo.yaml         # 配置文件
+</code></pre><h2 id="开发历程">开发历程<a hidden class="anchor" aria-hidden="true" href="#开发历程">#</a></h2>
+<h3 id="初期搭建">初期搭建<a hidden class="anchor" aria-hidden="true" href="#初期搭建">#</a></h3>
+<ul>
+<li>选择Hugo作为静态网站生成器</li>
+<li>采用PaperMod主题进行定制</li>
+<li>配置GitHub Actions自动部署</li>
+</ul>
+<h3 id="功能扩展">功能扩展<a hidden class="anchor" aria-hidden="true" href="#功能扩展">#</a></h3>
+<ul>
+<li>添加豆瓣读书/电影展示</li>
+<li>集成全站搜索功能</li>
+<li>优化SEO和性能</li>
+</ul>
+<h3 id="持续优化">持续优化<a hidden class="anchor" aria-hidden="true" href="#持续优化">#</a></h3>
+<ul>
+<li>图片压缩和优化</li>
+<li>加载速度提升</li>
+<li>用户体验改进</li>
+</ul>
+<h2 id="部署方式">部署方式<a hidden class="anchor" aria-hidden="true" href="#部署方式">#</a></h2>
+<p>项目使用GitHub Actions实现自动化部署：</p>
+<ol>
+<li>推送代码到main分支</li>
+<li>GitHub Actions自动构建Hugo网站</li>
+<li>部署到GitHub Pages</li>
+<li>自定义域名解析</li>
+</ol>
+<h2 id="遇到的挑战">遇到的挑战<a hidden class="anchor" aria-hidden="true" href="#遇到的挑战">#</a></h2>
+<h3 id="图片管理">图片管理<a hidden class="anchor" aria-hidden="true" href="#图片管理">#</a></h3>
+<p><strong>问题</strong>: 最初将图片放在 <code>static/images/</code> 目录，导致Hugo无法正确处理图片资源。</p>
+<p><strong>解决方案</strong>: 将所有图片迁移到 <code>assets/images/</code> 目录，并更新引用路径，确保Hugo能够正确处理和优化图片。</p>
+<h3 id="本地与线上不一致">本地与线上不一致<a hidden class="anchor" aria-hidden="true" href="#本地与线上不一致">#</a></h3>
+<p><strong>问题</strong>: 本地测试正常，但推送到GitHub后线上页面显示异常。</p>
+<p><strong>解决方案</strong>:</p>
+<ul>
+<li>检查baseURL配置</li>
+<li>确保相对路径正确</li>
+<li>验证GitHub Actions构建日志</li>
+</ul>
+<h2 id="未来规划">未来规划<a hidden class="anchor" aria-hidden="true" href="#未来规划">#</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"> 添加评论系统</li>
+<li><input disabled="" type="checkbox"> 集成更多第三方服务</li>
+<li><input disabled="" type="checkbox"> 优化移动端体验</li>
+<li><input disabled="" type="checkbox"> 添加RSS订阅功能</li>
+<li><input disabled="" type="checkbox"> 实现文章阅读统计</li>
+</ul>
+<h2 id="项目链接">项目链接<a hidden class="anchor" aria-hidden="true" href="#项目链接">#</a></h2>
+<ul>
+<li><strong>源码</strong>: <a href="https://github.com/luli-lula/luli-lula.github.io">GitHub Repository</a></li>
+<li><strong>在线预览</strong>: <a href="https://ailula.top/">ailula.top</a></li>
+<li><strong>主题文档</strong>: <a href="https://github.com/adityatelange/hugo-PaperMod">PaperMod Theme</a></li>
+</ul>
+<hr>
+<p>这个项目不仅是我的个人博客，也是我学习前端技术和静态网站开发的实践项目。通过不断的优化和完善，我对Hugo、GitHub Actions、Web性能优化等技术有了更深入的理解。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/web-development/">Web Development</a></li>
+      <li><a href="http://localhost:1313/tags/hugo/">Hugo</a></li>
+      <li><a href="http://localhost:1313/tags/github-pages/">GitHub Pages</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/projects/adhd-focus/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>ADHDFocus - Focus Timer</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">lula&#39;s blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    
+<div class="busuanzi-footer">
+  <span id="busuanzi_container_site_pv">
+    Total views: <span id="busuanzi_value_site_pv"></span> 
+  </span>
+</div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

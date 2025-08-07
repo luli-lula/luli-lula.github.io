@@ -2,118 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Life on lula&#39;s blog</title>
-    <link>https://ailula.top/tags/life/</link>
+    <link>http://localhost:1313/tags/life/</link>
     <description>Recent content in Life on lula&#39;s blog</description>
     <generator>Hugo -- 0.139.4</generator>
-    <language>en</language>
+    <language>en-us</language>
     <lastBuildDate>Sat, 03 Aug 2024 11:30:03 +0000</lastBuildDate>
-    <atom:link href="https://ailula.top/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2024年又重新开始写博客</title>
-      <link>https://ailula.top/posts/2024%E5%B9%B4%E5%8F%88%E9%87%8D%E6%96%B0%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2/</link>
+      <title>Starting to Blog Again in 2024</title>
+      <link>http://localhost:1313/posts/2024-starting-blogging-again/</link>
       <pubDate>Sat, 03 Aug 2024 11:30:03 +0000</pubDate>
-      <guid>https://ailula.top/posts/2024%E5%B9%B4%E5%8F%88%E9%87%8D%E6%96%B0%E5%BC%80%E5%A7%8B%E5%86%99%E5%8D%9A%E5%AE%A2/</guid>
-      <description>&lt;p&gt;现在写博客，可能也类似在在豆瓣写日记一样没人看吧，最近因为做独立产品买了一个域名，所以又开始产生折腾博客的念头，依然是用的Hugo+Github，似乎和七八年前一样，不过有了很多更便捷的工具。&lt;/p&gt;
-&lt;h3 id=&#34;挣扎的互联网产品经理的工作&#34;&gt;挣扎的互联网产品经理的工作&lt;/h3&gt;
-&lt;p&gt;在国内互联网挣扎了6年之后，终于躺平摊手放弃了，成了传说中“永远升不上P8的底层大头兵”，6年时间呆了4个团队，老板换了六七八个，经历了互联网最后一点荣光，越来越发现自己在这个环境中无法适从。&lt;/p&gt;
-&lt;p&gt;6年时间，环境在一点点恶化成一滩烂泥。看着互联网最后一点繁华消失殆尽，每个公司都内部宣扬着“不唯上”的slogan，但是却在每一个下班的时间要求下属们对老板和他们的朋友们上报的Case快速响应，从最开始强调用户体验和做正确的事情，到后来再听到职场上听到这些话会觉得可笑。&lt;/p&gt;
-&lt;p&gt;6年时间，也越发发现自己不适合的地方，不够aggressive，不会处理灰色地带的事情，不会抢活，不会倒排push别人，最后的结果就是自己和自己内耗到情绪崩溃，而外部的合作者同事也很尴尬。SSR之前问过我一个问题，他说你看看你碰到过的几个公司的每一个管理者，有一个是你这样性格的吗？我认真的想了很久，似乎找不到一个，唯一很认同价值观的一个老板也是被排挤上升之路并不好。&lt;/p&gt;
-&lt;p&gt;这样的环境和这样的我，人和人之间关系紧张，做的事情屎上雕花，除了那份工资没有任何事情能够说服我继续呆下来。最开始觉得是我倒霉总是碰到奇葩的团队，后来跟不同公司的人聊，发现没人过的开心，但是他们似乎比我更强大的地方在于能忍，也或许丰厚的收入能够在工作之余给他们带来值得的回报。&lt;/p&gt;
-&lt;h3 id=&#34;新的尝试的开始&#34;&gt;新的尝试的开始&lt;/h3&gt;
-&lt;p&gt;去年第一次Gap尝试，心理变化了很多，也踩了很多心理误区，从始自终都没有完全放松下来。迫于房贷压力以及并没有想好润这条路怎么走，所以决定重新找一份不求升职加薪的养老厂工作。但环境并不如预想这样，给你这份比谁跪的好才能挣到的钱，怎么会放你一个人站着。所以这次自动求裁轻车熟路了很多，折腾的中间开始自学Next.js做网站和项目，竟然最后真的做出来并且上线了（再次感叹前端技术发展到现在让小白都能轻松搭好网站。&lt;/p&gt;
-&lt;p&gt;项目本身从二月份起头，中间因为Prompt调整不好所以暂停了很久，直到离职前有了大把无人管的空余时间，跟着GPT老师一点点改，过程中也不断安慰自己，就当作是一个练习项目，最后结果如何不要想太多。&lt;/p&gt;
-&lt;p&gt;独立产品后面的路会怎么样呢，我真的不知道，想起来研二的时候决定走产品经理这条路的时候也不知道后面的路会怎么样吧，幸好现在能有些许存款能够自己继续折腾折腾，给自己创造下一个生活。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2019年终总结</title>
-      <link>https://ailula.top/posts/2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Sat, 28 Dec 2019 17:58:15 +0000</pubDate>
-      <guid>https://ailula.top/posts/2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</guid>
-      <description>&lt;p&gt;在准备写下这篇总结的时候，想着要选一个2019年的个人年度关键词，「妥协」这个词就蹦出来了；一直挂在嘴边的理想主义幻灭，一边在现有的生活中苟且着。&lt;/p&gt;
-&lt;h2 id=&#34;工作--个人&#34;&gt;工作 &amp;amp;&amp;amp; 个人&lt;/h2&gt;
-&lt;p&gt;如果统计一年各项活动的时间，工作应该是占比最大的吧。而独自一人在外，工作和生活似乎也难以分开。
-从年初陆续开始的人员变动离职，换了一波领导完全不同的风格，对接的研发和组里的小伙伴基本都走了，而自己也从职场新人进化到看清一些背后的人际关系，而这也是我之前选择互联网这个行业想要逃避的东西。从看清形势到抱怨浪费了很多时间，但是也促使自己去思考更多未来规划。&lt;/p&gt;
-&lt;p&gt;回想18年也许自己只是幸运遇到合适的团队和老板，也许自己只是太单纯（蠢）没看到一直存在的波涛汹涌。认清现在所处的现实之后开始向外看发现似乎大公司都这样而且可能更严重，小公司风险更高，而打开App Store似乎都没有能让我兴奋的产品了。&lt;/p&gt;
-&lt;p&gt;为什么要做产品经理呢？不会大到改变世界那么理想主义，但是总想着做一些能对社会上的一些人「有意义」的事情，而这个「有意义」其实也就是符合价值观中的「价值感」。回头看现在经济寒冬下的互联网行业似乎已经和自己创造价值的理想渐行渐远。&lt;/p&gt;
-&lt;p&gt;所以这一年我都过的很拧巴，我知道过去的自己太理想化，但也不想成为所谓的现实主义其中的一员，甚至都想要不就彻底放弃，顺着父母的意愿回去吧。「无意义」总比拧巴着站在对立面要好一些，但是我又不甘心，看到现在我也还是拧巴的。&lt;/p&gt;
-&lt;p&gt;直到12月底这个尴尬的绩效考核季，我才想明白一些，发现渣男你就已经输了，认清现实之后及时止损而不是成为一个怨妇，继续向前还是要继续相信爱，任何时候都不能失去自我，成长和生活最内核都是你一个人的事情。&lt;/p&gt;
-&lt;h2 id=&#34;家人&#34;&gt;家人&lt;/h2&gt;
-&lt;p&gt;父母是挡在自己与死亡面前的一扇门，还在小学时的爷爷离世对当时的自己打击很大，也促使自己对死亡这件事开始理解，这么些年读了很多书，看了很多纪录片，本以为已经能够成熟理性面对这件事情，但是越长大发现事情越复杂，自己也越脆弱。姥爷离世，老爸骨折，亲情的纽带在身上越绑越紧。18年觉得自己终于自由了可以过自己想要的人生，19年的我发现其实风筝的线一直在家里。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;诊断书就是死亡倒计时，
-最开始诊断起来的时候总天真的以为只要定期复诊手术切除就不会危及生命，但其实从诊断结果当时已经可以看到倒计时的时间表「五年存活率」，&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;亲人面前没办法说尽力了
-从诊断完成开始面临了太多抉择，去什么医院，找什么医生，做什么检查，有人说有一种新的疗法和药要不要尝试，什么时候放弃治疗，什么时候回家，每一个选择都会成为回忆时侵蚀自己的入口。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;陪着至亲一起面对未知的死亡
-我最崩溃的两次：一次是在医院里为是否要花一大笔钱重新在大医院里治疗跟姥爷争吵，在候诊区哭到不行；一次就是春节的时候第一次姥爷没办法来我家串门仿佛看到倒计时滴答在想，自己在房间里哭到停不下来。所以上半年放弃治疗之后在县医院休息的时候，太懦弱的我都不敢回家面对，母亲事无巨细的照料让我自愧不如。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;传统的孝顺
-现在回想起来那几天自己仿佛麻木的行尸走肉一样，胆小的自己第一晚守夜看着水晶棺里面的姥爷心里却没有一丝害怕，看着大人们处理着从早到晚的流程，像傻子一样听从着命令，永远不知道下一场是做什么，只是很担心妈妈和几个姨哭的身体受不了，最后才知道那些哭和嚎叫很多是为了让外人看到孝顺，基本没有睡觉的几天里空白的时间脑子里放电影一样恍过很多画面，唯一庆幸的是实习结束之后带他们来北京玩。
-除此之外，老爸十一的时候骨折我在外面没立即回家拜托表哥帮忙照顾的的事情，导致家里所有亲戚说我不孝顺，回想当时的决定只是权衡了一下严重性和成本，虽然父母能理解但是也是有些冷酷无情，这种愧疚感和亲戚中孝顺的评价也将是持久的。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;感情&#34;&gt;感情&lt;/h2&gt;
-&lt;p&gt;19年在身边的人都开始订婚结婚生娃的时间里，我像一个傻瓜一样才有了一点开窍的感觉，从身边的人到相亲介绍还有自己主动被动的尝试，有很多新的体验～&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;被人疼的感觉原来是这样
-说起来有些可笑，母胎SOLO之前毫无经验，第一次被人喜欢，不管是尝试自己之前不会做的事情，还是两个人一起做任何想做的无意义的事情，甚至都没想到自己还会有那么柔软一面，不再逞强所有的事情都自己去体面解决，有人陪伴带来的安全感和对未来的期待原来是这样。回想起来最打动的瞬间还是当时自己一个人去新疆飞机晚点凌晨落地的那句“有我在”，比所有的情话都要动人吧。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;开始理解将就/门当户对的选择
-自己向来很鄙视感情上的将就，并且一直秉着现代生活不需要为了降低生活风险搭伙过日子，我可以养活自己自由选择想要的生活。今年开始慢慢体会最容易被忽略的「日常生活」远不止简单的吃饱穿暖，更多是对抗漫长而虚无的人生，而将就/门当户对的最大优势也就是日常的陪伴，我以为自己丰富的「个人世界」在漫长人生面前脆弱地不堪一击。所以也就能理解将就/门当户对的选择，只是为了让生活更简单不拧巴一些吧。（其实也是和那些回老家的同学们也是在自己抗所有压力责任和父母的保护和侵入之间选择了后者一样）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;没有所谓的缘分，只是天时地利人和
-今年有很多次发出「人生就是Timing啊」的瞬间，从年初聊天的同事过年回趟家脱单了，到正午认识的笔友，开心的文字交流在错过一个下午的面基之后不了了之。其实就像《About Time》里面回到过去改变了妹妹第一次约会的时间点之后，那个你认为的命中注定的人就变成了陌生人一样。现在的年纪早就不再会用缘分来安慰自己，有时也会自嘲自己太单纯，道理其实从一开始就明白，世界就像是随机运动的分子一样，就是随机发生的事件而已，珍惜当下～&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;舒服的呆在一起就行
-都是大龄适婚青年，很多时候从一开始大家的意图都昭然若揭（所以有的时候为了避免误会异性都需要刻意保持距离），每一步的试探和回应在大家心里也都很明显，这也是公众号上一直写的“为什么现在男生/女生都不主动了”，所以其实和相亲（目的先行）很类似。这种情况下也就很少再有轰轰烈烈的各种仪式感，互相觉得还行就继续，能够舒服的呆在一起也就能过日子。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;精神交流可遇不可求
-日常聊天越来越无趣，总结了一下日常同事闲聊：八卦事件个人经历，朋友：感情生活（脱单/老公/孩子）&amp;amp;&amp;amp;吐槽工作不如意；如果有共同的爱好还能再进一步，但是被社会生活压榨的大家基本上也很难有可以称得上爱好的东西，最后才是更偏精神上的交流（没找到词来说明），在注意力涣散和思考匮乏的现实世界中，也许跟中彩票概率一样吧。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;19年的经历和感悟让自己之前对另一半「聊得来」这一个唯一期待有了更深的理解，但是却更难用语言去描述，只能列举出来像《爱在》里面的话唠对话和《最完美的离婚》里面光生聊到天亮的场景。看着相亲对象也逐渐明白自己在相亲市场中的价值，和现实中的尝试和拒绝体验让自己从之前调侃变成真的相信会“孤独终老”～&lt;/p&gt;
-&lt;h2 id=&#34;timeline&#34;&gt;timeline&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;2019.03.30 第5次搬家终于有客厅拉&lt;/li&gt;
-&lt;li&gt;2019.04.09 第一次参加北京电影节看了5场&lt;/li&gt;
-&lt;li&gt;2019.04.27 第一次Livehouse体验，Isaac Gracie&lt;/li&gt;
-&lt;li&gt;2019.05.01 第一次去内蒙古看火山&lt;/li&gt;
-&lt;li&gt;2019.05.08 历时23天完成3000块的拼图&lt;/li&gt;
-&lt;li&gt;2019.08.24 第一次看演唱会——五月天现场超级棒&lt;/li&gt;
-&lt;li&gt;2019.09.26 第一次一个出远门自驾新疆
-（20年一定好好记录，翻了票圈照片票根才凑到）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;书影音&#34;&gt;书影音&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;124部电影，23部综艺，39部剧集
-年度十佳，剧集似乎比电影更出色&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://movie.douban.com/subject/34670642/&#34;&gt;我的事情说来话长&lt;/a&gt;——冬天的治愈&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://movie.douban.com/subject/33418567/&#34;&gt;凪的新生活&lt;/a&gt;——夏天的治愈&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://movie.douban.com/subject/30194648/&#34;&gt;硅谷&lt;/a&gt;——坚持做正确的事情&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://movie.douban.com/subject/27053768/&#34;&gt;伦敦生活&lt;/a&gt;——I love you, It will pass&lt;/li&gt;
-&lt;li&gt;Years and Years ——关于未来的预言&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://movie.douban.com/subject/27202818/&#34;&gt;婚姻故事&lt;/a&gt;——爱在第四部&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://movie.douban.com/subject/1291557/&#34;&gt;花样年华&lt;/a&gt;——经典就是经典&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://movie.douban.com/subject/4832288/&#34;&gt;奇迹&lt;/a&gt;——到最后没有许下的愿望&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://movie.douban.com/subject/26874505/&#34;&gt;人生果实&lt;/a&gt;——想要种满80种水果的院子&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://movie.douban.com/subject/27172891/&#34;&gt;大象席地而坐&lt;/a&gt;——为了满洲里的那只大象&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;书标记的很多但是真正有共鸣收获的很少也就不总结了&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2024-starting-blogging-again/</guid>
+      <description>&lt;p&gt;Writing blogs now might be as unnoticed as writing diaries on Douban. Recently, I bought a domain for an independent product project, which sparked the idea to set up a blog again. Still using Hugo + GitHub, just like seven or eight years ago, though with many more convenient tools available now.&lt;/p&gt;
+&lt;h3 id=&#34;the-struggling-life-of-an-internet-product-manager&#34;&gt;The Struggling Life of an Internet Product Manager&lt;/h3&gt;
+&lt;p&gt;After struggling in China&amp;rsquo;s internet industry for 6 years, I finally gave up and became what they call a &amp;ldquo;grassroots soldier who will never be promoted to P8&amp;rdquo;. In 6 years, I worked in 4 different teams, had 6-7-8 different bosses, experienced the last glimmer of the internet boom, and increasingly found myself unable to adapt to this environment.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

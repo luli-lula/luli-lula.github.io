@@ -1,8 +1,8 @@
 baseURL: https://ailula.top/
-languageCode: zh-cn
-title: lula's blog
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
 theme: PaperMod
-canonifyURLs: true 
+canonifyURLs: false 
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -20,6 +20,8 @@ minify:
 languages:
   en:
     languageName: "English"
+    languageCode: en-us
+    title: "lula's blog"
     weight: 1
     taxonomies:
       category: categories
@@ -36,19 +38,21 @@ languages:
         - name: Tags
           url: tags/
           weight: 20
+        - name: Projects
+          url: projects/
+          weight: 15
         - name: About
           url: about/
           weight: 30
     params:
       languageAltTitle: English
+      description: "the private space for lula"
       profileMode:
         enabled: true
         title: lula
         imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f469_1f3fb_200d_1f4bb.svg"
         imageTitle: ProfileMode image
-        # imageWidth: 120
-        # imageHeight: 120
-        subtitle: " 🦌Indie Maker | 📱 ex-Product Manager | 👩🏻‍💻 Learning to code| 🌲 Loving Nature"
+        subtitle: "🦌Indie Maker | 📱 ex-Product Manager | 👩🏻‍💻 Learning to code| 🌲 Loving Nature"
         buttons:
           - name: Projects
             url: projects/
@@ -57,6 +61,51 @@ languages:
           - name: Movies
             url: movies/
           - name: Books
+            url: books/
+
+  zh:
+    languageName: "中文"
+    languageCode: zh-cn
+    title: "lula的博客"
+    weight: 2
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: 归档
+          url: archives
+          weight: 5
+        - name: 搜索
+          url: search/
+          weight: 10
+        - name: 标签
+          url: tags/
+          weight: 20
+        - name: 项目
+          url: projects/
+          weight: 15
+        - name: 关于
+          url: about/
+          weight: 30
+    params:
+      languageAltTitle: 中文
+      description: "lula的私人空间"
+      profileMode:
+        enabled: true
+        title: lula
+        imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f469_1f3fb_200d_1f4bb.svg"
+        imageTitle: ProfileMode image
+        subtitle: "🦌独立开发者 | 📱前产品经理 | 👩🏻‍💻学习编程中 | 🌲热爱自然"
+        buttons:
+          - name: 项目
+            url: projects/
+          - name: 博客
+            url: posts
+          - name: 电影
+            url: movies/
+          - name: 书籍
             url: books/
 
 
