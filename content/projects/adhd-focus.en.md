@@ -1,6 +1,6 @@
 ---
 title: "ADHDFocus - Focus Timer"
-date: 2024-02-15T12:00:00+00:00
+date: 2025-04-01T12:00:00+00:00
 tags: ["ADHD", "Productivity", "Focus Timer", "Web App"]
 author: "lula"
 description: "A minimalist focus timer designed specifically for people with ADHD to help improve attention concentration"
@@ -18,53 +18,51 @@ techStack: ["Next.js 14", "React", "TypeScript", "Tailwind CSS"]
 status: "Active"
 ---
 
-## Project Overview
+## Why
 
-This is a minimalist focus timer website designed specifically for people with ADHD (Attention Deficit Hyperactivity Disorder). The project was inspired by my personal experience - discovering that ADHD focus music genuinely helps me calm down and maintain concentration.
+This is a minimalist focus timer website. The project was inspired by my personal experience — I always find it hard to start tasks, and even harder to stop once I've started. Then I accidentally discovered that after turning on this background music, I was really able to immerse myself and work for two solid hours. The original music was on YouTube, but it would pause every so often and couldn't be controlled, so I spent a day implementing this idea that was in my head.
 
-## Core Features
+## What
 
-### 🎯 Simple Circular Timer Interface
-- Intuitive circular progress display
-- Hover on outer ring to set time
-- Click outer ring to start timing
+- Peaceful forest background
+- Background music designed specifically for ADHD
+- Minimalist timer with no distractions
 
-### 🎵 Integrated Background Music
-- Carefully curated ADHD focus music
-- Smooth background audio playback
-- Audio controls integrated with timer
+## How
 
-### ⏰ Flexible Time Management
-- Quick preset options (5, 15, 25, 45 minutes)
-- Custom time setting via hover interaction
-- Visual and audio completion notifications
+### Frontend Architecture
+- **Next.js 14**: Modern React framework providing excellent performance
+- **TypeScript**: Type safety, improving development experience
+- **Tailwind CSS**: Utility-first CSS framework
 
-### 📱 Responsive Design
-- Optimized for mobile and desktop
-- Clean, distraction-free interface
-- Dark/light theme support
+### Core Features
+- Optimized client-side rendering
+- Smooth animation effects
+- Integrated audio controls
+- Consistent cross-device experience
 
-## Technical Implementation
+## Development Motivation
 
-Built with modern web technologies:
-- **Next.js 14** with App Router
-- **TypeScript** for type safety
-- **Tailwind CSS** for styling
-- **React Hooks** for state management
-- **Web Audio API** for background music
+As someone with ADHD, I deeply understand the limitations of traditional timers for us:
 
-## Design Philosophy
+- **Overly complex interfaces** easily distract attention
+- **Lack of ambient creation** makes it difficult to enter a focused state
+- **Cumbersome operation steps** affect user experience
 
-The design follows ADHD-friendly principles:
-- **Minimal visual noise** to reduce distractions
-- **Single-focus interaction** - one primary action at a time
-- **Immediate feedback** for all user interactions
-- **Soothing color palette** to promote calmness
+ADHDFocus was born to solve these pain points.
 
-## Live Demo
+## Project Structure
 
-Visit [ADHDFocus](https://www.adhd-focus.ailula.top/) to try it out, or check the [source code](https://github.com/luli-lula/ADHDFocus) on GitHub.
+```
+ADHDFocus/
+├── app/              # Next.js app directory
+├── components/       # React components
+├── lib/             # Utility libraries
+├── types/           # TypeScript type definitions
+├── public/          # Static assets
+└── package.json     # Project configuration
+```
 
-## Impact
+## Acknowledgments
 
-This project represents my first successful independent product launch, combining personal needs with technical learning. It serves both as a useful tool for the ADHD community and as a stepping stone in my journey as an indie developer.
+Background music is sourced from "Study with Me: Cozy Cabin", used for personal learning purposes only. If there are any copyright issues, please contact me through GitHub Issues.

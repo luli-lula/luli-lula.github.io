@@ -2,66 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on lula&#39;s blog</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://localhost:60913/tags/</link>
     <description>Recent content in Tags on lula&#39;s blog</description>
     <generator>Hugo -- 0.139.4</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Aug 2024 11:30:03 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Life</title>
-      <link>http://localhost:1313/tags/life/</link>
-      <pubDate>Sat, 03 Aug 2024 11:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/tags/life/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Tue, 01 Apr 2025 12:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:60913/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ADHD</title>
-      <link>http://localhost:1313/tags/adhd/</link>
-      <pubDate>Thu, 15 Feb 2024 12:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/adhd/</guid>
+      <link>http://localhost:60913/tags/adhd/</link>
+      <pubDate>Tue, 01 Apr 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:60913/tags/adhd/</guid>
       <description></description>
     </item>
     <item>
       <title>Focus Timer</title>
-      <link>http://localhost:1313/tags/focus-timer/</link>
-      <pubDate>Thu, 15 Feb 2024 12:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/focus-timer/</guid>
+      <link>http://localhost:60913/tags/focus-timer/</link>
+      <pubDate>Tue, 01 Apr 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:60913/tags/focus-timer/</guid>
       <description></description>
     </item>
     <item>
       <title>Productivity</title>
-      <link>http://localhost:1313/tags/productivity/</link>
-      <pubDate>Thu, 15 Feb 2024 12:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/productivity/</guid>
+      <link>http://localhost:60913/tags/productivity/</link>
+      <pubDate>Tue, 01 Apr 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:60913/tags/productivity/</guid>
       <description></description>
     </item>
     <item>
       <title>Web App</title>
-      <link>http://localhost:1313/tags/web-app/</link>
-      <pubDate>Thu, 15 Feb 2024 12:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/web-app/</guid>
+      <link>http://localhost:60913/tags/web-app/</link>
+      <pubDate>Tue, 01 Apr 2025 12:00:00 +0000</pubDate>
+      <guid>http://localhost:60913/tags/web-app/</guid>
       <description></description>
     </item>
     <item>
-      <title>GitHub Pages</title>
-      <link>http://localhost:1313/tags/github-pages/</link>
-      <pubDate>Mon, 01 Jan 2024 12:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/github-pages/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hugo</title>
-      <link>http://localhost:1313/tags/hugo/</link>
-      <pubDate>Mon, 01 Jan 2024 12:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/hugo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web Development</title>
-      <link>http://localhost:1313/tags/web-development/</link>
-      <pubDate>Mon, 01 Jan 2024 12:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/web-development/</guid>
+      <title>Life</title>
+      <link>http://localhost:60913/tags/life/</link>
+      <pubDate>Sat, 03 Aug 2024 11:30:03 +0000</pubDate>
+      <guid>http://localhost:60913/tags/life/</guid>
       <description></description>
     </item>
   </channel>

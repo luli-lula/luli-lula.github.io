@@ -1,0 +1,344 @@
+{{- $limit := .Get 0 | default 999 -}}
+{{- $rating := .Get 1 | default "5" | string -}}
+
+{{- $movies := slice -}}
+{{- $timestamp := now.Unix -}}
+{{- $dataUrl := printf "https://raw.githubusercontent.com/luli-lula/douban-data/main/data/movies.json?t=%v" $timestamp -}}
+{{- with resources.GetRemote $dataUrl -}}
+  {{- if .Err -}}
+    {{- warnf "Failed to fetch movie data: %s" .Err -}}
+  {{- else -}}
+    {{- with . | transform.Unmarshal -}}
+      {{- $movies = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<div class="douban-movies">
+  {{- if eq (len $movies) 0 -}}
+    <div class="loading-message">
+      <p>🎬 暂无电影数据</p>
+      <p><a href="https://github.com/luli-lula/douban-data/actions" target="_blank">检查同步状态</a> | <a href="https://raw.githubusercontent.com/luli-lula/douban-data/main/data/movies.json" target="_blank">查看原始数据</a></p>
+    </div>
+  {{- else -}}
+    {{- $filteredMovies := where $movies "rating" "eq" $rating -}}
+    {{- $sortedMovies := sort $filteredMovies "mark_date" "desc" -}}
+    <div class="movies-grid">
+      {{- range first $limit $sortedMovies -}}
+    <div class="movie-item">
+      <a href="{{ .douban_url }}" target="_blank" rel="noopener" class="movie-poster-link">
+        <div class="movie-poster">
+          {{- $cdnUrl := printf "https://cdn.jsdelivr.net/gh/luli-lula/douban-data@main/images/posters/%s.jpg" .id -}}
+          <img src="{{ $cdnUrl }}" alt="{{ .title }}" loading="lazy" onerror="this.src='{{ .poster_url }}'">
+        <div class="movie-overlay">
+          <div class="movie-info">
+            <h3 class="movie-title">{{ .title }}</h3>
+          </div>
+        </div>
+        </div>
+      </a>
+      {{- if .comment -}}
+      <div class="movie-comment-card">
+        <p class="movie-comment">{{ .comment }}</p>
+      </div>
+      {{- end -}}
+    </div>
+    {{- end -}}
+    </div>
+  {{- end -}}
+</div>
+
+<style>
+.douban-movies {
+  margin: 2rem 0;
+}
+
+.movies-grid {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.movie-item {
+  position: absolute;
+  width: calc((100% - 7 * 1.2rem) / 8);
+}
+
+@media (max-width: 1400px) {
+  .movie-item {
+    width: calc((100% - 6 * 1.2rem) / 7);
+  }
+}
+
+@media (max-width: 1200px) {
+  .movie-item {
+    width: calc((100% - 5 * 1.2rem) / 6);
+  }
+}
+
+@media (max-width: 1000px) {
+  .movie-item {
+    width: calc((100% - 4 * 1.2rem) / 5);
+  }
+}
+
+@media (max-width: 800px) {
+  .movie-item {
+    width: calc((100% - 3 * 1rem) / 4);
+  }
+}
+
+@media (max-width: 600px) {
+  .movie-item {
+    width: calc((100% - 2 * 0.8rem) / 3);
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-item {
+    width: calc((100% - 1 * 0.6rem) / 2);
+  }
+}
+
+.movie-item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.movie-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.movie-poster-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.movie-item:hover {
+  transform: translateY(-8px);
+}
+
+.movie-poster-link:hover {
+  text-decoration: none;
+}
+
+.movie-poster {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2/3;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  background: transparent;
+}
+
+.movie-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.movie-poster img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  object-position: center;
+  border: none;
+  outline: none;
+}
+
+.movie-poster:hover img {
+  transform: scale(1.05);
+}
+
+.movie-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 1rem 0.75rem 0.75rem;
+}
+
+.movie-poster:hover .movie-overlay {
+  opacity: 1;
+}
+
+.movie-info {
+  color: white;
+  text-align: left;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+.movie-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.movie-comment-card {
+  background: rgba(0,0,0,0.7);
+  margin: 0;
+  margin-top: -1px;
+  padding: 0.75rem;
+  border-radius: 0 0 8px 8px;
+  backdrop-filter: blur(10px);
+}
+
+.movie-comment {
+  color: white;
+  font-size: 0.8rem;
+  margin: 0;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  opacity: 0.9;
+}
+
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  function initMasonry() {
+    const grid = document.querySelector('.movies-grid');
+    if (!grid) return;
+    
+    const items = Array.from(grid.querySelectorAll('.movie-item'));
+    if (items.length === 0) return;
+    
+    // 获取列数
+    function getColumnCount() {
+      const width = window.innerWidth;
+      if (width <= 480) return 2;
+      if (width <= 600) return 3;
+      if (width <= 800) return 4;
+      if (width <= 1000) return 5;
+      if (width <= 1200) return 6;
+      if (width <= 1400) return 7;
+      return 8;
+    }
+    
+    function getGap() {
+      const width = window.innerWidth;
+      if (width <= 480) return 0.6;
+      if (width <= 600) return 0.8;
+      if (width <= 800) return 1.0;
+      return 1.2;
+    }
+    
+    function layoutMasonry() {
+      const columns = getColumnCount();
+      const gap = getGap() * 16; // 转换为px (1rem = 16px)
+      const containerWidth = grid.offsetWidth;
+      const itemWidth = (containerWidth - (columns - 1) * gap) / columns;
+      
+      // 初始化列高度数组
+      const columnHeights = new Array(columns).fill(0);
+      let itemsProcessed = 0;
+      
+      items.forEach((item, index) => {
+        // 设置项目宽度
+        item.style.width = itemWidth + 'px';
+        
+        // 找到最短的列
+        const shortestColumnIndex = columnHeights.indexOf(Math.min(...columnHeights));
+        const x = shortestColumnIndex * (itemWidth + gap);
+        const y = columnHeights[shortestColumnIndex];
+        
+        // 设置位置
+        item.style.left = x + 'px';
+        item.style.top = y + 'px';
+        item.style.opacity = '1';
+        
+        // 立即计算高度
+        const itemHeight = item.offsetHeight;
+        columnHeights[shortestColumnIndex] += itemHeight + gap;
+        
+        itemsProcessed++;
+        
+        // 所有项目处理完后设置容器高度
+        if (itemsProcessed === items.length) {
+          updateContainerHeight();
+        }
+      });
+      
+      function updateContainerHeight() {
+        const maxHeight = Math.max(...columnHeights);
+        grid.style.height = Math.max(maxHeight - gap, 0) + 'px';
+      }
+      
+      // 延迟重新计算，确保图片加载完成
+      setTimeout(updateContainerHeight, 200);
+    }
+    
+    // 初始隐藏所有项目
+    items.forEach(item => {
+      item.style.opacity = '0';
+      item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+    });
+    
+    // 等待所有图片加载或超时后布局
+    let imagesLoaded = 0;
+    const totalImages = items.length;
+    let timeoutId = setTimeout(layoutMasonry, 1000); // 1秒超时
+    
+    items.forEach(item => {
+      const img = item.querySelector('img');
+      if (img) {
+        if (img.complete) {
+          imagesLoaded++;
+          if (imagesLoaded === totalImages) {
+            clearTimeout(timeoutId);
+            layoutMasonry();
+          }
+        } else {
+          img.addEventListener('load', () => {
+            imagesLoaded++;
+            if (imagesLoaded === totalImages) {
+              clearTimeout(timeoutId);
+              layoutMasonry();
+            }
+          });
+          img.addEventListener('error', () => {
+            imagesLoaded++;
+            if (imagesLoaded === totalImages) {
+              clearTimeout(timeoutId);
+              layoutMasonry();
+            }
+          });
+        }
+      } else {
+        imagesLoaded++;
+        if (imagesLoaded === totalImages) {
+          clearTimeout(timeoutId);
+          layoutMasonry();
+        }
+      }
+    });
+    
+    // 窗口大小改变时重新布局
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(layoutMasonry, 250);
+    });
+  }
+  
+  // 如果存在电影网格则初始化
+  if (document.querySelector('.movies-grid')) {
+    initMasonry();
+  }
+});
+</script>

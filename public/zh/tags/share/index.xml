@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Share on lula的博客</title>
-    <link>http://localhost:1313/zh/tags/share/</link>
+    <link>http://localhost:60913/zh/tags/share/</link>
     <description>Recent content in Share on lula的博客</description>
     <generator>Hugo -- 0.139.4</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 16 Oct 2024 11:30:03 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/tags/share/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:60913/zh/tags/share/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>旧Kindle安装微信读书防踩坑全流程</title>
-      <link>http://localhost:1313/zh/posts/%E6%97%A7kindle%E5%AE%89%E8%A3%85%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E9%98%B2%E8%B8%A9%E5%9D%91%E5%85%A8%E6%B5%81%E7%A8%8B/</link>
+      <link>http://localhost:60913/zh/posts/%E6%97%A7kindle%E5%AE%89%E8%A3%85%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E9%98%B2%E8%B8%A9%E5%9D%91%E5%85%A8%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Wed, 16 Oct 2024 11:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E6%97%A7kindle%E5%AE%89%E8%A3%85%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E9%98%B2%E8%B8%A9%E5%9D%91%E5%85%A8%E6%B5%81%E7%A8%8B/</guid>
+      <guid>http://localhost:60913/zh/posts/%E6%97%A7kindle%E5%AE%89%E8%A3%85%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E9%98%B2%E8%B8%A9%E5%9D%91%E5%85%A8%E6%B5%81%E7%A8%8B/</guid>
       <description>&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;p&gt;上个月重新开始使用微信读书，又开始了30天的赌博（连续30天+阅读30小时可以换取30天的会员卡活动），这就导致Kindle上看非常不方便，iPad又很难集中注意力，虽然Kindle上也支持网页，但是必须一直联网在线+翻页延迟效果很不好，所以开始找解决方案。&lt;/p&gt;
 &lt;ol&gt;
