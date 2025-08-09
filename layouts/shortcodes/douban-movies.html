@@ -28,7 +28,7 @@
     <div class="movie-item">
       <a href="{{ .douban_url }}" target="_blank" rel="noopener" class="movie-poster-link">
         <div class="movie-poster">
-          {{- $cdnUrl := printf "https://cdn.jsdelivr.net/gh/luli-lula/douban-data@main/images/posters/%s.jpg" .id -}}
+          {{- $cdnUrl := printf "https://cdn.jsdelivr.net/gh/luli-lula/douban-data@main/images/movies/%s.jpg" .id -}}
           <img src="{{ $cdnUrl }}" alt="{{ .title }}" loading="lazy" onerror="this.src='{{ .poster_url }}'">
         <div class="movie-overlay">
           <div class="movie-info">
@@ -62,42 +62,24 @@
 
 .movie-item {
   position: absolute;
-  width: calc((100% - 7 * 1.2rem) / 8);
-}
-
-@media (max-width: 1400px) {
-  .movie-item {
-    width: calc((100% - 6 * 1.2rem) / 7);
-  }
-}
-
-@media (max-width: 1200px) {
-  .movie-item {
-    width: calc((100% - 5 * 1.2rem) / 6);
-  }
-}
-
-@media (max-width: 1000px) {
-  .movie-item {
-    width: calc((100% - 4 * 1.2rem) / 5);
-  }
+  width: calc((100% - 3 * 1.2rem) / 4);
 }
 
 @media (max-width: 800px) {
   .movie-item {
-    width: calc((100% - 3 * 1rem) / 4);
+    width: calc((100% - 2 * 1rem) / 3);
   }
 }
 
 @media (max-width: 600px) {
   .movie-item {
-    width: calc((100% - 2 * 0.8rem) / 3);
+    width: calc((100% - 1 * 0.8rem) / 2);
   }
 }
 
 @media (max-width: 480px) {
   .movie-item {
-    width: calc((100% - 1 * 0.6rem) / 2);
+    width: calc((100% - 0 * 0.6rem) / 1);
   }
 }
 
@@ -221,13 +203,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // 获取列数
     function getColumnCount() {
       const width = window.innerWidth;
-      if (width <= 480) return 2;
-      if (width <= 600) return 3;
-      if (width <= 800) return 4;
-      if (width <= 1000) return 5;
-      if (width <= 1200) return 6;
-      if (width <= 1400) return 7;
-      return 8;
+      if (width <= 480) return 1;
+      if (width <= 600) return 2;
+      if (width <= 800) return 3;
+      return 4;
     }
     
     function getGap() {
