@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>拖延了一年时间项目，花了5天上线了 | lula的博客</title>
+<meta name="keywords" content="Project">
+<meta name="description" content="
+上周不知道为什么突发奇想，想试试最近大火的Claude Code，Terminal上一行命令就开始了。
+然后就一发不可收拾的突然进入了高效状态。
+先是把整个Blog做了之前一直想加的内容，之前用Cursor尝试过一次最后走到死胡同就回滚了，准备这次用Claude完整尝试一次，结果发现效率奇高超快找到了解决办法，一口气做了四个feature
+
+项目介绍页面
+中英文多语言页面
+豆瓣电影数据离线同步以及海报下载后展示
+豆瓣读书数据离线同步下载展示
+
+中间只出现了一个走偏的地方就是豆瓣的API限制下载海报的解决办法，最绝的知识自省，其实这个功能应该挺好实现的，就是在做出判断的同时，会隔一会突然说不对，不是这个原因，而其他的之前体验则是一条路走到黑。
+第一天晚上甚至和AI一起coding到狗都困的要喊着赶紧睡觉
+
+Project页面搭好之后，就想着要把之前做的东西整理进去，一个拖延了很久的项目不做不行了。
+英语写作考试的练习平台，最早做这个还是在打工时，一边想润一边备考，每天看网上各种吹AI编程就想试一试，虽然一开始被V0做的前端惊艳到，接下来就发现大项目根本就理解不了，经常最后变成一堆不知道如何改的东西。于是就此搁置。
+之后裸辞又再次拿起，非常坎坷的半懂不懂的用vercel推上线了，志得意满觉得马上有用户来，结果毫无反响，投资了18块人民币买域名想着总能回本吧，后来出国躺平完全不想碰，或者是心底里还是害怕面对这件事其实真的走不通，自己做的这个和那些开发自己瞎折腾的独立开发三件套一样无意义。不解决不上线总还是能对外说我还在做，不用面对评判。
+这次终于憋着一口把上次上线的网站的各种问题都解决了，整体优化了前端，用最新的AI终于把各种状态管理和API设计统一了，又一步步把各种题库里的题目都处理下来，测了几个版本的Prompt。
+周二上午终于觉得无愧自己，可以发到微信群里推广了，发之前自己还担心会不会立即被踢出去，结果和自己想的完全不一样，被群主转到了每一个群，然后还被几个群里的朋友们夸，做的很棒。心里简直乐开了花。
+GA上看昨天一共有112个用户访问，注册用户8个转化率比我预想的低很多，一方面也有种认清现实的感觉，这条路真的是不好走呀，养活自己似乎是一件很难的事情，另外一方面也许我本身产品有一些问题还没有收到用户反馈的信息，后续的运营和推广也是该学的事情。
+整体来说对于自己算是一个巨大的进步！
+先做出一个垃圾出来，也激发了我的下一个项目的方向，IOS开发走起。">
+<meta name="author" content="lula">
+<link rel="canonical" href="http://localhost:1313/zh/posts/%E6%8B%96%E5%BB%B6%E4%BA%86%E4%B8%80%E5%B9%B4%E6%97%B6%E9%97%B4%E9%A1%B9%E7%9B%AE%E8%8A%B1%E4%BA%865%E5%A4%A9%E4%B8%8A%E7%BA%BF%E4%BA%86/">
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/zh/posts/%E6%8B%96%E5%BB%B6%E4%BA%86%E4%B8%80%E5%B9%B4%E6%97%B6%E9%97%B4%E9%A1%B9%E7%9B%AE%E8%8A%B1%E4%BA%865%E5%A4%A9%E4%B8%8A%E7%BA%BF%E4%BA%86/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMC06JHFDG"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WMC06JHFDG');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/zh/posts/%E6%8B%96%E5%BB%B6%E4%BA%86%E4%B8%80%E5%B9%B4%E6%97%B6%E9%97%B4%E9%A1%B9%E7%9B%AE%E8%8A%B1%E4%BA%865%E5%A4%A9%E4%B8%8A%E7%BA%BF%E4%BA%86/">
+  <meta property="og:site_name" content="lula的博客">
+  <meta property="og:title" content="拖延了一年时间项目，花了5天上线了">
+  <meta property="og:description" content="
+上周不知道为什么突发奇想，想试试最近大火的Claude Code，Terminal上一行命令就开始了。
+然后就一发不可收拾的突然进入了高效状态。
+先是把整个Blog做了之前一直想加的内容，之前用Cursor尝试过一次最后走到死胡同就回滚了，准备这次用Claude完整尝试一次，结果发现效率奇高超快找到了解决办法，一口气做了四个feature
+项目介绍页面 中英文多语言页面 豆瓣电影数据离线同步以及海报下载后展示 豆瓣读书数据离线同步下载展示 中间只出现了一个走偏的地方就是豆瓣的API限制下载海报的解决办法，最绝的知识自省，其实这个功能应该挺好实现的，就是在做出判断的同时，会隔一会突然说不对，不是这个原因，而其他的之前体验则是一条路走到黑。
+第一天晚上甚至和AI一起coding到狗都困的要喊着赶紧睡觉
+Project页面搭好之后，就想着要把之前做的东西整理进去，一个拖延了很久的项目不做不行了。
+英语写作考试的练习平台，最早做这个还是在打工时，一边想润一边备考，每天看网上各种吹AI编程就想试一试，虽然一开始被V0做的前端惊艳到，接下来就发现大项目根本就理解不了，经常最后变成一堆不知道如何改的东西。于是就此搁置。
+之后裸辞又再次拿起，非常坎坷的半懂不懂的用vercel推上线了，志得意满觉得马上有用户来，结果毫无反响，投资了18块人民币买域名想着总能回本吧，后来出国躺平完全不想碰，或者是心底里还是害怕面对这件事其实真的走不通，自己做的这个和那些开发自己瞎折腾的独立开发三件套一样无意义。不解决不上线总还是能对外说我还在做，不用面对评判。
+这次终于憋着一口把上次上线的网站的各种问题都解决了，整体优化了前端，用最新的AI终于把各种状态管理和API设计统一了，又一步步把各种题库里的题目都处理下来，测了几个版本的Prompt。
+周二上午终于觉得无愧自己，可以发到微信群里推广了，发之前自己还担心会不会立即被踢出去，结果和自己想的完全不一样，被群主转到了每一个群，然后还被几个群里的朋友们夸，做的很棒。心里简直乐开了花。
+GA上看昨天一共有112个用户访问，注册用户8个转化率比我预想的低很多，一方面也有种认清现实的感觉，这条路真的是不好走呀，养活自己似乎是一件很难的事情，另外一方面也许我本身产品有一些问题还没有收到用户反馈的信息，后续的运营和推广也是该学的事情。
+整体来说对于自己算是一个巨大的进步！
+先做出一个垃圾出来，也激发了我的下一个项目的方向，IOS开发走起。">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-08-13T11:30:03+00:00">
+    <meta property="article:modified_time" content="2025-08-13T11:30:03+00:00">
+    <meta property="article:tag" content="Project">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="拖延了一年时间项目，花了5天上线了">
+<meta name="twitter:description" content="
+上周不知道为什么突发奇想，想试试最近大火的Claude Code，Terminal上一行命令就开始了。
+然后就一发不可收拾的突然进入了高效状态。
+先是把整个Blog做了之前一直想加的内容，之前用Cursor尝试过一次最后走到死胡同就回滚了，准备这次用Claude完整尝试一次，结果发现效率奇高超快找到了解决办法，一口气做了四个feature
+
+项目介绍页面
+中英文多语言页面
+豆瓣电影数据离线同步以及海报下载后展示
+豆瓣读书数据离线同步下载展示
+
+中间只出现了一个走偏的地方就是豆瓣的API限制下载海报的解决办法，最绝的知识自省，其实这个功能应该挺好实现的，就是在做出判断的同时，会隔一会突然说不对，不是这个原因，而其他的之前体验则是一条路走到黑。
+第一天晚上甚至和AI一起coding到狗都困的要喊着赶紧睡觉
+
+Project页面搭好之后，就想着要把之前做的东西整理进去，一个拖延了很久的项目不做不行了。
+英语写作考试的练习平台，最早做这个还是在打工时，一边想润一边备考，每天看网上各种吹AI编程就想试一试，虽然一开始被V0做的前端惊艳到，接下来就发现大项目根本就理解不了，经常最后变成一堆不知道如何改的东西。于是就此搁置。
+之后裸辞又再次拿起，非常坎坷的半懂不懂的用vercel推上线了，志得意满觉得马上有用户来，结果毫无反响，投资了18块人民币买域名想着总能回本吧，后来出国躺平完全不想碰，或者是心底里还是害怕面对这件事其实真的走不通，自己做的这个和那些开发自己瞎折腾的独立开发三件套一样无意义。不解决不上线总还是能对外说我还在做，不用面对评判。
+这次终于憋着一口把上次上线的网站的各种问题都解决了，整体优化了前端，用最新的AI终于把各种状态管理和API设计统一了，又一步步把各种题库里的题目都处理下来，测了几个版本的Prompt。
+周二上午终于觉得无愧自己，可以发到微信群里推广了，发之前自己还担心会不会立即被踢出去，结果和自己想的完全不一样，被群主转到了每一个群，然后还被几个群里的朋友们夸，做的很棒。心里简直乐开了花。
+GA上看昨天一共有112个用户访问，注册用户8个转化率比我预想的低很多，一方面也有种认清现实的感觉，这条路真的是不好走呀，养活自己似乎是一件很难的事情，另外一方面也许我本身产品有一些问题还没有收到用户反馈的信息，后续的运营和推广也是该学的事情。
+整体来说对于自己算是一个巨大的进步！
+先做出一个垃圾出来，也激发了我的下一个项目的方向，IOS开发走起。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "拖延了一年时间项目，花了5天上线了",
+      "item": "http://localhost:1313/zh/posts/%E6%8B%96%E5%BB%B6%E4%BA%86%E4%B8%80%E5%B9%B4%E6%97%B6%E9%97%B4%E9%A1%B9%E7%9B%AE%E8%8A%B1%E4%BA%865%E5%A4%A9%E4%B8%8A%E7%BA%BF%E4%BA%86/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "拖延了一年时间项目，花了5天上线了",
+  "name": "拖延了一年时间项目，花了5天上线了",
+  "description": "\n上周不知道为什么突发奇想，想试试最近大火的Claude Code，Terminal上一行命令就开始了。\n然后就一发不可收拾的突然进入了高效状态。\n先是把整个Blog做了之前一直想加的内容，之前用Cursor尝试过一次最后走到死胡同就回滚了，准备这次用Claude完整尝试一次，结果发现效率奇高超快找到了解决办法，一口气做了四个feature\n项目介绍页面 中英文多语言页面 豆瓣电影数据离线同步以及海报下载后展示 豆瓣读书数据离线同步下载展示 中间只出现了一个走偏的地方就是豆瓣的API限制下载海报的解决办法，最绝的知识自省，其实这个功能应该挺好实现的，就是在做出判断的同时，会隔一会突然说不对，不是这个原因，而其他的之前体验则是一条路走到黑。\n第一天晚上甚至和AI一起coding到狗都困的要喊着赶紧睡觉\nProject页面搭好之后，就想着要把之前做的东西整理进去，一个拖延了很久的项目不做不行了。\n英语写作考试的练习平台，最早做这个还是在打工时，一边想润一边备考，每天看网上各种吹AI编程就想试一试，虽然一开始被V0做的前端惊艳到，接下来就发现大项目根本就理解不了，经常最后变成一堆不知道如何改的东西。于是就此搁置。\n之后裸辞又再次拿起，非常坎坷的半懂不懂的用vercel推上线了，志得意满觉得马上有用户来，结果毫无反响，投资了18块人民币买域名想着总能回本吧，后来出国躺平完全不想碰，或者是心底里还是害怕面对这件事其实真的走不通，自己做的这个和那些开发自己瞎折腾的独立开发三件套一样无意义。不解决不上线总还是能对外说我还在做，不用面对评判。\n这次终于憋着一口把上次上线的网站的各种问题都解决了，整体优化了前端，用最新的AI终于把各种状态管理和API设计统一了，又一步步把各种题库里的题目都处理下来，测了几个版本的Prompt。\n周二上午终于觉得无愧自己，可以发到微信群里推广了，发之前自己还担心会不会立即被踢出去，结果和自己想的完全不一样，被群主转到了每一个群，然后还被几个群里的朋友们夸，做的很棒。心里简直乐开了花。\nGA上看昨天一共有112个用户访问，注册用户8个转化率比我预想的低很多，一方面也有种认清现实的感觉，这条路真的是不好走呀，养活自己似乎是一件很难的事情，另外一方面也许我本身产品有一些问题还没有收到用户反馈的信息，后续的运营和推广也是该学的事情。\n整体来说对于自己算是一个巨大的进步！\n先做出一个垃圾出来，也激发了我的下一个项目的方向，IOS开发走起。\n",
+  "keywords": [
+    "Project"
+  ],
+  "articleBody": "\n上周不知道为什么突发奇想，想试试最近大火的Claude Code，Terminal上一行命令就开始了。\n然后就一发不可收拾的突然进入了高效状态。\n先是把整个Blog做了之前一直想加的内容，之前用Cursor尝试过一次最后走到死胡同就回滚了，准备这次用Claude完整尝试一次，结果发现效率奇高超快找到了解决办法，一口气做了四个feature\n项目介绍页面 中英文多语言页面 豆瓣电影数据离线同步以及海报下载后展示 豆瓣读书数据离线同步下载展示 中间只出现了一个走偏的地方就是豆瓣的API限制下载海报的解决办法，最绝的知识自省，其实这个功能应该挺好实现的，就是在做出判断的同时，会隔一会突然说不对，不是这个原因，而其他的之前体验则是一条路走到黑。\n第一天晚上甚至和AI一起coding到狗都困的要喊着赶紧睡觉\nProject页面搭好之后，就想着要把之前做的东西整理进去，一个拖延了很久的项目不做不行了。\n英语写作考试的练习平台，最早做这个还是在打工时，一边想润一边备考，每天看网上各种吹AI编程就想试一试，虽然一开始被V0做的前端惊艳到，接下来就发现大项目根本就理解不了，经常最后变成一堆不知道如何改的东西。于是就此搁置。\n之后裸辞又再次拿起，非常坎坷的半懂不懂的用vercel推上线了，志得意满觉得马上有用户来，结果毫无反响，投资了18块人民币买域名想着总能回本吧，后来出国躺平完全不想碰，或者是心底里还是害怕面对这件事其实真的走不通，自己做的这个和那些开发自己瞎折腾的独立开发三件套一样无意义。不解决不上线总还是能对外说我还在做，不用面对评判。\n这次终于憋着一口把上次上线的网站的各种问题都解决了，整体优化了前端，用最新的AI终于把各种状态管理和API设计统一了，又一步步把各种题库里的题目都处理下来，测了几个版本的Prompt。\n周二上午终于觉得无愧自己，可以发到微信群里推广了，发之前自己还担心会不会立即被踢出去，结果和自己想的完全不一样，被群主转到了每一个群，然后还被几个群里的朋友们夸，做的很棒。心里简直乐开了花。\nGA上看昨天一共有112个用户访问，注册用户8个转化率比我预想的低很多，一方面也有种认清现实的感觉，这条路真的是不好走呀，养活自己似乎是一件很难的事情，另外一方面也许我本身产品有一些问题还没有收到用户反馈的信息，后续的运营和推广也是该学的事情。\n整体来说对于自己算是一个巨大的进步！\n先做出一个垃圾出来，也激发了我的下一个项目的方向，IOS开发走起。\n",
+  "wordCount" : "18",
+  "inLanguage": "zh",
+  "datePublished": "2025-08-13T11:30:03Z",
+  "dateModified": "2025-08-13T11:30:03Z",
+  "author":{
+    "@type": "Person",
+    "name": "lula"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/zh/posts/%E6%8B%96%E5%BB%B6%E4%BA%86%E4%B8%80%E5%B9%B4%E6%97%B6%E9%97%B4%E9%A1%B9%E7%9B%AE%E8%8A%B1%E4%BA%865%E5%A4%A9%E4%B8%8A%E7%BA%BF%E4%BA%86/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "lula的博客",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/zh/" accesskey="h" title="lula的博客 (Alt + H)">lula的博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="http://localhost:1313/" title="English"
+                            aria-label="English">English</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/zh/archives" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/projects/" title="项目">
+                    <span>项目</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/zh/">主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/zh/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      拖延了一年时间项目，花了5天上线了
+    </h1>
+    <div class="post-meta"><span title='2025-08-13 11:30:03 +0000 +0000'>八月 13, 2025</span>&nbsp;·&nbsp;1 分钟&nbsp;·&nbsp;18 字&nbsp;·&nbsp;lula
+
+</div>
+  </header> 
+
+  <div class="post-content"><p><img alt="laji.jpg" loading="lazy" src="/images/laji.jpg"></p>
+<p>上周不知道为什么突发奇想，想试试最近大火的Claude Code，Terminal上一行命令就开始了。</p>
+<p>然后就一发不可收拾的突然进入了高效状态。</p>
+<p>先是把整个Blog做了之前一直想加的内容，之前用Cursor尝试过一次最后走到死胡同就回滚了，准备这次用Claude完整尝试一次，结果发现效率奇高超快找到了解决办法，一口气做了四个feature</p>
+<ul>
+<li>项目介绍页面</li>
+<li>中英文多语言页面</li>
+<li>豆瓣电影数据离线同步以及海报下载后展示</li>
+<li>豆瓣读书数据离线同步下载展示</li>
+</ul>
+<p>中间只出现了一个走偏的地方就是豆瓣的API限制下载海报的解决办法，最绝的知识自省，其实这个功能应该挺好实现的，就是在做出判断的同时，会隔一会突然说不对，不是这个原因，而其他的之前体验则是一条路走到黑。</p>
+<p>第一天晚上甚至和AI一起coding到狗都困的要喊着赶紧睡觉</p>
+<hr>
+<p>Project页面搭好之后，就想着要把之前做的东西整理进去，一个拖延了很久的项目不做不行了。</p>
+<p>英语写作考试的练习平台，最早做这个还是在打工时，一边想润一边备考，每天看网上各种吹AI编程就想试一试，虽然一开始被V0做的前端惊艳到，接下来就发现大项目根本就理解不了，经常最后变成一堆不知道如何改的东西。于是就此搁置。</p>
+<p>之后裸辞又再次拿起，非常坎坷的半懂不懂的用vercel推上线了，志得意满觉得马上有用户来，结果毫无反响，投资了18块人民币买域名想着总能回本吧，后来出国躺平完全不想碰，或者是心底里还是害怕面对这件事其实真的走不通，自己做的这个和那些开发自己瞎折腾的独立开发三件套一样无意义。不解决不上线总还是能对外说我还在做，不用面对评判。</p>
+<p>这次终于憋着一口把上次上线的网站的各种问题都解决了，整体优化了前端，用最新的AI终于把各种状态管理和API设计统一了，又一步步把各种题库里的题目都处理下来，测了几个版本的Prompt。</p>
+<p>周二上午终于觉得无愧自己，可以发到微信群里推广了，发之前自己还担心会不会立即被踢出去，结果和自己想的完全不一样，被群主转到了每一个群，然后还被几个群里的朋友们夸，做的很棒。心里简直乐开了花。</p>
+<p>GA上看昨天一共有112个用户访问，注册用户8个转化率比我预想的低很多，一方面也有种认清现实的感觉，这条路真的是不好走呀，养活自己似乎是一件很难的事情，另外一方面也许我本身产品有一些问题还没有收到用户反馈的信息，后续的运营和推广也是该学的事情。</p>
+<p>整体来说对于自己算是一个巨大的进步！</p>
+<p>先做出一个垃圾出来，也激发了我的下一个项目的方向，IOS开发走起。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/zh/tags/project/">Project</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/zh/projects/celpip12/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>CELPIP12 - AI英语考试写作练习平台</span>
+  </a>
+  <a class="next" href="http://localhost:1313/zh/projects/adhd-focus/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>ADHDFocus - 专注计时器</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/zh/">lula的博客</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    
+<div class="busuanzi-footer">
+  <span id="busuanzi_container_site_pv">
+    Total views: <span id="busuanzi_value_site_pv"></span> 
+  </span>
+</div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

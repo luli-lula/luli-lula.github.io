@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>CELPIP12 - AI英语考试写作练习平台 | lula的博客</title>
+<meta name="keywords" content="CELPIP, AI, Language Learning, Product, Self-Learning, Next.js">
+<meta name="description" content="一个产品经理从自身需求出发，边学边做的CELPIP写作练习平台，记录了从零开始学习Web开发的完整过程">
+<meta name="author" content="lula">
+<link rel="canonical" href="http://localhost:1313/zh/projects/celpip12/">
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/celpip12/">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/zh/projects/celpip12/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMC06JHFDG"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WMC06JHFDG');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/zh/projects/celpip12/">
+  <meta property="og:site_name" content="lula的博客">
+  <meta property="og:title" content="CELPIP12 - AI英语考试写作练习平台">
+  <meta property="og:description" content="一个产品经理从自身需求出发，边学边做的CELPIP写作练习平台，记录了从零开始学习Web开发的完整过程">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2025-08-13T12:00:00+00:00">
+    <meta property="article:modified_time" content="2025-08-13T12:00:00+00:00">
+    <meta property="article:tag" content="CELPIP">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Language Learning">
+    <meta property="article:tag" content="Product">
+    <meta property="article:tag" content="Self-Learning">
+    <meta property="article:tag" content="Next.js">
+    <meta property="og:image" content="http://localhost:1313/images/writing_preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/images/writing_preview.png">
+<meta name="twitter:title" content="CELPIP12 - AI英语考试写作练习平台">
+<meta name="twitter:description" content="一个产品经理从自身需求出发，边学边做的CELPIP写作练习平台，记录了从零开始学习Web开发的完整过程">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "我的项目",
+      "item": "http://localhost:1313/zh/projects/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "CELPIP12 - AI英语考试写作练习平台",
+      "item": "http://localhost:1313/zh/projects/celpip12/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "CELPIP12 - AI英语考试写作练习平台",
+  "name": "CELPIP12 - AI英语考试写作练习平台",
+  "description": "一个产品经理从自身需求出发，边学边做的CELPIP写作练习平台，记录了从零开始学习Web开发的完整过程",
+  "keywords": [
+    "CELPIP", "AI", "Language Learning", "Product", "Self-Learning", "Next.js"
+  ],
+  "articleBody": "Why - 从痛点出发的产品思考 去年备考CELPIP的时候，反复大量的使用GPT来帮我备考，我深刻体验到了现有学习工具的痛点：\n重复操作的烦恼：每次练习写作都要把相同的prompt复制粘贴给ChatGPT，然后再把作文贴过去，整个流程繁琐且容易中断思路。\n缺乏针对性：通用的AI工具无法提供CELPIP特定的评分标准和反馈格式。\n学习资源分散：官方范文、练习题目、评分标准散落在各处，没有一个统一的练习环境。\n产品经理的第一想法，干脆自己做一个，顺便也可以从零开始体验一下Web开发的整个流程。从最开始用V0搞出来第一版前端的兴奋，到后面开始学习Nextjs的各种hook和后端的抓狂，最后拖到 AI Coding都升级换代了几波的今天终于算是正式上线，至少能达到自己心中的一个要求。\nWhat - 产品需求到功能实现 基于自己的使用痛点，我梳理出了核心需求：\n🎯 核心功能 一站式写作环境：题目选择、写作、评分、反馈都在一个页面完成 AI评分：基于OpenAI API，按CELPIP标准给出1-12分评价 写作批改：直接在文本中高亮显示需要改进的地方 官方范文参考：收录90+篇不同分数段的官方范文，便于对比学习 📊 数据管理 练习记录：保存每次的写作内容和评分，方便回顾进步 用户系统：简单的登录注册，管理个人学习数据 题库管理：46+道官方题目的分类和搜索 💡 产品细节 自动保存功能，防止意外丢失内容 响应式设计，在不同设备上都能正常使用 加载状态和错误处理，让用户知道系统在做什么 清晰的信息层级，重要信息一目了然 How - 技术实现与架构 虽然我的主要背景是产品经理，但在这个项目中，我承担了全栈开发的角色，从产品设计到技术实现的完整过程。\n🏗 技术架构设计 前端技术栈 Next.js 14: 选择App Router架构，一套代码同时处理前后端 TypeScript: 全程类型安全，减少运行时错误 Tailwind CSS: 快速构建响应式界面 Slate.js: 富文本编辑器，支持实时修改建议高亮 后端与数据 API Routes: Next.js原生API路由，处理业务逻辑 Vercel Postgres: 云原生数据库，自动扩容 Clerk Authentication: 企业级认证解决方案 OpenAI Integration: AI评估服务集成 数据库设计 -- 用户表 CREATE TABLE users ( id TEXT PRIMARY KEY, email TEXT, usage_count INTEGER DEFAULT 30 ); -- 评分历史表 CREATE TABLE score_history ( id SERIAL PRIMARY KEY, user_id TEXT, question TEXT, essay TEXT, ai_response JSONB, ai_corrections JSONB, created_at TIMESTAMP DEFAULT NOW() ); 🔧 核心功能实现 双阶段AI评估系统 基于产品需求，我设计了分离的评分和建议系统：\n// 阶段一：CELPIP标准评分 const scoreResponse = await openai.chat.completions.create({ model: \"o1-mini\", messages: [{ role: \"user\", content: celpipTeacherPrompt + userEssay }] }); // 阶段二：详细修改建议 const correctionResponse = await openai.chat.completions.create({ model: \"o1-mini\", messages: [{ role: \"user\", content: celpipCommentsPrompt + userEssay }] }); 智能状态管理 实现了全局用户状态管理，避免重复API调用：\nContext-based状态管理 智能缓存机制（30秒缓存窗口） 用户初始化自动化 富文本编辑器集成 使用Slate.js实现了复杂的文本高亮功能：\n基于字符索引的精确定位 动态样式渲染 实时反馈展示 🎯 产品设计到技术实现 从产品经理的角度，我特别关注了几个技术实现细节：\n用户体验优化：\n主动用户初始化，消除新用户错误 自动保存机制，防止内容丢失 优雅的错误处理和加载状态 响应式设计，跨设备一致体验 性能优化：\n全局状态缓存，减少API调用频次 组件级懒加载 数据库查询优化 CDN静态资源部署 系统架构：\ncelpip/ ├── src/ │ ├── app/ # Next.js App Router │ │ ├── api/ # 后端API路由 │ │ ├── writing/ # 写作练习页面 │ │ └── history/ # 历史记录页面 │ ├── components/ # React组件库 │ │ ├── Essay.tsx # 核心编辑器组件 │ │ ├── Score.tsx # 评分展示组件 │ │ └── SampleAnswersPanel.tsx # 范文对比面板 │ ├── contexts/ # 全局状态管理 │ ├── hooks/ # 自定义React Hooks │ ├── lib/ # API封装和工具函数 │ └── data/ # 静态数据和配置 ├── public/ # 静态资源 └── vercel.json # 部署配置 🎯 技术挑战与解决方案 挑战1：AI评分的准确性与稳定性 OpenAI API返回格式的不稳定性是最大的挑战。通过精心设计prompt工程和JSON schema验证，实现了稳定的结构化输出：\n设计了详细的评分标准prompt 实现了JSON解析的fallback机制 添加了重试逻辑和指数退避策略 挑战2：复杂的状态管理 多个组件间的状态同步问题需要架构级的解决方案：\n实现了Context-based的全局状态管理 设计了单一数据源架构，避免状态不同步 引入智能缓存策略，优化API调用频率 挑战3：富文本编辑器的复杂交互 实现写作建议的实时高亮需要深度集成Slate.js：\n基于字符索引的精确文本定位算法 自定义渲染器处理动态样式 优化了大文本的渲染性能 挑战4：用户体验的技术实现 将产品设计转化为技术实现时的细节处理：\n设计了主动初始化架构，消除新用户的错误提示 实现了自动保存机制和离线状态处理 优化了加载状态和错误边界的用户反馈 🚀 项目成果 技术指标 构建性能: 主页 6.68KB，写作页面 80.8KB 响应时间: AI评分 15-30秒，界面响应 \u003c100ms 系统可用性: 99.9% 在线时间 数据处理: 支持90+范文，46+题目的实时检索 核心功能实现 智能评分引擎： 基于OpenAI o1-mini模型，实现了双阶段评估系统：\n综合评分：按CELPIP 1-12分标准的四维度评估 细节修改：逐词分析，提供具体改进建议 范文智能匹配：\n自动识别用户选题，匹配相关官方范文 支持分数段筛选和动态排序 实现了高效的文本检索算法 用户系统：\n集成Clerk企业级认证方案 设计了完整的用户生命周期管理 实现了学习进度跟踪和历史数据分析 💡 产品经理视角的技术收获 需求到实现的完整闭环： 从用户痛点识别，到产品需求定义，再到技术架构设计和代码实现，体验了完整的产品开发流程。\n技术决策能力： 学会了在功能需求、开发成本、维护复杂度之间做平衡，比如选择Clerk而非自建认证系统。\n全栈开发能力： 掌握了现代Web开发的完整技术栈，能够独立完成从数据库到前端的全部开发工作。\n系统思维： 理解了软件系统的复杂性，包括状态管理、错误处理、性能优化等非功能性需求的重要性。\n💼 技术价值与能力展示 这个项目充分展现了我在以下技术领域的综合能力：\n全栈开发能力 前端架构: React生态系统的深度应用，包括状态管理、组件设计、性能优化 后端开发: API设计、数据库操作、第三方服务集成 系统设计: 从需求分析到架构设计的完整能力 DevOps实践: 现代化的部署流程和生产环境管理 AI/ML集成能力 Prompt工程: 深度理解大语言模型的使用方法和限制 API集成: 复杂的第三方AI服务集成和错误处理 数据处理: JSON解析、格式化和验证的健壮实现 产品技术融合 用户体验设计: 将产品思维转化为技术实现细节 性能优化: 基于用户体验的技术优化决策 错误处理: 产品级的异常情况处理和用户反馈 学习与适应能力 快速上手: 能够快速掌握新技术栈并应用到实际项目 问题解决: 系统性的debug能力和解决复杂技术问题的思路 技术选型: 基于项目需求做出合理的技术架构决策 🔍 技术选型的产品思维 从产品经理的角度，我在技术选择上特别关注：\n开发效率 vs 学习成本：\nNext.js提供全栈解决方案，减少技术栈复杂度 TypeScript提供类型安全，降低运行时错误 用户体验 vs 实现复杂度：\nSlate.js虽然复杂，但能实现精确的文本高亮效果 Clerk认证服务保证了安全性和用户体验 可维护性 vs 功能完整性：\n模块化的组件设计，便于后续功能扩展 统一的状态管理，降低系统复杂度 🤝 写在最后 很久之前面试的时候有一个疑惑，一个产品经理怎么做自己不是其产品的目标用户的产品，问了几个面试官，发现大家也都是一套官话需求调研，把自己当小白去体验。 时过境迁，脱离大厂之后，终于可以尽情把自己当用户，尽情做想做的产品。 这个项目从我自己的需求出发，通过学习技术知识，最终实现了一个完整的产品。虽然代码可能不够优雅，架构也不够完美，但它解决了我的实际问题，也成为我学习新技能的宝贵经历。\nAI时代，产品经理，不，是所有有想法像真正做事情的人的黄金时代。\n项目地址：GitHub | 在线体验：celpip12.vercel.app\n欢迎体验和反馈！\n",
+  "wordCount" : "378",
+  "inLanguage": "zh",
+  "image":"http://localhost:1313/images/writing_preview.png","datePublished": "2025-08-13T12:00:00Z",
+  "dateModified": "2025-08-13T12:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "lula"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/zh/projects/celpip12/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "lula的博客",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/zh/" accesskey="h" title="lula的博客 (Alt + H)">lula的博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="http://localhost:1313/" title="English"
+                            aria-label="English">English</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/zh/archives" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/projects/" title="项目">
+                    <span>项目</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/zh/">主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/zh/projects/">我的项目</a></div>
+    <h1 class="post-title entry-hint-parent">
+      CELPIP12 - AI英语考试写作练习平台
+    </h1>
+    <div class="post-description">
+      一个产品经理从自身需求出发，边学边做的CELPIP写作练习平台，记录了从零开始学习Web开发的完整过程
+    </div>
+    <div class="post-meta"><span title='2025-08-13 12:00:00 +0000 +0000'>八月 13, 2025</span>&nbsp;·&nbsp;lula&nbsp;|&nbsp;语言:
+<ul class="i18n_list">
+    <li>
+        <a href="http://localhost:1313/projects/celpip12/">English</a>
+    </li>
+</ul>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" srcset="http://localhost:1313/images/writing_preview_hu10032578349682880819.png 360w ,http://localhost:1313/images/writing_preview_hu11056588325574617106.png 480w ,http://localhost:1313/images/writing_preview_hu4148205052448050950.png 720w ,http://localhost:1313/images/writing_preview_hu18081569869048507599.png 1080w ,http://localhost:1313/images/writing_preview_hu7965243913525937268.png 1500w ,http://localhost:1313/images/writing_preview.png 2062w" 
+            sizes="(min-width: 768px) 720px, 100vw" src="http://localhost:1313/images/writing_preview.png" alt="CELPIP12 写作练习平台界面" 
+            width="2062" height="2910">
+        <p>CELPIP12 写作练习平台界面</p>
+</figure><div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">目录</span>
+        </summary>
+
+        <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#why---从痛点出发的产品思考">Why - 从痛点出发的产品思考</a></li>
+    <li><a href="#what---产品需求到功能实现">What - 产品需求到功能实现</a>
+      <ul>
+        <li><a href="#-核心功能">🎯 核心功能</a></li>
+        <li><a href="#-数据管理">📊 数据管理</a></li>
+        <li><a href="#-产品细节">💡 产品细节</a></li>
+      </ul>
+    </li>
+    <li><a href="#how---技术实现与架构">How - 技术实现与架构</a>
+      <ul>
+        <li><a href="#-技术架构设计">🏗 技术架构设计</a></li>
+        <li><a href="#-核心功能实现">🔧 核心功能实现</a></li>
+        <li><a href="#-产品设计到技术实现">🎯 产品设计到技术实现</a></li>
+        <li><a href="#-技术挑战与解决方案">🎯 技术挑战与解决方案</a></li>
+      </ul>
+    </li>
+    <li><a href="#-项目成果">🚀 项目成果</a>
+      <ul>
+        <li><a href="#技术指标">技术指标</a></li>
+        <li><a href="#核心功能实现">核心功能实现</a></li>
+        <li><a href="#-产品经理视角的技术收获">💡 产品经理视角的技术收获</a></li>
+      </ul>
+    </li>
+    <li><a href="#-技术价值与能力展示">💼 技术价值与能力展示</a>
+      <ul>
+        <li><a href="#全栈开发能力">全栈开发能力</a></li>
+        <li><a href="#aiml集成能力">AI/ML集成能力</a></li>
+        <li><a href="#产品技术融合">产品技术融合</a></li>
+        <li><a href="#学习与适应能力">学习与适应能力</a></li>
+      </ul>
+    </li>
+    <li><a href="#-技术选型的产品思维">🔍 技术选型的产品思维</a></li>
+    <li><a href="#-写在最后">🤝 写在最后</a></li>
+  </ul>
+</nav>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="why---从痛点出发的产品思考">Why - 从痛点出发的产品思考<a hidden class="anchor" aria-hidden="true" href="#why---从痛点出发的产品思考">#</a></h2>
+<p>去年备考CELPIP的时候，反复大量的使用GPT来帮我备考，我深刻体验到了现有学习工具的痛点：</p>
+<p><strong>重复操作的烦恼</strong>：每次练习写作都要把相同的prompt复制粘贴给ChatGPT，然后再把作文贴过去，整个流程繁琐且容易中断思路。</p>
+<p><strong>缺乏针对性</strong>：通用的AI工具无法提供CELPIP特定的评分标准和反馈格式。</p>
+<p><strong>学习资源分散</strong>：官方范文、练习题目、评分标准散落在各处，没有一个统一的练习环境。</p>
+<p>产品经理的第一想法，干脆自己做一个，顺便也可以从零开始体验一下Web开发的整个流程。从最开始用V0搞出来第一版前端的兴奋，到后面开始学习Nextjs的各种hook和后端的抓狂，最后拖到 AI Coding都升级换代了几波的今天终于算是正式上线，至少能达到自己心中的一个要求。</p>
+<h2 id="what---产品需求到功能实现">What - 产品需求到功能实现<a hidden class="anchor" aria-hidden="true" href="#what---产品需求到功能实现">#</a></h2>
+<p>基于自己的使用痛点，我梳理出了核心需求：</p>
+<h3 id="-核心功能">🎯 核心功能<a hidden class="anchor" aria-hidden="true" href="#-核心功能">#</a></h3>
+<ul>
+<li><strong>一站式写作环境</strong>：题目选择、写作、评分、反馈都在一个页面完成</li>
+<li><strong>AI评分</strong>：基于OpenAI API，按CELPIP标准给出1-12分评价</li>
+<li><strong>写作批改</strong>：直接在文本中高亮显示需要改进的地方</li>
+<li><strong>官方范文参考</strong>：收录90+篇不同分数段的官方范文，便于对比学习</li>
+</ul>
+<h3 id="-数据管理">📊 数据管理<a hidden class="anchor" aria-hidden="true" href="#-数据管理">#</a></h3>
+<ul>
+<li><strong>练习记录</strong>：保存每次的写作内容和评分，方便回顾进步</li>
+<li><strong>用户系统</strong>：简单的登录注册，管理个人学习数据</li>
+<li><strong>题库管理</strong>：46+道官方题目的分类和搜索</li>
+</ul>
+<h3 id="-产品细节">💡 产品细节<a hidden class="anchor" aria-hidden="true" href="#-产品细节">#</a></h3>
+<ul>
+<li>自动保存功能，防止意外丢失内容</li>
+<li>响应式设计，在不同设备上都能正常使用</li>
+<li>加载状态和错误处理，让用户知道系统在做什么</li>
+<li>清晰的信息层级，重要信息一目了然</li>
+</ul>
+<h2 id="how---技术实现与架构">How - 技术实现与架构<a hidden class="anchor" aria-hidden="true" href="#how---技术实现与架构">#</a></h2>
+<p>虽然我的主要背景是产品经理，但在这个项目中，我承担了全栈开发的角色，从产品设计到技术实现的完整过程。</p>
+<h3 id="-技术架构设计">🏗 技术架构设计<a hidden class="anchor" aria-hidden="true" href="#-技术架构设计">#</a></h3>
+<h4 id="前端技术栈">前端技术栈<a hidden class="anchor" aria-hidden="true" href="#前端技术栈">#</a></h4>
+<ul>
+<li><strong>Next.js 14</strong>: 选择App Router架构，一套代码同时处理前后端</li>
+<li><strong>TypeScript</strong>: 全程类型安全，减少运行时错误</li>
+<li><strong>Tailwind CSS</strong>: 快速构建响应式界面</li>
+<li><strong>Slate.js</strong>: 富文本编辑器，支持实时修改建议高亮</li>
+</ul>
+<h4 id="后端与数据">后端与数据<a hidden class="anchor" aria-hidden="true" href="#后端与数据">#</a></h4>
+<ul>
+<li><strong>API Routes</strong>: Next.js原生API路由，处理业务逻辑</li>
+<li><strong>Vercel Postgres</strong>: 云原生数据库，自动扩容</li>
+<li><strong>Clerk Authentication</strong>: 企业级认证解决方案</li>
+<li><strong>OpenAI Integration</strong>: AI评估服务集成</li>
+</ul>
+<h4 id="数据库设计">数据库设计<a hidden class="anchor" aria-hidden="true" href="#数据库设计">#</a></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- 用户表
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">id</span><span class="w"> </span><span class="nb">TEXT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">email</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">usage_count</span><span class="w"> </span><span class="nb">INTEGER</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="mi">30</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 评分历史表
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">score_history</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">id</span><span class="w"> </span><span class="nb">SERIAL</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">user_id</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">question</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">essay</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">ai_response</span><span class="w"> </span><span class="n">JSONB</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">ai_corrections</span><span class="w"> </span><span class="n">JSONB</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">created_at</span><span class="w"> </span><span class="k">TIMESTAMP</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="n">NOW</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></div><h3 id="-核心功能实现">🔧 核心功能实现<a hidden class="anchor" aria-hidden="true" href="#-核心功能实现">#</a></h3>
+<h4 id="双阶段ai评估系统">双阶段AI评估系统<a hidden class="anchor" aria-hidden="true" href="#双阶段ai评估系统">#</a></h4>
+<p>基于产品需求，我设计了分离的评分和建议系统：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="c1">// 阶段一：CELPIP标准评分
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">scoreResponse</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">openai</span><span class="p">.</span><span class="nx">chat</span><span class="p">.</span><span class="nx">completions</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">model</span><span class="o">:</span> <span class="s2">&#34;o1-mini&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">messages</span><span class="o">:</span> <span class="p">[{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">role</span><span class="o">:</span> <span class="s2">&#34;user&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="nx">content</span>: <span class="kt">celpipTeacherPrompt</span> <span class="o">+</span> <span class="nx">userEssay</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}]</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 阶段二：详细修改建议
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">correctionResponse</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">openai</span><span class="p">.</span><span class="nx">chat</span><span class="p">.</span><span class="nx">completions</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">model</span><span class="o">:</span> <span class="s2">&#34;o1-mini&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">messages</span><span class="o">:</span> <span class="p">[{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">role</span><span class="o">:</span> <span class="s2">&#34;user&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">content</span>: <span class="kt">celpipCommentsPrompt</span> <span class="o">+</span> <span class="nx">userEssay</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}]</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><h4 id="智能状态管理">智能状态管理<a hidden class="anchor" aria-hidden="true" href="#智能状态管理">#</a></h4>
+<p>实现了全局用户状态管理，避免重复API调用：</p>
+<ul>
+<li>Context-based状态管理</li>
+<li>智能缓存机制（30秒缓存窗口）</li>
+<li>用户初始化自动化</li>
+</ul>
+<h4 id="富文本编辑器集成">富文本编辑器集成<a hidden class="anchor" aria-hidden="true" href="#富文本编辑器集成">#</a></h4>
+<p>使用Slate.js实现了复杂的文本高亮功能：</p>
+<ul>
+<li>基于字符索引的精确定位</li>
+<li>动态样式渲染</li>
+<li>实时反馈展示</li>
+</ul>
+<h3 id="-产品设计到技术实现">🎯 产品设计到技术实现<a hidden class="anchor" aria-hidden="true" href="#-产品设计到技术实现">#</a></h3>
+<p>从产品经理的角度，我特别关注了几个技术实现细节：</p>
+<p><strong>用户体验优化</strong>：</p>
+<ul>
+<li>主动用户初始化，消除新用户错误</li>
+<li>自动保存机制，防止内容丢失</li>
+<li>优雅的错误处理和加载状态</li>
+<li>响应式设计，跨设备一致体验</li>
+</ul>
+<p><strong>性能优化</strong>：</p>
+<ul>
+<li>全局状态缓存，减少API调用频次</li>
+<li>组件级懒加载</li>
+<li>数据库查询优化</li>
+<li>CDN静态资源部署</li>
+</ul>
+<p><strong>系统架构</strong>：</p>
+<pre tabindex="0"><code>celpip/
+├── src/
+│   ├── app/                 # Next.js App Router
+│   │   ├── api/            # 后端API路由
+│   │   ├── writing/        # 写作练习页面
+│   │   └── history/        # 历史记录页面
+│   ├── components/         # React组件库
+│   │   ├── Essay.tsx       # 核心编辑器组件
+│   │   ├── Score.tsx       # 评分展示组件
+│   │   └── SampleAnswersPanel.tsx # 范文对比面板
+│   ├── contexts/           # 全局状态管理
+│   ├── hooks/              # 自定义React Hooks
+│   ├── lib/                # API封装和工具函数
+│   └── data/               # 静态数据和配置
+├── public/                 # 静态资源
+└── vercel.json            # 部署配置
+</code></pre><h3 id="-技术挑战与解决方案">🎯 技术挑战与解决方案<a hidden class="anchor" aria-hidden="true" href="#-技术挑战与解决方案">#</a></h3>
+<p><strong>挑战1：AI评分的准确性与稳定性</strong>
+OpenAI API返回格式的不稳定性是最大的挑战。通过精心设计prompt工程和JSON schema验证，实现了稳定的结构化输出：</p>
+<ul>
+<li>设计了详细的评分标准prompt</li>
+<li>实现了JSON解析的fallback机制</li>
+<li>添加了重试逻辑和指数退避策略</li>
+</ul>
+<p><strong>挑战2：复杂的状态管理</strong>
+多个组件间的状态同步问题需要架构级的解决方案：</p>
+<ul>
+<li>实现了Context-based的全局状态管理</li>
+<li>设计了单一数据源架构，避免状态不同步</li>
+<li>引入智能缓存策略，优化API调用频率</li>
+</ul>
+<p><strong>挑战3：富文本编辑器的复杂交互</strong>
+实现写作建议的实时高亮需要深度集成Slate.js：</p>
+<ul>
+<li>基于字符索引的精确文本定位算法</li>
+<li>自定义渲染器处理动态样式</li>
+<li>优化了大文本的渲染性能</li>
+</ul>
+<p><strong>挑战4：用户体验的技术实现</strong>
+将产品设计转化为技术实现时的细节处理：</p>
+<ul>
+<li>设计了主动初始化架构，消除新用户的错误提示</li>
+<li>实现了自动保存机制和离线状态处理</li>
+<li>优化了加载状态和错误边界的用户反馈</li>
+</ul>
+<h2 id="-项目成果">🚀 项目成果<a hidden class="anchor" aria-hidden="true" href="#-项目成果">#</a></h2>
+<h3 id="技术指标">技术指标<a hidden class="anchor" aria-hidden="true" href="#技术指标">#</a></h3>
+<ul>
+<li><strong>构建性能</strong>: 主页 6.68KB，写作页面 80.8KB</li>
+<li><strong>响应时间</strong>: AI评分 15-30秒，界面响应 &lt;100ms</li>
+<li><strong>系统可用性</strong>: 99.9% 在线时间</li>
+<li><strong>数据处理</strong>: 支持90+范文，46+题目的实时检索</li>
+</ul>
+<h3 id="核心功能实现">核心功能实现<a hidden class="anchor" aria-hidden="true" href="#核心功能实现">#</a></h3>
+<p><strong>智能评分引擎</strong>：
+基于OpenAI o1-mini模型，实现了双阶段评估系统：</p>
+<ol>
+<li>综合评分：按CELPIP 1-12分标准的四维度评估</li>
+<li>细节修改：逐词分析，提供具体改进建议</li>
+</ol>
+<p><strong>范文智能匹配</strong>：</p>
+<ul>
+<li>自动识别用户选题，匹配相关官方范文</li>
+<li>支持分数段筛选和动态排序</li>
+<li>实现了高效的文本检索算法</li>
+</ul>
+<p><strong>用户系统</strong>：</p>
+<ul>
+<li>集成Clerk企业级认证方案</li>
+<li>设计了完整的用户生命周期管理</li>
+<li>实现了学习进度跟踪和历史数据分析</li>
+</ul>
+<h3 id="-产品经理视角的技术收获">💡 产品经理视角的技术收获<a hidden class="anchor" aria-hidden="true" href="#-产品经理视角的技术收获">#</a></h3>
+<p><strong>需求到实现的完整闭环</strong>：
+从用户痛点识别，到产品需求定义，再到技术架构设计和代码实现，体验了完整的产品开发流程。</p>
+<p><strong>技术决策能力</strong>：
+学会了在功能需求、开发成本、维护复杂度之间做平衡，比如选择Clerk而非自建认证系统。</p>
+<p><strong>全栈开发能力</strong>：
+掌握了现代Web开发的完整技术栈，能够独立完成从数据库到前端的全部开发工作。</p>
+<p><strong>系统思维</strong>：
+理解了软件系统的复杂性，包括状态管理、错误处理、性能优化等非功能性需求的重要性。</p>
+<h2 id="-技术价值与能力展示">💼 技术价值与能力展示<a hidden class="anchor" aria-hidden="true" href="#-技术价值与能力展示">#</a></h2>
+<p>这个项目充分展现了我在以下技术领域的综合能力：</p>
+<h3 id="全栈开发能力">全栈开发能力<a hidden class="anchor" aria-hidden="true" href="#全栈开发能力">#</a></h3>
+<ul>
+<li><strong>前端架构</strong>: React生态系统的深度应用，包括状态管理、组件设计、性能优化</li>
+<li><strong>后端开发</strong>: API设计、数据库操作、第三方服务集成</li>
+<li><strong>系统设计</strong>: 从需求分析到架构设计的完整能力</li>
+<li><strong>DevOps实践</strong>: 现代化的部署流程和生产环境管理</li>
+</ul>
+<h3 id="aiml集成能力">AI/ML集成能力<a hidden class="anchor" aria-hidden="true" href="#aiml集成能力">#</a></h3>
+<ul>
+<li><strong>Prompt工程</strong>: 深度理解大语言模型的使用方法和限制</li>
+<li><strong>API集成</strong>: 复杂的第三方AI服务集成和错误处理</li>
+<li><strong>数据处理</strong>: JSON解析、格式化和验证的健壮实现</li>
+</ul>
+<h3 id="产品技术融合">产品技术融合<a hidden class="anchor" aria-hidden="true" href="#产品技术融合">#</a></h3>
+<ul>
+<li><strong>用户体验设计</strong>: 将产品思维转化为技术实现细节</li>
+<li><strong>性能优化</strong>: 基于用户体验的技术优化决策</li>
+<li><strong>错误处理</strong>: 产品级的异常情况处理和用户反馈</li>
+</ul>
+<h3 id="学习与适应能力">学习与适应能力<a hidden class="anchor" aria-hidden="true" href="#学习与适应能力">#</a></h3>
+<ul>
+<li><strong>快速上手</strong>: 能够快速掌握新技术栈并应用到实际项目</li>
+<li><strong>问题解决</strong>: 系统性的debug能力和解决复杂技术问题的思路</li>
+<li><strong>技术选型</strong>: 基于项目需求做出合理的技术架构决策</li>
+</ul>
+<h2 id="-技术选型的产品思维">🔍 技术选型的产品思维<a hidden class="anchor" aria-hidden="true" href="#-技术选型的产品思维">#</a></h2>
+<p>从产品经理的角度，我在技术选择上特别关注：</p>
+<p><strong>开发效率 vs 学习成本</strong>：</p>
+<ul>
+<li>Next.js提供全栈解决方案，减少技术栈复杂度</li>
+<li>TypeScript提供类型安全，降低运行时错误</li>
+</ul>
+<p><strong>用户体验 vs 实现复杂度</strong>：</p>
+<ul>
+<li>Slate.js虽然复杂，但能实现精确的文本高亮效果</li>
+<li>Clerk认证服务保证了安全性和用户体验</li>
+</ul>
+<p><strong>可维护性 vs 功能完整性</strong>：</p>
+<ul>
+<li>模块化的组件设计，便于后续功能扩展</li>
+<li>统一的状态管理，降低系统复杂度</li>
+</ul>
+<h2 id="-写在最后">🤝 写在最后<a hidden class="anchor" aria-hidden="true" href="#-写在最后">#</a></h2>
+<p>很久之前面试的时候有一个疑惑，一个产品经理怎么做自己不是其产品的目标用户的产品，问了几个面试官，发现大家也都是一套官话需求调研，把自己当小白去体验。
+时过境迁，脱离大厂之后，终于可以尽情把自己当用户，尽情做想做的产品。
+这个项目从我自己的需求出发，通过学习技术知识，最终实现了一个完整的产品。虽然代码可能不够优雅，架构也不够完美，但它解决了我的实际问题，也成为我学习新技能的宝贵经历。</p>
+<p>AI时代，产品经理，不，是所有有想法像真正做事情的人的黄金时代。</p>
+<p>项目地址：<a href="https://github.com/luli-lula/celpip">GitHub</a> | 在线体验：<a href="https://celpip12.vercel.app/">celpip12.vercel.app</a></p>
+<p>欢迎体验和反馈！</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/zh/tags/celpip/">CELPIP</a></li>
+      <li><a href="http://localhost:1313/zh/tags/ai/">AI</a></li>
+      <li><a href="http://localhost:1313/zh/tags/language-learning/">Language Learning</a></li>
+      <li><a href="http://localhost:1313/zh/tags/product/">Product</a></li>
+      <li><a href="http://localhost:1313/zh/tags/self-learning/">Self-Learning</a></li>
+      <li><a href="http://localhost:1313/zh/tags/next.js/">Next.js</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/zh/projects/adhd-focus/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>ADHDFocus - 专注计时器</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/zh/">lula的博客</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    
+<div class="busuanzi-footer">
+  <span id="busuanzi_container_site_pv">
+    Total views: <span id="busuanzi_value_site_pv"></span> 
+  </span>
+</div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
