@@ -6,8 +6,19 @@
     <description>Recent content on lula的博客</description>
     <generator>Hugo -- 0.139.4</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 13 Aug 2025 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 Aug 2025 11:30:03 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week33 - 拿到驾照&amp;MGV项目面试通过</title>
+      <link>http://localhost:1313/zh/posts/033-week33-%E6%8B%BF%E5%88%B0%E9%A9%BE%E7%85%A7mgv%E9%A1%B9%E7%9B%AE%E9%9D%A2%E8%AF%95%E9%80%9A%E8%BF%87/</link>
+      <pubDate>Mon, 18 Aug 2025 11:30:03 +0000</pubDate>
+      <guid>http://localhost:1313/zh/posts/033-week33-%E6%8B%BF%E5%88%B0%E9%A9%BE%E7%85%A7mgv%E9%A1%B9%E7%9B%AE%E9%9D%A2%E8%AF%95%E9%80%9A%E8%BF%87/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;033-IMG_9370.jpeg&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/033-IMG_9370.jpeg&#34;&gt;
+&lt;img alt=&#34;033-IMG_9381.jpeg&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/033-IMG_9381.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这周先是接着突发的热情疯狂开始使用Claude Code写项目，但是IOS的项目看起来表现和Web端差多了，主要可能也是因为IOS系统的封闭性，如果任由AI来写不忍直视的前端，重新开始拿起来Figma来自己画，进展一下子慢了很多。&lt;/p&gt;
+&lt;p&gt;然后就是遛狗的时候想起来好久没看信箱，没想到打开之后竟然看到Master Gardener的接收通知，左上角的Connell的LOGO还是挺开心哈哈，没想到还用这么传统的方式通知，我还等了好几天的Email。结果就看到了9.2的Orientation的安排，以后每周都要去一天的话，开车的问题必须要解决了，紧急打开了road test的预约，没想到正好有一个30mile之外的小村有三天后的一个spot，还在纠结的时候就被SSR催着赶紧预约了，提前还搜了一下网上关于这个考点的评价，总体来说是村里所以车很少，很容易通过，还找找到了一个三年前分享的驾考路线。到了周五早上，还是有些紧张，不过因为是第四次了，所以自然而然的项目也不用这么准备，先是高速开了40分钟到考点，在最右边以限速开，但是似乎路上所有人都是超过限速的。到了考点，发现竟然没有人排队，但是还是有些心理没谱，就按照那个三年前的线路尝试了两次侧方位停车，就直接去开始了，这个时候前面已经有三个车排队，考官有两个人，一直跟SSR讨论哪一个人看起来面相好些，很快轮到我，就想着是福是祸就这样吧，结果很短的路线，甚至没有考到走大路左转这个我最担心的项目，不过遇到一些前车突然倒车还有路口右转被停着的车挡住的情况，不过都礼貌应对了，每次有些担心的时候都偷瞄看他有没有记录，似乎一直没什么反应，结束之后感觉比较稳了。下午开始一直盯着result页面刷新，一直到四点突然就看到了那个小小的Pass，好开心。跟小狗一起庆祝了一会，决定带她去家旁边的一个小的Hiking路线，之前每次没走过去，她就气喘吁吁的，开车带她过去之后看到她开心的到处闻，自己也开心的行不行，算是在美国生活一个挺重要的节点吧，只是没想到竟然拖了这么久。回头看，好学生的心态每次fail之后，都会调整心态好久，然后重新预约再等着考试，兜兜转转还是运气作用很大。&lt;/p&gt;
+&lt;p&gt;周末又跟DL见面，去了中餐馆吃了有员工折扣的一餐，晚上一起玩桌游超开心的周末就结束了。下周准备去远一点的地方，有个mushroom festival，期待起来了。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>CELPIP12 - AI英语考试写作练习平台</title>
       <link>http://localhost:1313/zh/projects/celpip12/</link>
@@ -17,10 +28,10 @@
     </item>
     <item>
       <title>拖延了一年时间项目，花了5天上线了</title>
-      <link>http://localhost:1313/zh/posts/%E6%8B%96%E5%BB%B6%E4%BA%86%E4%B8%80%E5%B9%B4%E6%97%B6%E9%97%B4%E9%A1%B9%E7%9B%AE%E8%8A%B1%E4%BA%865%E5%A4%A9%E4%B8%8A%E7%BA%BF%E4%BA%86/</link>
+      <link>http://localhost:1313/zh/posts/032-%E6%8B%96%E5%BB%B6%E4%BA%86%E4%B8%80%E5%B9%B4%E6%97%B6%E9%97%B4%E9%A1%B9%E7%9B%AE%E8%8A%B1%E4%BA%865%E5%A4%A9%E4%B8%8A%E7%BA%BF%E4%BA%86/</link>
       <pubDate>Wed, 13 Aug 2025 11:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E6%8B%96%E5%BB%B6%E4%BA%86%E4%B8%80%E5%B9%B4%E6%97%B6%E9%97%B4%E9%A1%B9%E7%9B%AE%E8%8A%B1%E4%BA%865%E5%A4%A9%E4%B8%8A%E7%BA%BF%E4%BA%86/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;laji.jpg&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/laji.jpg&#34;&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/zh/posts/032-%E6%8B%96%E5%BB%B6%E4%BA%86%E4%B8%80%E5%B9%B4%E6%97%B6%E9%97%B4%E9%A1%B9%E7%9B%AE%E8%8A%B1%E4%BA%865%E5%A4%A9%E4%B8%8A%E7%BA%BF%E4%BA%86/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;032-laji.jpg&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/032-laji.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;上周不知道为什么突发奇想，想试试最近大火的Claude Code，Terminal上一行命令就开始了。&lt;/p&gt;
 &lt;p&gt;然后就一发不可收拾的突然进入了高效状态。&lt;/p&gt;
 &lt;p&gt;先是把整个Blog做了之前一直想加的内容，之前用Cursor尝试过一次最后走到死胡同就回滚了，准备这次用Claude完整尝试一次，结果发现效率奇高超快找到了解决办法，一口气做了四个feature&lt;/p&gt;
@@ -51,15 +62,15 @@
     </item>
     <item>
       <title>一周一记12</title>
-      <link>http://localhost:1313/zh/posts/20250323-%E4%B8%80%E5%91%A8%E4%B8%80%E8%AE%B0/</link>
+      <link>http://localhost:1313/zh/posts/031-20250323-%E4%B8%80%E5%91%A8%E4%B8%80%E8%AE%B0/</link>
       <pubDate>Sun, 23 Mar 2025 23:21:56 -0400</pubDate>
-      <guid>http://localhost:1313/zh/posts/20250323-%E4%B8%80%E5%91%A8%E4%B8%80%E8%AE%B0/</guid>
+      <guid>http://localhost:1313/zh/posts/031-20250323-%E4%B8%80%E5%91%A8%E4%B8%80%E8%AE%B0/</guid>
       <description>&lt;p&gt;相比上周的丰富生活，这周似乎都没什么可以记录的事情，大部分时间都在家里，生活上似乎也没什么进展，周末出门了逛了一下超市而已。&lt;/p&gt;
 &lt;h3 id=&#34;春天来了&#34;&gt;春天来了&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;IMG_8276.jpeg&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_8276.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;031-spring-trees.jpeg&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/031-spring-trees.jpeg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;以往在国内的城市中呆着，总是会感叹春天怎么突然到了，而这次我是真真切切的看着春天的到来，看着窗户外的树从光秃秃的树干突然出现一些小小的节点，然后在一场春雨之后快速展开了叶片，看着实在让人欣喜。原本不想出门的心，也突然想穿起衣服出门晃晃了，周末去逛tradejoes的时候发现有好多春天的种球盆栽，看中了一个三种植物种球种在一起的，特意挑了一个满是绿色感觉还得长长的盆栽，懒得搬直接放在餐桌上，早上吃早饭的时候还是没什么变化，结果中午吃饭突然发现直接开花了，欣喜的不行，也许这就是喜欢盆栽多于鲜切花的原因吧，能感觉到生命力。&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;IMG_8273.jpg&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_8273.jpg&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;IMG_8278.jpeg&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_8278.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;031-plants.jpeg&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/031-plants.jpeg&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;社交需求&#34;&gt;社交需求&lt;/h3&gt;
 &lt;p&gt;自己总是说喜欢一个人呆着，但是偶尔还是会产生脱离了原有的朋友而产生的孤独感，之前一直很活跃的三人群也因为时差很多时候都对不上时间可以聊，心里很落寞也无从谈起，这周一个机会主动开始发起了视频聊天，很开心的聊了一个小时，然后中间自己说到希望能多聊聊，周四的时候又聊了一次，听他们吐槽公司的事情也觉得有趣起来了。周六SSR攒了一个局带两个没车的同学一起去超市，因为有一个韩国人，所以全程被迫英语，最开始还挺忐忑的，聊起来之后也就适应了也觉得挺开心的，人真的是每周可能还是得有点外界信息摄入才能保持健康。&lt;/p&gt;
 &lt;h3 id=&#34;兴趣爱好---玩起来才是最重要的&#34;&gt;兴趣爱好 - 玩起来才是最重要的&lt;/h3&gt;
@@ -67,32 +78,32 @@
 &lt;li&gt;这周书法开始学赵孟頫之后第一周，隶书确实比楷书简单多了，但是看这字帖真心感觉这些字真美，特别是行楷有种流动的美感，而自己却一直不得道，找了几个教学视频看还有各种互相矛盾的地方。最后还是看了陈忠建的视频，虽然之前的书法课老师一直不太推荐这个人，但是听着他的台湾口音还蛮可爱的，特别是讲到自然书写不要「画」字，还有赵写字很快，所以不要一边看一边临，每个字看完一次写完，很认同。换了之前快递配送时填充的牛皮纸开始随便写，没有了格子的限制和要临摹的要求，反而写的更加畅快开心，写字还是自己开心最好。&lt;/li&gt;
 &lt;li&gt;画画的部分，本来想等着去学校打印机打印贴纸，但是SSR一直推脱我也觉得麻烦，今天突然想到干脆直接用水彩纸的边角料直接贴在软磁片上不就行了，说干就干也不打草稿直接开始画了，越画越开心，正好把之前想做的食材冰箱贴都做好了，贴在冰箱上就不用打开冰箱门就知道里面有什么菜，也能方便直接规划周几吃什么，画好贴在冰箱上，虽然有几个有些丑，但是创造出来东西还是挺开心的。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt=&#34;IMG_8280.jpeg&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/IMG_8280.jpeg&#34;&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt=&#34;031-fridge-magnets.jpeg&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/031-fridge-magnets.jpeg&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>An Unfinished Film</title>
-      <link>http://localhost:1313/zh/posts/an-unfinished-film/</link>
+      <link>http://localhost:1313/zh/posts/030-an-unfinished-film/</link>
       <pubDate>Thu, 20 Mar 2025 15:31:56 -0400</pubDate>
-      <guid>http://localhost:1313/zh/posts/an-unfinished-film/</guid>
-      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/film_forum.jpeg&#34;&gt;&lt;/p&gt;
+      <guid>http://localhost:1313/zh/posts/030-an-unfinished-film/</guid>
+      <description>&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/030-film_forum.jpeg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;周中的时候偶然打开订阅了很久但是没怎么打开的Film Forum的邮件，发现娄烨的新片要在NYC展映并且有三场导演QA场，结果点击进去的时候发现早已Sold Out了，犹豫纠结这么远要不要为了一场电影专门过去，结果SSR直接说去吧瞬间打了鸡血，很想去看QA场看看导演但是票早就Sold out了，搜了一轮之后发现官网说明现场会有Standby Line，很早之前听说NY的活动常有的这种预留票会给到没有提前买到票的挂观众，还是很担心可能性有多少怕白跑一趟。往返将近6小时，再加上难停车拥堵费，全程还要起早贪黑，不过最后感觉都值了。&lt;/p&gt;
 &lt;p&gt;2:30的场次，我们1点就到了电影院，在确认了有Standby的票之后，准备2:00开始排队试试，这个时候仍然悲观的认为概率不大，但是有两个人在一起有了一些底气，以及害怕让其他人失望的担忧在他们的热情下也消失不见，只剩下了期待。在电影院坐着的时候，我们用中文聊着天，身旁的外国妹子突然也用中文跟我们聊起来，原来她曾经在台湾交换过两年，中文特别好还没有台湾口音，很可爱的在等着另外一部《no other land》，也帮我们介绍了Film Forum这个电影院，看起来是一个常客，虽然很想继续聊，但是又有些害怕尴尬，最终没有建立联系方式。&lt;/p&gt;
 &lt;p&gt;接着越来越多中国人出现，SSR有些担忧开始说要不提前出去站LINE，纠结了一下最终出去了，之后越来越多人开始排队，而我们因为站在前三位所以心里安定不少，排队的基本上90%都是中国人，也是这部片子的受众更多是我们这些拥有共同创伤的人吧。感觉大家的年龄看起来都不大，都是比较明显的留学生&lt;/p&gt;
 &lt;p&gt;聊着天很快到了2点半，我们首先被告知有5张票是确定的，非常开心的买了17刀的电影票进场，电影院不是很大，大概也就是100来人，最后三排的位置都是空的，然后就发现所有排队的人都进来了。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/louye.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/030-louye.jpeg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;电影起初是一个虚构的剧组，很有意思的是在最开始秦昊扮演的演员在戏中质问导演，你知道这部戏肯定不会过审，只能我们几个拍着玩自己看，有什么意思，全场都笑了起来。到了后期越来越多短视频集锦在这部伪纪录片中的时候，越来越难过，可能与电影已经没有关系，而是痛苦回忆的再现。最后QA的过程导演说这部其实是对电影的破坏，他拍的过程以及剧组中的人都觉得不是很开心，但是还是要做，也许这就是创作者的表达欲吧。&lt;/p&gt;
 &lt;p&gt;看完之后出来又地铁去了中央公园，找到了李文亮和刘晓波的的纪念长椅，意外也看到李文亮的左边旁边竟然是纳瓦利尼的纪念长椅。中央公园据说有10000个长椅，不太好找，中间只能停下来找到之前柴静分享的一个微信链接想看看地图，点进去也404了，这里也留一下地图和坐标吧，李文亮(40.791051, -73.963868) 刘晓波（40.791040, -73.962721）。&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/map.png&#34;&gt;
-&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/navalny.jpeg&#34;&gt;
-&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/liwenliang.jpeg&#34;&gt;
-&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/liuxiaobo.jpeg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/002-map.png&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/030-navalny.jpeg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/030-liwenliang.jpeg&#34;&gt;
+&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/030-liuxiaobo.jpeg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;法拉盛吃完了好吃的中餐之后冒着大雨回到家的时候发现11点了，写了一个朋友圈所有名字都没提却被屏蔽了，豆瓣没有条目，大家都在另外一个同名电影下有评论，写了一点点评论不久就说收到了违规删除的通知，仅有的表达欲消磨殆尽，今天突然想起来还有一个自留地能说说话。&lt;/p&gt;</description>
     </item>
     <item>
       <title>好的产品遍地都是</title>
-      <link>http://localhost:1313/zh/posts/%E5%A5%BD%E7%9A%84%E4%BA%A7%E5%93%81%E9%81%8D%E5%9C%B0%E9%83%BD%E6%98%AF/</link>
+      <link>http://localhost:1313/zh/posts/029-%E5%A5%BD%E7%9A%84%E4%BA%A7%E5%93%81%E9%81%8D%E5%9C%B0%E9%83%BD%E6%98%AF/</link>
       <pubDate>Wed, 19 Mar 2025 20:31:56 -0400</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E5%A5%BD%E7%9A%84%E4%BA%A7%E5%93%81%E9%81%8D%E5%9C%B0%E9%83%BD%E6%98%AF/</guid>
+      <guid>http://localhost:1313/zh/posts/029-%E5%A5%BD%E7%9A%84%E4%BA%A7%E5%93%81%E9%81%8D%E5%9C%B0%E9%83%BD%E6%98%AF/</guid>
       <description>&lt;p&gt;最近接连两次有产品idea的时候发现市面上已经有做的非常好的产品了，顺便调研了一下这些创作人的故事，虽然感觉自己没得做了，但是还是会为这些好的产品而激动。&lt;/p&gt;
 &lt;h1 id=&#34;good-sudukuhttpswwwplaygoodsudokucom&#34;&gt;&lt;a href=&#34;https://www.playgoodsudoku.com/&#34;&gt;Good Suduku&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;前段时间因为Apple News中自带的数独应用而开始沉迷，每天有从易到难的三种题目可以做，做完之后感觉不够于是开始找有没有其他App，连续下载了几个感觉设计的都不是很好，最简单的草稿笔和填数的笔都很容易误触，看起来下载量也不低，瞬间感觉是一个机会也有些纳闷为什么这么古老的一个游戏竟然没有人做，一个国内的公司做了小程序，付费10元/月，但是体验明显感觉是程序员做的，似乎付费的人也不少。于是开始和GPT聊起来产品方案，聊的过程中说到设计感的时候GPT告诉了我一个已经做的很好的产品也就是这个Good Suduku，打开网页介绍就感觉挺不错的，很能抓住大家的痛点，于是开始尝试使用，使用过程不断感叹这就是我想做的产品。这个应用也挺有意思的点的是，App的名字直接把作者加上了，所以很容易找到创作人，是在NYC的一个游戏开发者，顺便看到了2025年做的一个&lt;a href=&#34;https://www.youtube.com/watch?v=jYxT3uqCxMw&#34;&gt;采访&lt;/a&gt;，本人看起来还挺帅的哈哈，看的出来是认真做产品的人。主持人一开始也说了一个跟我一样的想法，都是在最开始入坑数独的时候发现市面上产品太差劲，想自己做一个然后就发现了这个产品，看了一下更新记录1.0之后版本似乎就没有做太大变更。&lt;/p&gt;
@@ -104,9 +115,9 @@
     </item>
     <item>
       <title>旧Kindle安装微信读书防踩坑全流程</title>
-      <link>http://localhost:1313/zh/posts/%E6%97%A7kindle%E5%AE%89%E8%A3%85%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E9%98%B2%E8%B8%A9%E5%9D%91%E5%85%A8%E6%B5%81%E7%A8%8B/</link>
+      <link>http://localhost:1313/zh/posts/028-%E6%97%A7kindle%E5%AE%89%E8%A3%85%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E9%98%B2%E8%B8%A9%E5%9D%91%E5%85%A8%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Wed, 16 Oct 2024 11:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E6%97%A7kindle%E5%AE%89%E8%A3%85%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E9%98%B2%E8%B8%A9%E5%9D%91%E5%85%A8%E6%B5%81%E7%A8%8B/</guid>
+      <guid>http://localhost:1313/zh/posts/028-%E6%97%A7kindle%E5%AE%89%E8%A3%85%E5%BE%AE%E4%BF%A1%E8%AF%BB%E4%B9%A6%E9%98%B2%E8%B8%A9%E5%9D%91%E5%85%A8%E6%B5%81%E7%A8%8B/</guid>
       <description>&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
 &lt;p&gt;上个月重新开始使用微信读书，又开始了30天的赌博（连续30天+阅读30小时可以换取30天的会员卡活动），这就导致Kindle上看非常不方便，iPad又很难集中注意力，虽然Kindle上也支持网页，但是必须一直联网在线+翻页延迟效果很不好，所以开始找解决方案。&lt;/p&gt;
 &lt;ol&gt;
@@ -161,9 +172,9 @@
     </item>
     <item>
       <title>2024年又重新开始写博客</title>
-      <link>http://localhost:1313/zh/posts/2024-starting-blogging-again/</link>
+      <link>http://localhost:1313/zh/posts/027-2024-starting-blogging-again/</link>
       <pubDate>Sat, 03 Aug 2024 11:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/2024-starting-blogging-again/</guid>
+      <guid>http://localhost:1313/zh/posts/027-2024-starting-blogging-again/</guid>
       <description>&lt;p&gt;现在写博客，可能也类似在在豆瓣写日记一样没人看吧，最近因为做独立产品买了一个域名，所以又开始产生折腾博客的念头，依然是用的Hugo+Github，似乎和七八年前一样，不过有了很多更便捷的工具。&lt;/p&gt;
 &lt;h3 id=&#34;挣扎的互联网产品经理的工作&#34;&gt;挣扎的互联网产品经理的工作&lt;/h3&gt;
 &lt;p&gt;在国内互联网挣扎了6年之后，终于躺平摊手放弃了，成了传说中“永远升不上P8的底层大头兵”，6年时间呆了4个团队，老板换了六七八个，经历了互联网最后一点荣光，越来越发现自己在这个环境中无法适从。&lt;/p&gt;
@@ -177,9 +188,9 @@
     </item>
     <item>
       <title>📖一间只属于自己的房间</title>
-      <link>http://localhost:1313/zh/posts/%E4%B8%80%E9%97%B4%E5%8F%AA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E6%88%BF%E9%97%B4/</link>
+      <link>http://localhost:1313/zh/posts/026-%E4%B8%80%E9%97%B4%E5%8F%AA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E6%88%BF%E9%97%B4/</link>
       <pubDate>Sat, 09 May 2020 16:06:23 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E4%B8%80%E9%97%B4%E5%8F%AA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E6%88%BF%E9%97%B4/</guid>
+      <guid>http://localhost:1313/zh/posts/026-%E4%B8%80%E9%97%B4%E5%8F%AA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E6%88%BF%E9%97%B4/</guid>
       <description>&lt;p&gt;弗吉尼亚·伍尔夫
 19个笔记
 ★★★★★
@@ -226,9 +237,9 @@
     </item>
     <item>
       <title>📖扔掉书本上街去—希望病</title>
-      <link>http://localhost:1313/zh/posts/%E6%89%94%E6%8E%89%E4%B9%A6%E6%9C%AC%E4%B8%8A%E8%A1%97%E5%8E%BB%E5%B8%8C%E6%9C%9B%E7%97%85/</link>
+      <link>http://localhost:1313/zh/posts/024-%E6%89%94%E6%8E%89%E4%B9%A6%E6%9C%AC%E4%B8%8A%E8%A1%97%E5%8E%BB%E5%B8%8C%E6%9C%9B%E7%97%85/</link>
       <pubDate>Sat, 09 May 2020 15:45:00 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E6%89%94%E6%8E%89%E4%B9%A6%E6%9C%AC%E4%B8%8A%E8%A1%97%E5%8E%BB%E5%B8%8C%E6%9C%9B%E7%97%85/</guid>
+      <guid>http://localhost:1313/zh/posts/024-%E6%89%94%E6%8E%89%E4%B9%A6%E6%9C%AC%E4%B8%8A%E8%A1%97%E5%8E%BB%E5%B8%8C%E6%9C%9B%E7%97%85/</guid>
       <description>&lt;h1 id=&#34;扔掉书本上街去&#34;&gt;扔掉书本上街去&lt;/h1&gt;
 &lt;p&gt;寺山修司&lt;/p&gt;
 &lt;ol&gt;
@@ -267,9 +278,9 @@
     </item>
     <item>
       <title>📖无人驾驶入门书</title>
-      <link>http://localhost:1313/zh/posts/%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E5%85%A5%E9%97%A8%E4%B9%A6/</link>
+      <link>http://localhost:1313/zh/posts/025-%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E5%85%A5%E9%97%A8%E4%B9%A6/</link>
       <pubDate>Sat, 09 May 2020 12:17:05 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E5%85%A5%E9%97%A8%E4%B9%A6/</guid>
+      <guid>http://localhost:1313/zh/posts/025-%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6%E5%85%A5%E9%97%A8%E4%B9%A6/</guid>
       <description>&lt;p&gt;作者：胡迪·利普森 梅尔芭·库曼
 评分：***
 短评：因为跳槽而想了解的行业，作为入门书很好，一方面可以解答很多普通大众对于自动驾驶的疑惑点，另一方面也简单介绍了自动驾驶涉及的软硬件传感器等入门知识。看完之后还是很看好无人驾驶的未来的，毕竟是小学作文中对于未来设想的重要场景之一。&lt;/p&gt;
@@ -374,9 +385,9 @@
     </item>
     <item>
       <title>手抄报20200418</title>
-      <link>http://localhost:1313/zh/posts/%E6%89%8B%E6%8A%84%E6%8A%A5/</link>
+      <link>http://localhost:1313/zh/posts/023-%E6%89%8B%E6%8A%84%E6%8A%A5/</link>
       <pubDate>Sat, 18 Apr 2020 14:32:43 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E6%89%8B%E6%8A%84%E6%8A%A5/</guid>
+      <guid>http://localhost:1313/zh/posts/023-%E6%89%8B%E6%8A%84%E6%8A%A5/</guid>
       <description>&lt;p&gt;写在开头：这段时间深切的感觉到信息源对人的认知的塑造，每天看微博豆瓣的人很难跟每天看新闻联播的爸妈沟通戴口罩，每天看个体喜乐的人也很难和每天看强国理论的人沟通，而这种情况也随着个性化推荐的信息茧房愈加严重。所以想把自己看到的认同的喜欢的内容纪录下来，这些构造了现在的我，也许不久之后回头看会觉得有些可笑，但是只是一个私人纪录的话也无妨。&lt;/p&gt;
 &lt;h2 id=&#34;做一家叫多抓鱼的公司httpsmpweixinqqcomsgkmvikq8dx49ng7chdoedg&#34;&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/GKmvikQ8dX49ng7cHDOeDg&#34;&gt;做一家叫多抓鱼的公司&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;猫助从2017年开始写的一个连载，很有意思&lt;/p&gt;
@@ -478,9 +489,9 @@
     </item>
     <item>
       <title>豆瓣电影推荐策略优化</title>
-      <link>http://localhost:1313/zh/posts/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96/</link>
+      <link>http://localhost:1313/zh/posts/022-%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96/</link>
       <pubDate>Fri, 03 Apr 2020 10:23:12 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96/</guid>
+      <guid>http://localhost:1313/zh/posts/022-%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96/</guid>
       <description>&lt;h4 id=&#34;问题豆瓣电影的网页喜欢这部电影的人也喜欢模块的策略优化&#34;&gt;问题：豆瓣电影的网页「喜欢这部电影的人也喜欢」模块的策略优化&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;推荐模块的理想态：帮助用户发现「想看」的电影&lt;/li&gt;
@@ -595,9 +606,9 @@
     </item>
     <item>
       <title>策略产品实例</title>
-      <link>http://localhost:1313/zh/posts/%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E5%AE%9E%E4%BE%8B/</link>
+      <link>http://localhost:1313/zh/posts/021-%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E5%AE%9E%E4%BE%8B/</link>
       <pubDate>Thu, 02 Apr 2020 15:05:19 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E5%AE%9E%E4%BE%8B/</guid>
+      <guid>http://localhost:1313/zh/posts/021-%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E5%AE%9E%E4%BE%8B/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;目的地检索推荐策略&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -732,9 +743,9 @@
     </item>
     <item>
       <title>策略产品方法论</title>
-      <link>http://localhost:1313/zh/posts/%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E6%96%B9%E6%B3%95%E8%AE%BA/</link>
+      <link>http://localhost:1313/zh/posts/020-%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E6%96%B9%E6%B3%95%E8%AE%BA/</link>
       <pubDate>Wed, 01 Apr 2020 15:51:58 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E6%96%B9%E6%B3%95%E8%AE%BA/</guid>
+      <guid>http://localhost:1313/zh/posts/020-%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E6%96%B9%E6%B3%95%E8%AE%BA/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;三节课在二月份限免了一些课程，当时随手领取之后就忘了，结果还有两天课程结束时才想起来又开始看&lt;/li&gt;
 &lt;li&gt;课程导师是原来在百度/滴滴的产品，其实方法论很简单，但是课程内容有很多简化版的例子对于想要了解其他行业的策略还是很好的入门&lt;/li&gt;
@@ -890,9 +901,9 @@
     </item>
     <item>
       <title>🎬《婚姻生活》</title>
-      <link>http://localhost:1313/zh/posts/%E5%A9%9A%E5%A7%BB%E7%94%9F%E6%B4%BB/</link>
+      <link>http://localhost:1313/zh/posts/019-%E5%A9%9A%E5%A7%BB%E7%94%9F%E6%B4%BB/</link>
       <pubDate>Thu, 30 Jan 2020 13:34:23 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E5%A9%9A%E5%A7%BB%E7%94%9F%E6%B4%BB/</guid>
+      <guid>http://localhost:1313/zh/posts/019-%E5%A9%9A%E5%A7%BB%E7%94%9F%E6%B4%BB/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://movie.douban.com/subject/1292981/&#34;&gt;婚姻生活 🌟🌟🌟🌟🌟&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;内心有碰撞的还是离开之后男主袒露的孤独感和女主失去自我的反思。刚刚整理完截图突然意识到也许这就是这个问题的两端，拥有自我的人只能独自面对孤独感，而失去自我的人却失去了快乐的能力。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://movie.douban.com/celebrity/1054526/&#34;&gt;英格玛·伯格曼&lt;/a&gt;的大名很早就听说，却是第一次看他的电影。瑞典作者电影大师。&lt;/p&gt;
@@ -914,9 +925,9 @@
     </item>
     <item>
       <title>🎬《Waking life》 &amp;《Richard Linklater: Dream Is Destiny》</title>
-      <link>http://localhost:1313/zh/posts/waking-life-richard-linklater-dream-is-destiny/</link>
+      <link>http://localhost:1313/zh/posts/018-waking-life-richard-linklater-dream-is-destiny/</link>
       <pubDate>Wed, 22 Jan 2020 18:16:23 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/waking-life-richard-linklater-dream-is-destiny/</guid>
+      <guid>http://localhost:1313/zh/posts/018-waking-life-richard-linklater-dream-is-destiny/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://movie.douban.com/subject/1304981/&#34;&gt;半梦半醒的人生 🌟🌟🌟🌟🌟&lt;/a&gt;
 &lt;a href=&#34;https://movie.douban.com/subject/26681652/&#34;&gt;理查德·林克莱特：筑梦而生 🌟🌟🌟🌟&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;写完上一篇之后断断续续看了一些电影，但是始终没有想要表达的内容和欲望，自己想了一下有两个原因，一个是没有看电影的欲望，自己似乎逐渐失去了看电影的热情和好奇心，偶尔新片宣传或者出资源了找来看看，老片子也耐不下性子去仔细的看。二是没有表达的内容，因为给自己定的目标，所以在豆瓣上找了一些推荐来看，但是看完总有一种就这样啊，似乎很难产生碰撞和表达欲。最后的最后就是带着输出的目标看电影很多时候会很有压力，会在没有输出和碰撞或者语言表达不出来的时候产生很大的焦虑而失去了做这件事本身的乐趣。&lt;/p&gt;
@@ -968,9 +979,9 @@
     </item>
     <item>
       <title>🎬《Frances Ha (2012)》</title>
-      <link>http://localhost:1313/zh/posts/frances-ha-2012/</link>
+      <link>http://localhost:1313/zh/posts/017-frances-ha-2012/</link>
       <pubDate>Wed, 01 Jan 2020 21:31:20 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/frances-ha-2012/</guid>
+      <guid>http://localhost:1313/zh/posts/017-frances-ha-2012/</guid>
       <description>&lt;p&gt;上周在整理年度观影十佳的时候发现竟然很难凑齐10部，开始反思自己选片的标准问题以及好片自己的理解度问题，所以就有了这个计划，不再盲目地去刷片儿，而是谨慎一点选一些自己喜欢的电影和书，同时看完之后也将转瞬即逝的感受尽量记录下来。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://movie.douban.com/subject/11527487/&#34;&gt;Frances Ha (2012)&lt;/a&gt;
 豆瓣评分 8.4
@@ -1036,9 +1047,9 @@
     </item>
     <item>
       <title>2019年终总结</title>
-      <link>http://localhost:1313/zh/posts/2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</link>
+      <link>http://localhost:1313/zh/posts/016-2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sat, 28 Dec 2019 17:58:15 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://localhost:1313/zh/posts/016-2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;p&gt;在准备写下这篇总结的时候，想着要选一个2019年的个人年度关键词，「妥协」这个词就蹦出来了；一直挂在嘴边的理想主义幻灭，一边在现有的生活中苟且着。&lt;/p&gt;
 &lt;h2 id=&#34;工作--个人&#34;&gt;工作 &amp;amp;&amp;amp; 个人&lt;/h2&gt;
 &lt;p&gt;如果统计一年各项活动的时间，工作应该是占比最大的吧。而独自一人在外，工作和生活似乎也难以分开。
@@ -1127,9 +1138,9 @@
     </item>
     <item>
       <title>📖《被讨厌的勇气》自由就是不再寻求他人认可</title>
-      <link>http://localhost:1313/zh/posts/%E8%A2%AB%E8%AE%A8%E5%8E%8C%E7%9A%84%E5%8B%87%E6%B0%94%E8%87%AA%E7%94%B1%E5%B0%B1%E6%98%AF%E4%B8%8D%E5%86%8D%E5%AF%BB%E6%B1%82%E4%BB%96%E4%BA%BA%E8%AE%A4%E5%8F%AF/</link>
+      <link>http://localhost:1313/zh/posts/015-%E8%A2%AB%E8%AE%A8%E5%8E%8C%E7%9A%84%E5%8B%87%E6%B0%94%E8%87%AA%E7%94%B1%E5%B0%B1%E6%98%AF%E4%B8%8D%E5%86%8D%E5%AF%BB%E6%B1%82%E4%BB%96%E4%BA%BA%E8%AE%A4%E5%8F%AF/</link>
       <pubDate>Sun, 15 Dec 2019 11:56:45 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E8%A2%AB%E8%AE%A8%E5%8E%8C%E7%9A%84%E5%8B%87%E6%B0%94%E8%87%AA%E7%94%B1%E5%B0%B1%E6%98%AF%E4%B8%8D%E5%86%8D%E5%AF%BB%E6%B1%82%E4%BB%96%E4%BA%BA%E8%AE%A4%E5%8F%AF/</guid>
+      <guid>http://localhost:1313/zh/posts/015-%E8%A2%AB%E8%AE%A8%E5%8E%8C%E7%9A%84%E5%8B%87%E6%B0%94%E8%87%AA%E7%94%B1%E5%B0%B1%E6%98%AF%E4%B8%8D%E5%86%8D%E5%AF%BB%E6%B1%82%E4%BB%96%E4%BA%BA%E8%AE%A4%E5%8F%AF/</guid>
       <description>&lt;!-- more --&gt;
 &lt;h2 id=&#34;目的论-vs-原因论&#34;&gt;目的论 VS 原因论&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -1251,9 +1262,9 @@
     </item>
     <item>
       <title>新疆结伴游—旅行真人秀</title>
-      <link>http://localhost:1313/zh/posts/%E6%96%B0%E7%96%86%E7%BB%93%E4%BC%B4%E6%B8%B8%E6%97%85%E8%A1%8C%E7%9C%9F%E4%BA%BA%E7%A7%80/</link>
+      <link>http://localhost:1313/zh/posts/014-%E6%96%B0%E7%96%86%E7%BB%93%E4%BC%B4%E6%B8%B8%E6%97%85%E8%A1%8C%E7%9C%9F%E4%BA%BA%E7%A7%80/</link>
       <pubDate>Sat, 14 Dec 2019 14:02:46 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E6%96%B0%E7%96%86%E7%BB%93%E4%BC%B4%E6%B8%B8%E6%97%85%E8%A1%8C%E7%9C%9F%E4%BA%BA%E7%A7%80/</guid>
+      <guid>http://localhost:1313/zh/posts/014-%E6%96%B0%E7%96%86%E7%BB%93%E4%BC%B4%E6%B8%B8%E6%97%85%E8%A1%8C%E7%9C%9F%E4%BA%BA%E7%A7%80/</guid>
       <description>&lt;p&gt;9个陌生人一起14天新疆游经历，风景很美，人物关系也很复杂，感觉都可以在两辆车上分别装上摄像头，拍一季《花样青春》，凌晨2点投票表决要不要分开.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;D1（9.26）北京——乌鲁木齐&lt;/li&gt;
@@ -1340,9 +1351,9 @@
     </item>
     <item>
       <title>📖《Jusitce：What&#39;&#39;s the right things to do》</title>
-      <link>http://localhost:1313/zh/posts/jusitcewhats-the-right-things-to-do/</link>
+      <link>http://localhost:1313/zh/posts/013-jusitcewhats-the-right-things-to-do/</link>
       <pubDate>Sun, 24 Nov 2019 13:59:31 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/jusitcewhats-the-right-things-to-do/</guid>
+      <guid>http://localhost:1313/zh/posts/013-jusitcewhats-the-right-things-to-do/</guid>
       <description>&lt;p&gt;从前段时间更新的新一季奇葩说，到最近顺风车上线之后的女权讨论，还有HK青年争取的自由，社会议题每天都有每个人也都有自己的观点，然后到最后讨论似乎都演变成无法说服之后的不理解和谩骂。&lt;/p&gt;
 &lt;p&gt;自己一直挺喜欢这类的讨论，对于不同的观点也很好奇背后的逻辑，很多时候会一边讨论一反思自己长久以来的想法，这本书最有意思的也是非常多的实际案例，并且从正方反方不同的角度互相反驳彼此，看起来非常过瘾，特别是对其中自己之前持有的「自由至上主义」的观点的问题的思考。&lt;/p&gt;
 &lt;p&gt;另外算是政治哲学的入门课，康德亚里士多德还有罗尔斯这些之前觉得很深奥的哲学家的论点也初窥一二想要找来继续学习一下。&lt;/p&gt;
@@ -1451,9 +1462,9 @@
     </item>
     <item>
       <title>有趣的博客和文字（持更ing）</title>
-      <link>http://localhost:1313/zh/posts/%E6%9C%89%E8%B6%A3%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%92%8C%E6%96%87%E5%AD%97%E6%8C%81%E6%9B%B4ing/</link>
+      <link>http://localhost:1313/zh/posts/012-%E6%9C%89%E8%B6%A3%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%92%8C%E6%96%87%E5%AD%97%E6%8C%81%E6%9B%B4ing/</link>
       <pubDate>Fri, 15 Nov 2019 12:37:51 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E6%9C%89%E8%B6%A3%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%92%8C%E6%96%87%E5%AD%97%E6%8C%81%E6%9B%B4ing/</guid>
+      <guid>http://localhost:1313/zh/posts/012-%E6%9C%89%E8%B6%A3%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%92%8C%E6%96%87%E5%AD%97%E6%8C%81%E6%9B%B4ing/</guid>
       <description>&lt;p&gt;很早开始就&lt;/p&gt;
 &lt;h1 id=&#34;博客&#34;&gt;博客&lt;/h1&gt;
 &lt;table&gt;
@@ -1537,9 +1548,9 @@
     </item>
     <item>
       <title>📖《亲爱的三毛》</title>
-      <link>http://localhost:1313/zh/posts/%E4%BA%B2%E7%88%B1%E7%9A%84%E4%B8%89%E6%AF%9B/</link>
+      <link>http://localhost:1313/zh/posts/011-%E4%BA%B2%E7%88%B1%E7%9A%84%E4%B8%89%E6%AF%9B/</link>
       <pubDate>Sat, 09 Nov 2019 10:22:50 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E4%BA%B2%E7%88%B1%E7%9A%84%E4%B8%89%E6%AF%9B/</guid>
+      <guid>http://localhost:1313/zh/posts/011-%E4%BA%B2%E7%88%B1%E7%9A%84%E4%B8%89%E6%AF%9B/</guid>
       <description>&lt;p&gt;昨晚拒绝完团建和聚餐之后，独自一人回家地铁路上看到豆瓣的这个话题「你是如何克服人生的无意义感的？」中第一篇文章推荐的三毛的一封回信，回想起来很久很久以前在ONE APP上的一个回信，也是说一个人生活的建议就是不要保持只有“一个人”的状态，哪怕养盆绿植，也要去考虑去给它浇水。&lt;/p&gt;
 &lt;p&gt;找来这本书看，收录了她在报刊上和读者的书信交流内容，一直持续到90年，30年前的文字还是这么有温度。和正午信箱有些类似，来信大部分都是生活的苦闷孤独迷茫，30年前和现在有什么区别呢，回信也看到了正午编辑的无奈，但是还是看到她一直在鼓励读者去热爱生活，虽然91年就自杀了。&lt;/p&gt;
 &lt;!-- more --&gt;
@@ -1592,9 +1603,9 @@
     </item>
     <item>
       <title>📖《贾樟柯电影手记》</title>
-      <link>http://localhost:1313/zh/posts/%E8%B4%BE%E6%A8%9F%E6%9F%AF%E7%94%B5%E5%BD%B1%E6%89%8B%E8%AE%B0/</link>
+      <link>http://localhost:1313/zh/posts/010-%E8%B4%BE%E6%A8%9F%E6%9F%AF%E7%94%B5%E5%BD%B1%E6%89%8B%E8%AE%B0/</link>
       <pubDate>Sat, 09 Nov 2019 10:09:05 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E8%B4%BE%E6%A8%9F%E6%9F%AF%E7%94%B5%E5%BD%B1%E6%89%8B%E8%AE%B0/</guid>
+      <guid>http://localhost:1313/zh/posts/010-%E8%B4%BE%E6%A8%9F%E6%9F%AF%E7%94%B5%E5%BD%B1%E6%89%8B%E8%AE%B0/</guid>
       <description>&lt;p&gt;最近看的几本How-TO的书导致完全失去了表达欲，昨晚在「微信读书」上把这两本很快的翻完了，有些话还挺有感触的，之前看他的电影总觉得太多情绪化的内容，没想到文字却是另一种风格。因为是从96年到现在各种发表的文字和对谈整理出来的，所以也就没有那种做完事情之后往回看写出来的文字的马后炮气味。&lt;/p&gt;
 &lt;p&gt;PS 微信读书的笔记导出功能非常友好，没有乱七八糟的适配，直接复制到剪贴板就好，非常舒适。&lt;/p&gt;
 &lt;!-- more --&gt;
@@ -1667,9 +1678,9 @@
     </item>
     <item>
       <title>Google Map 从0到1的过程</title>
-      <link>http://localhost:1313/zh/posts/google-map-%E4%BB%8E0%E5%88%B01%E7%9A%84%E8%BF%87%E7%A8%8B/</link>
+      <link>http://localhost:1313/zh/posts/009-google-map-%E4%BB%8E0%E5%88%B01%E7%9A%84%E8%BF%87%E7%A8%8B/</link>
       <pubDate>Wed, 23 Oct 2019 14:55:39 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/google-map-%E4%BB%8E0%E5%88%B01%E7%9A%84%E8%BF%87%E7%A8%8B/</guid>
+      <guid>http://localhost:1313/zh/posts/009-google-map-%E4%BB%8E0%E5%88%B01%E7%9A%84%E8%BF%87%E7%A8%8B/</guid>
       <description>&lt;p&gt;Never Lost Again
 The Google Mapping Revolution That Sparked New Industries and Augmented Our Reality&lt;/p&gt;
 &lt;p&gt;最开始知道这本书也是看到公众号中有一篇拆书的文章，当时只有英文版，之后出了中文版就果断买回来看了，读了7年的GIS专业看完整本书有种热血沸腾的感觉。&lt;/p&gt;
@@ -1705,9 +1716,9 @@ The Google Mapping Revolution That Sparked New Industries and Augmented Our Real
     </item>
     <item>
       <title>为什么现在还要写博客呢？</title>
-      <link>http://localhost:1313/zh/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%8E%B0%E5%9C%A8%E8%BF%98%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2%E5%91%A2/</link>
+      <link>http://localhost:1313/zh/posts/008-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%8E%B0%E5%9C%A8%E8%BF%98%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2%E5%91%A2/</link>
       <pubDate>Fri, 02 Aug 2019 14:28:25 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%8E%B0%E5%9C%A8%E8%BF%98%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2%E5%91%A2/</guid>
+      <guid>http://localhost:1313/zh/posts/008-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%8E%B0%E5%9C%A8%E8%BF%98%E8%A6%81%E5%86%99%E5%8D%9A%E5%AE%A2%E5%91%A2/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;风吹枯叶落，落叶生肥土，肥土丰香果，孜孜不倦，不紧不慢。- 《人生果实》&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1732,9 +1743,9 @@ The Google Mapping Revolution That Sparked New Industries and Augmented Our Real
     </item>
     <item>
       <title>三节课产品P2课程</title>
-      <link>http://localhost:1313/zh/posts/%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p2%E8%AF%BE%E7%A8%8B/</link>
+      <link>http://localhost:1313/zh/posts/007-%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p2%E8%AF%BE%E7%A8%8B/</link>
       <pubDate>Thu, 31 Aug 2017 13:06:48 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p2%E8%AF%BE%E7%A8%8B/</guid>
+      <guid>http://localhost:1313/zh/posts/007-%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p2%E8%AF%BE%E7%A8%8B/</guid>
       <description>&lt;p&gt;P2课程开始就强调更多的在于思考，作业比较少，但是感觉还是没有P1课程内容的丰富度，而且也没有体会到深度，可能也是自己没有实际的工作经验，但是课程数量、拓展材料以及思考题也都变少了很多。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;用户分析
@@ -1853,9 +1864,9 @@ The Google Mapping Revolution That Sparked New Industries and Augmented Our Real
     </item>
     <item>
       <title>三节课产品P1课程思考题作业</title>
-      <link>http://localhost:1313/zh/posts/%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E6%80%9D%E8%80%83%E9%A2%98%E4%BD%9C%E4%B8%9A/</link>
+      <link>http://localhost:1313/zh/posts/006-%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E6%80%9D%E8%80%83%E9%A2%98%E4%BD%9C%E4%B8%9A/</link>
       <pubDate>Fri, 18 Aug 2017 13:05:11 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E6%80%9D%E8%80%83%E9%A2%98%E4%BD%9C%E4%B8%9A/</guid>
+      <guid>http://localhost:1313/zh/posts/006-%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E6%80%9D%E8%80%83%E9%A2%98%E4%BD%9C%E4%B8%9A/</guid>
       <description>&lt;p&gt;这套课程的课后作业挺多，而且听完课程之后可操作性很好，至少知道应该从哪些方面开始下手，而且对于之前觉得很大的问题开始知道从哪些方面开始分析和下手了。收获最大的还是在第二部分的习题，对于产品的拆解，从用户场景需求开始，到业务逻辑，业务流程图，页面流程图，原型设计，最后到需求文档的撰写。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;用产品生命周期图分析产品迭代&lt;/li&gt;
@@ -1947,9 +1958,9 @@ TIPs:&lt;/p&gt;
     </item>
     <item>
       <title>三节课产品P1课程笔记（3/3）</title>
-      <link>http://localhost:1313/zh/posts/%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B03-of-3/</link>
+      <link>http://localhost:1313/zh/posts/005-%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B03-of-3/</link>
       <pubDate>Tue, 08 Aug 2017 13:01:58 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B03-of-3/</guid>
+      <guid>http://localhost:1313/zh/posts/005-%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B03-of-3/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;06 项目管理入门-上线邮件
 &lt;ul&gt;
@@ -2097,9 +2108,9 @@ TIPs:&lt;/p&gt;
     </item>
     <item>
       <title>三节课产品P1课程笔记（2/3）</title>
-      <link>http://localhost:1313/zh/posts/%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B02-of-3/</link>
+      <link>http://localhost:1313/zh/posts/004-%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B02-of-3/</link>
       <pubDate>Mon, 24 Jul 2017 12:53:14 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B02-of-3/</guid>
+      <guid>http://localhost:1313/zh/posts/004-%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B02-of-3/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;04 功能和流程入门
 &lt;ul&gt;
@@ -2211,9 +2222,9 @@ TIPs:&lt;/p&gt;
     </item>
     <item>
       <title>三节课产品经理课程笔记（1/3）</title>
-      <link>http://localhost:1313/zh/posts/%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B01-of-3/</link>
+      <link>http://localhost:1313/zh/posts/003-%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B01-of-3/</link>
       <pubDate>Mon, 24 Jul 2017 11:41:13 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B01-of-3/</guid>
+      <guid>http://localhost:1313/zh/posts/003-%E4%B8%89%E8%8A%82%E8%AF%BE%E4%BA%A7%E5%93%81p1%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B01-of-3/</guid>
       <description>&lt;hr&gt;
 &lt;ol&gt;
 &lt;li&gt;前段时间几次电话面试发现自己真的准备的东西太少了，正好有朋友分享了三节课的资料，就花了一些时间看完，总体来说质量很不错了。&lt;strong&gt;最大的好处就是分级，把横向的知识点纵向分了三个级别来讲&lt;/strong&gt;，相对于之前看的网易云课堂的课程更接地气，从实际上可能遇到的问题出发，再加上很多的思考题，对于初学者来说很友好。&lt;/li&gt;
@@ -2417,9 +2428,9 @@ TIPs:&lt;/p&gt;
     </item>
     <item>
       <title>地图导航产品分析报告</title>
-      <link>http://localhost:1313/zh/posts/%E5%9C%B0%E5%9B%BE%E5%AF%BC%E8%88%AA%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/</link>
+      <link>http://localhost:1313/zh/posts/002-%E5%9C%B0%E5%9B%BE%E5%AF%BC%E8%88%AA%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/</link>
       <pubDate>Tue, 18 Jul 2017 12:59:19 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E5%9C%B0%E5%9B%BE%E5%AF%BC%E8%88%AA%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/</guid>
+      <guid>http://localhost:1313/zh/posts/002-%E5%9C%B0%E5%9B%BE%E5%AF%BC%E8%88%AA%E4%BA%A7%E5%93%81%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/</guid>
       <description>&lt;p&gt;当年校招下决心要做产品，看了一堆推荐入门的书之后满腔热情开始分析产品。
 没有实习经历，只能傻了吧唧自己瞎琢磨花了一段时间磨出来下面的内容，也算是后来找工作的敲门砖，现在回头看起来里面的观点真的太幼稚了，但是还是还能回想起来当时截图对比分析时的乐趣和初心
 高德和百度都做到10.0了，从当时觉得很酷很有价值的工具产品，到现在挂在嘴上的竞品，时间的力量。
@@ -2441,9 +2452,9 @@ PS：之前的图床挂了，最后还是从邮箱里面找到PDF重新转上来
     </item>
     <item>
       <title>SQL必知必会笔记</title>
-      <link>http://localhost:1313/zh/posts/sql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:1313/zh/posts/001-sql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Sun, 28 May 2017 15:04:44 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/sql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:1313/zh/posts/001-sql%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Sams Teach Yourself SQL in 10 Minutes - Fourth Edition
 语句备份，方便查阅，SQL Server版本&lt;/p&gt;

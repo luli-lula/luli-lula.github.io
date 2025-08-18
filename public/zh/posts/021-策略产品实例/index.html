@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>策略产品实例 | lula的博客</title>
+<meta name="keywords" content="产品">
+<meta name="description" content="
+目的地检索推荐策略
+
+
+产品目标：帮助用户以最低成本完成目的地输入
+需求理解：（对需求的预测）用户目的地受到什么影响：出发地，时间，历史行为，终点的输入词
+衡量指标：推荐策略的召回率和准确率
+
+
+公交路线推荐策略
+
+
+产品目标：最低代价从出发地到达目的地
+需求理解：最低代价怎么判断？出发时间（是否有时间诉求），目的地类型，用户历史行为（交通工具和价格倾向等）
+衡量指标：
+解决方案：给出所有可到达的路线集合——根据需求判断代价权重，给出候选路线的的排序——给出排序的依据（时长，步行距离，价格等数据）
+
+
+网页搜索策略
+
+
+
+产品目标：高效获取信息
+
+
+衡量指标：搜索满足度
+
+
+
+【语义理解】：
+
+需求明确；
+
+结构简单清晰的搜索词，通过切词处理即可进行后续检索
+口语化的query：需要进行纠错/同义转换等语义处理
+表达方式很复杂的query:需要进行更加unique的语义处理，如披星（）月
+
+
+需求明确，对答案有特殊需求；
+
+除了统一的query变换外，需要将特定要求转换成搜索引擎可理解的特征
+
+猪肉最新价格：资源时效性
+XX电影资源：考虑资源的可用性
+PPT素材：可用性&amp;特定文件格式
+
+
+
+
+需求不明确，需要对需求进行扩展和预测
+
+欢乐颂：视频链接，剧情介绍，演员表，评论
+电影名称：上映前预告片，上映时间，简介，在线购票，下线后的评论
+
+
+每个query经过以上分类处理后，会统一解析为：需求类目/需求词/需求强度/待检索term/其他限定特征等内容，进行检索
+衡量指标：每个query规则的召回率和准确率，各需求的准召
+
+
+
+【排序】根据需求强度（命中需求的概率），结果质量（相关性，权威性，时效性，可用性）用户点击行为统一成排序指标，确定搜索结果的排序
+
+
+【展现】
+
+通用策略：将结果页中与query相关的信息提取为标题/摘要，进行飘红等处理帮助用户筛选信息
+细化策略：不同需求不同展示策略
+
+单一明确需求：天气，客服电话，直接将答案摘要前置
+用户行为路径收敛：网易邮箱（登陆），欢乐颂（集数）歌曲（播放），缩短步骤
+对于不同资源类型的结果，可以针对性优化摘要（视频，图片，新闻，地图）
+
+
+
+
+
+
+内容推荐策略
+
+
+产品目标：Kill Time
+需求理解：基础特征/历史行为/实时特征等组成用户潜在需求
+排序：根据需求预测和结果的各类特征综合排序，统一到CTR预估模型中
+展现：为点击服务，同时避免标题党
+
+
+网约车分派单策略0.0
+
+
+几个利益体：乘客希望被最近的司机接单（等待时间最短）；司机希望接到最挣钱的订单（接驾最短，距离最长，最不堵车）
+边界值：乘客能接受的最长等待时间最长是X分钟，司机能接受的最远接驾距离是XKM
+分析双方利益关系：都是希望撮合交易，但是矛盾点在于每个人都渴望最优质的匹配对象，而最优质的资源是稀缺的
+阶段性目标：成交率最大（在乘客需求更稀缺时，更偏向于乘客）
+方案：
+
+
+
+网约车分派单策略1.0——以乘客为中心
+
+
+阶段现状：需求比较低频稀疏，w单/天
+乘客：叫到车就好；司机：对平台无依赖，有单就好
+解决方案：以乘客为中心，由近到远播单；存在最大播单距离，保证司机体验
+问题：订单密度增加后，多个订单无差别推给司机，司机A被推送多个订单，而司机B却没有订单
+
+
+网约车分派单策略2.0——以司机为中心
+
+
+阶段现状：需求密集，10w单/天
+乘客：打到车；司机：希望更近更好的订单（市场上存在多个叫车平台）
+解决方案：以司机为中心，当司机需要订单时，由远及近播单；存在最大播单距离，保证司机体验
+问题：仅仅以距离作为条件派单很难将好订单筛选出来
+
+
+网约车分派单策略2.n——以司机为中心的订单推荐系统
+
+
+阶段现状：需求继续增加，&gt;10w单每天
+解决方案：引入订单长度，目的地特征，已被抢概率，取消概率，司机特征等因素升级为推荐系统
+以司机为中心，当司机需要订单时，选取周围订单按照模型排序
+问题：司乘存在明显分布不均，出现离所有司机很远无法播单的P1和离所有司机很近，被重复播单的P2
+
+
+网约车分派单策略3.0——以平台为中心的订单撮合系统
+
+
+阶段现状：需求继续密集，&gt;100w单/天
+解决方案：同时考虑区域内所有的乘客和司机，多种组合方式判定如何使得所有人的体验最佳（成交量最高）
+迭代：指派系统，动态调价
+">
+<meta name="author" content="lula">
+<link rel="canonical" href="http://localhost:1313/zh/posts/021-%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E5%AE%9E%E4%BE%8B/">
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/zh/posts/021-%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E5%AE%9E%E4%BE%8B/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMC06JHFDG"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WMC06JHFDG');
+        }
+      </script><meta property="og:url" content="http://localhost:1313/zh/posts/021-%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E5%AE%9E%E4%BE%8B/">
+  <meta property="og:site_name" content="lula的博客">
+  <meta property="og:title" content="策略产品实例">
+  <meta property="og:description" content=" 目的地检索推荐策略
+产品目标：帮助用户以最低成本完成目的地输入 需求理解：（对需求的预测）用户目的地受到什么影响：出发地，时间，历史行为，终点的输入词 衡量指标：推荐策略的召回率和准确率 公交路线推荐策略
+产品目标：最低代价从出发地到达目的地 需求理解：最低代价怎么判断？出发时间（是否有时间诉求），目的地类型，用户历史行为（交通工具和价格倾向等） 衡量指标： 解决方案：给出所有可到达的路线集合——根据需求判断代价权重，给出候选路线的的排序——给出排序的依据（时长，步行距离，价格等数据） 网页搜索策略
+产品目标：高效获取信息
+衡量指标：搜索满足度 【语义理解】：
+需求明确； 结构简单清晰的搜索词，通过切词处理即可进行后续检索 口语化的query：需要进行纠错/同义转换等语义处理 表达方式很复杂的query:需要进行更加unique的语义处理，如披星（）月 需求明确，对答案有特殊需求； 除了统一的query变换外，需要将特定要求转换成搜索引擎可理解的特征 猪肉最新价格：资源时效性 XX电影资源：考虑资源的可用性 PPT素材：可用性&amp;特定文件格式 需求不明确，需要对需求进行扩展和预测 欢乐颂：视频链接，剧情介绍，演员表，评论 电影名称：上映前预告片，上映时间，简介，在线购票，下线后的评论 每个query经过以上分类处理后，会统一解析为：需求类目/需求词/需求强度/待检索term/其他限定特征等内容，进行检索 衡量指标：每个query规则的召回率和准确率，各需求的准召 【排序】根据需求强度（命中需求的概率），结果质量（相关性，权威性，时效性，可用性）用户点击行为统一成排序指标，确定搜索结果的排序
+【展现】
+通用策略：将结果页中与query相关的信息提取为标题/摘要，进行飘红等处理帮助用户筛选信息 细化策略：不同需求不同展示策略 单一明确需求：天气，客服电话，直接将答案摘要前置 用户行为路径收敛：网易邮箱（登陆），欢乐颂（集数）歌曲（播放），缩短步骤 对于不同资源类型的结果，可以针对性优化摘要（视频，图片，新闻，地图） 内容推荐策略
+产品目标：Kill Time 需求理解：基础特征/历史行为/实时特征等组成用户潜在需求 排序：根据需求预测和结果的各类特征综合排序，统一到CTR预估模型中 展现：为点击服务，同时避免标题党 网约车分派单策略0.0
+几个利益体：乘客希望被最近的司机接单（等待时间最短）；司机希望接到最挣钱的订单（接驾最短，距离最长，最不堵车） 边界值：乘客能接受的最长等待时间最长是X分钟，司机能接受的最远接驾距离是XKM 分析双方利益关系：都是希望撮合交易，但是矛盾点在于每个人都渴望最优质的匹配对象，而最优质的资源是稀缺的 阶段性目标：成交率最大（在乘客需求更稀缺时，更偏向于乘客） 方案： 网约车分派单策略1.0——以乘客为中心
+阶段现状：需求比较低频稀疏，w单/天 乘客：叫到车就好；司机：对平台无依赖，有单就好 解决方案：以乘客为中心，由近到远播单；存在最大播单距离，保证司机体验 问题：订单密度增加后，多个订单无差别推给司机，司机A被推送多个订单，而司机B却没有订单 网约车分派单策略2.0——以司机为中心
+阶段现状：需求密集，10w单/天 乘客：打到车；司机：希望更近更好的订单（市场上存在多个叫车平台） 解决方案：以司机为中心，当司机需要订单时，由远及近播单；存在最大播单距离，保证司机体验 问题：仅仅以距离作为条件派单很难将好订单筛选出来 网约车分派单策略2.n——以司机为中心的订单推荐系统
+阶段现状：需求继续增加，&gt;10w单每天 解决方案：引入订单长度，目的地特征，已被抢概率，取消概率，司机特征等因素升级为推荐系统 以司机为中心，当司机需要订单时，选取周围订单按照模型排序 问题：司乘存在明显分布不均，出现离所有司机很远无法播单的P1和离所有司机很近，被重复播单的P2 网约车分派单策略3.0——以平台为中心的订单撮合系统
+阶段现状：需求继续密集，&gt;100w单/天 解决方案：同时考虑区域内所有的乘客和司机，多种组合方式判定如何使得所有人的体验最佳（成交量最高） 迭代：指派系统，动态调价 ">
+  <meta property="og:locale" content="zh-cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-04-02T15:05:19+00:00">
+    <meta property="article:modified_time" content="2020-04-02T15:05:19+00:00">
+    <meta property="article:tag" content="产品">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="策略产品实例">
+<meta name="twitter:description" content="
+目的地检索推荐策略
+
+
+产品目标：帮助用户以最低成本完成目的地输入
+需求理解：（对需求的预测）用户目的地受到什么影响：出发地，时间，历史行为，终点的输入词
+衡量指标：推荐策略的召回率和准确率
+
+
+公交路线推荐策略
+
+
+产品目标：最低代价从出发地到达目的地
+需求理解：最低代价怎么判断？出发时间（是否有时间诉求），目的地类型，用户历史行为（交通工具和价格倾向等）
+衡量指标：
+解决方案：给出所有可到达的路线集合——根据需求判断代价权重，给出候选路线的的排序——给出排序的依据（时长，步行距离，价格等数据）
+
+
+网页搜索策略
+
+
+
+产品目标：高效获取信息
+
+
+衡量指标：搜索满足度
+
+
+
+【语义理解】：
+
+需求明确；
+
+结构简单清晰的搜索词，通过切词处理即可进行后续检索
+口语化的query：需要进行纠错/同义转换等语义处理
+表达方式很复杂的query:需要进行更加unique的语义处理，如披星（）月
+
+
+需求明确，对答案有特殊需求；
+
+除了统一的query变换外，需要将特定要求转换成搜索引擎可理解的特征
+
+猪肉最新价格：资源时效性
+XX电影资源：考虑资源的可用性
+PPT素材：可用性&amp;特定文件格式
+
+
+
+
+需求不明确，需要对需求进行扩展和预测
+
+欢乐颂：视频链接，剧情介绍，演员表，评论
+电影名称：上映前预告片，上映时间，简介，在线购票，下线后的评论
+
+
+每个query经过以上分类处理后，会统一解析为：需求类目/需求词/需求强度/待检索term/其他限定特征等内容，进行检索
+衡量指标：每个query规则的召回率和准确率，各需求的准召
+
+
+
+【排序】根据需求强度（命中需求的概率），结果质量（相关性，权威性，时效性，可用性）用户点击行为统一成排序指标，确定搜索结果的排序
+
+
+【展现】
+
+通用策略：将结果页中与query相关的信息提取为标题/摘要，进行飘红等处理帮助用户筛选信息
+细化策略：不同需求不同展示策略
+
+单一明确需求：天气，客服电话，直接将答案摘要前置
+用户行为路径收敛：网易邮箱（登陆），欢乐颂（集数）歌曲（播放），缩短步骤
+对于不同资源类型的结果，可以针对性优化摘要（视频，图片，新闻，地图）
+
+
+
+
+
+
+内容推荐策略
+
+
+产品目标：Kill Time
+需求理解：基础特征/历史行为/实时特征等组成用户潜在需求
+排序：根据需求预测和结果的各类特征综合排序，统一到CTR预估模型中
+展现：为点击服务，同时避免标题党
+
+
+网约车分派单策略0.0
+
+
+几个利益体：乘客希望被最近的司机接单（等待时间最短）；司机希望接到最挣钱的订单（接驾最短，距离最长，最不堵车）
+边界值：乘客能接受的最长等待时间最长是X分钟，司机能接受的最远接驾距离是XKM
+分析双方利益关系：都是希望撮合交易，但是矛盾点在于每个人都渴望最优质的匹配对象，而最优质的资源是稀缺的
+阶段性目标：成交率最大（在乘客需求更稀缺时，更偏向于乘客）
+方案：
+
+
+
+网约车分派单策略1.0——以乘客为中心
+
+
+阶段现状：需求比较低频稀疏，w单/天
+乘客：叫到车就好；司机：对平台无依赖，有单就好
+解决方案：以乘客为中心，由近到远播单；存在最大播单距离，保证司机体验
+问题：订单密度增加后，多个订单无差别推给司机，司机A被推送多个订单，而司机B却没有订单
+
+
+网约车分派单策略2.0——以司机为中心
+
+
+阶段现状：需求密集，10w单/天
+乘客：打到车；司机：希望更近更好的订单（市场上存在多个叫车平台）
+解决方案：以司机为中心，当司机需要订单时，由远及近播单；存在最大播单距离，保证司机体验
+问题：仅仅以距离作为条件派单很难将好订单筛选出来
+
+
+网约车分派单策略2.n——以司机为中心的订单推荐系统
+
+
+阶段现状：需求继续增加，&gt;10w单每天
+解决方案：引入订单长度，目的地特征，已被抢概率，取消概率，司机特征等因素升级为推荐系统
+以司机为中心，当司机需要订单时，选取周围订单按照模型排序
+问题：司乘存在明显分布不均，出现离所有司机很远无法播单的P1和离所有司机很近，被重复播单的P2
+
+
+网约车分派单策略3.0——以平台为中心的订单撮合系统
+
+
+阶段现状：需求继续密集，&gt;100w单/天
+解决方案：同时考虑区域内所有的乘客和司机，多种组合方式判定如何使得所有人的体验最佳（成交量最高）
+迭代：指派系统，动态调价
+">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/zh/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "策略产品实例",
+      "item": "http://localhost:1313/zh/posts/021-%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E5%AE%9E%E4%BE%8B/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "策略产品实例",
+  "name": "策略产品实例",
+  "description": " 目的地检索推荐策略\n产品目标：帮助用户以最低成本完成目的地输入 需求理解：（对需求的预测）用户目的地受到什么影响：出发地，时间，历史行为，终点的输入词 衡量指标：推荐策略的召回率和准确率 公交路线推荐策略\n产品目标：最低代价从出发地到达目的地 需求理解：最低代价怎么判断？出发时间（是否有时间诉求），目的地类型，用户历史行为（交通工具和价格倾向等） 衡量指标： 解决方案：给出所有可到达的路线集合——根据需求判断代价权重，给出候选路线的的排序——给出排序的依据（时长，步行距离，价格等数据） 网页搜索策略\n产品目标：高效获取信息\n衡量指标：搜索满足度 【语义理解】：\n需求明确； 结构简单清晰的搜索词，通过切词处理即可进行后续检索 口语化的query：需要进行纠错/同义转换等语义处理 表达方式很复杂的query:需要进行更加unique的语义处理，如披星（）月 需求明确，对答案有特殊需求； 除了统一的query变换外，需要将特定要求转换成搜索引擎可理解的特征 猪肉最新价格：资源时效性 XX电影资源：考虑资源的可用性 PPT素材：可用性\u0026amp;特定文件格式 需求不明确，需要对需求进行扩展和预测 欢乐颂：视频链接，剧情介绍，演员表，评论 电影名称：上映前预告片，上映时间，简介，在线购票，下线后的评论 每个query经过以上分类处理后，会统一解析为：需求类目/需求词/需求强度/待检索term/其他限定特征等内容，进行检索 衡量指标：每个query规则的召回率和准确率，各需求的准召 【排序】根据需求强度（命中需求的概率），结果质量（相关性，权威性，时效性，可用性）用户点击行为统一成排序指标，确定搜索结果的排序\n【展现】\n通用策略：将结果页中与query相关的信息提取为标题/摘要，进行飘红等处理帮助用户筛选信息 细化策略：不同需求不同展示策略 单一明确需求：天气，客服电话，直接将答案摘要前置 用户行为路径收敛：网易邮箱（登陆），欢乐颂（集数）歌曲（播放），缩短步骤 对于不同资源类型的结果，可以针对性优化摘要（视频，图片，新闻，地图） 内容推荐策略\n产品目标：Kill Time 需求理解：基础特征/历史行为/实时特征等组成用户潜在需求 排序：根据需求预测和结果的各类特征综合排序，统一到CTR预估模型中 展现：为点击服务，同时避免标题党 网约车分派单策略0.0\n几个利益体：乘客希望被最近的司机接单（等待时间最短）；司机希望接到最挣钱的订单（接驾最短，距离最长，最不堵车） 边界值：乘客能接受的最长等待时间最长是X分钟，司机能接受的最远接驾距离是XKM 分析双方利益关系：都是希望撮合交易，但是矛盾点在于每个人都渴望最优质的匹配对象，而最优质的资源是稀缺的 阶段性目标：成交率最大（在乘客需求更稀缺时，更偏向于乘客） 方案： 网约车分派单策略1.0——以乘客为中心\n阶段现状：需求比较低频稀疏，w单/天 乘客：叫到车就好；司机：对平台无依赖，有单就好 解决方案：以乘客为中心，由近到远播单；存在最大播单距离，保证司机体验 问题：订单密度增加后，多个订单无差别推给司机，司机A被推送多个订单，而司机B却没有订单 网约车分派单策略2.0——以司机为中心\n阶段现状：需求密集，10w单/天 乘客：打到车；司机：希望更近更好的订单（市场上存在多个叫车平台） 解决方案：以司机为中心，当司机需要订单时，由远及近播单；存在最大播单距离，保证司机体验 问题：仅仅以距离作为条件派单很难将好订单筛选出来 网约车分派单策略2.n——以司机为中心的订单推荐系统\n阶段现状：需求继续增加，\u0026gt;10w单每天 解决方案：引入订单长度，目的地特征，已被抢概率，取消概率，司机特征等因素升级为推荐系统 以司机为中心，当司机需要订单时，选取周围订单按照模型排序 问题：司乘存在明显分布不均，出现离所有司机很远无法播单的P1和离所有司机很近，被重复播单的P2 网约车分派单策略3.0——以平台为中心的订单撮合系统\n阶段现状：需求继续密集，\u0026gt;100w单/天 解决方案：同时考虑区域内所有的乘客和司机，多种组合方式判定如何使得所有人的体验最佳（成交量最高） 迭代：指派系统，动态调价 ",
+  "keywords": [
+    "产品"
+  ],
+  "articleBody": " 目的地检索推荐策略\n产品目标：帮助用户以最低成本完成目的地输入 需求理解：（对需求的预测）用户目的地受到什么影响：出发地，时间，历史行为，终点的输入词 衡量指标：推荐策略的召回率和准确率 公交路线推荐策略\n产品目标：最低代价从出发地到达目的地 需求理解：最低代价怎么判断？出发时间（是否有时间诉求），目的地类型，用户历史行为（交通工具和价格倾向等） 衡量指标： 解决方案：给出所有可到达的路线集合——根据需求判断代价权重，给出候选路线的的排序——给出排序的依据（时长，步行距离，价格等数据） 网页搜索策略\n产品目标：高效获取信息\n衡量指标：搜索满足度 【语义理解】：\n需求明确； 结构简单清晰的搜索词，通过切词处理即可进行后续检索 口语化的query：需要进行纠错/同义转换等语义处理 表达方式很复杂的query:需要进行更加unique的语义处理，如披星（）月 需求明确，对答案有特殊需求； 除了统一的query变换外，需要将特定要求转换成搜索引擎可理解的特征 猪肉最新价格：资源时效性 XX电影资源：考虑资源的可用性 PPT素材：可用性\u0026特定文件格式 需求不明确，需要对需求进行扩展和预测 欢乐颂：视频链接，剧情介绍，演员表，评论 电影名称：上映前预告片，上映时间，简介，在线购票，下线后的评论 每个query经过以上分类处理后，会统一解析为：需求类目/需求词/需求强度/待检索term/其他限定特征等内容，进行检索 衡量指标：每个query规则的召回率和准确率，各需求的准召 【排序】根据需求强度（命中需求的概率），结果质量（相关性，权威性，时效性，可用性）用户点击行为统一成排序指标，确定搜索结果的排序\n【展现】\n通用策略：将结果页中与query相关的信息提取为标题/摘要，进行飘红等处理帮助用户筛选信息 细化策略：不同需求不同展示策略 单一明确需求：天气，客服电话，直接将答案摘要前置 用户行为路径收敛：网易邮箱（登陆），欢乐颂（集数）歌曲（播放），缩短步骤 对于不同资源类型的结果，可以针对性优化摘要（视频，图片，新闻，地图） 内容推荐策略\n产品目标：Kill Time 需求理解：基础特征/历史行为/实时特征等组成用户潜在需求 排序：根据需求预测和结果的各类特征综合排序，统一到CTR预估模型中 展现：为点击服务，同时避免标题党 网约车分派单策略0.0\n几个利益体：乘客希望被最近的司机接单（等待时间最短）；司机希望接到最挣钱的订单（接驾最短，距离最长，最不堵车） 边界值：乘客能接受的最长等待时间最长是X分钟，司机能接受的最远接驾距离是XKM 分析双方利益关系：都是希望撮合交易，但是矛盾点在于每个人都渴望最优质的匹配对象，而最优质的资源是稀缺的 阶段性目标：成交率最大（在乘客需求更稀缺时，更偏向于乘客） 方案： 网约车分派单策略1.0——以乘客为中心\n阶段现状：需求比较低频稀疏，w单/天 乘客：叫到车就好；司机：对平台无依赖，有单就好 解决方案：以乘客为中心，由近到远播单；存在最大播单距离，保证司机体验 问题：订单密度增加后，多个订单无差别推给司机，司机A被推送多个订单，而司机B却没有订单 网约车分派单策略2.0——以司机为中心\n阶段现状：需求密集，10w单/天 乘客：打到车；司机：希望更近更好的订单（市场上存在多个叫车平台） 解决方案：以司机为中心，当司机需要订单时，由远及近播单；存在最大播单距离，保证司机体验 问题：仅仅以距离作为条件派单很难将好订单筛选出来 网约车分派单策略2.n——以司机为中心的订单推荐系统\n阶段现状：需求继续增加，\u003e10w单每天 解决方案：引入订单长度，目的地特征，已被抢概率，取消概率，司机特征等因素升级为推荐系统 以司机为中心，当司机需要订单时，选取周围订单按照模型排序 问题：司乘存在明显分布不均，出现离所有司机很远无法播单的P1和离所有司机很近，被重复播单的P2 网约车分派单策略3.0——以平台为中心的订单撮合系统\n阶段现状：需求继续密集，\u003e100w单/天 解决方案：同时考虑区域内所有的乘客和司机，多种组合方式判定如何使得所有人的体验最佳（成交量最高） 迭代：指派系统，动态调价 ",
+  "wordCount" : "65",
+  "inLanguage": "zh",
+  "datePublished": "2020-04-02T15:05:19Z",
+  "dateModified": "2020-04-02T15:05:19Z",
+  "author":{
+    "@type": "Person",
+    "name": "lula"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/zh/posts/021-%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E5%AE%9E%E4%BE%8B/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "lula的博客",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/zh/" accesskey="h" title="lula的博客 (Alt + H)">lula的博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="http://localhost:1313/" title="English"
+                            aria-label="English">English</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/zh/archives" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/projects/" title="项目">
+                    <span>项目</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/zh/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/zh/">主页</a>&nbsp;»&nbsp;<a href="http://localhost:1313/zh/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      策略产品实例
+    </h1>
+    <div class="post-meta"><span title='2020-04-02 15:05:19 +0000 UTC'>四月 2, 2020</span>&nbsp;·&nbsp;lula
+
+</div>
+  </header> 
+
+  <div class="post-content"><blockquote>
+<p>目的地检索推荐策略</p>
+</blockquote>
+<ol>
+<li>产品目标：帮助用户以最低成本完成目的地输入</li>
+<li>需求理解：（对需求的预测）用户目的地受到什么影响：出发地，时间，历史行为，终点的输入词</li>
+<li>衡量指标：推荐策略的召回率和准确率</li>
+</ol>
+<blockquote>
+<p>公交路线推荐策略</p>
+</blockquote>
+<ol>
+<li>产品目标：最低代价从出发地到达目的地</li>
+<li>需求理解：最低代价怎么判断？出发时间（是否有时间诉求），目的地类型，用户历史行为（交通工具和价格倾向等）</li>
+<li>衡量指标：</li>
+<li>解决方案：给出所有可到达的路线集合——根据需求判断代价权重，给出候选路线的的排序——给出排序的依据（时长，步行距离，价格等数据）</li>
+</ol>
+<blockquote>
+<p>网页搜索策略</p>
+</blockquote>
+<ol>
+<li>
+<p>产品目标：高效获取信息</p>
+</li>
+<li>
+<p>衡量指标：搜索满足度
+<img loading="lazy" src="https://lilulula.github.io//post-images/1585821897735.png"></p>
+</li>
+<li>
+<p>【语义理解】：</p>
+<ol>
+<li>需求明确；
+<ol>
+<li>结构简单清晰的搜索词，通过切词处理即可进行后续检索</li>
+<li>口语化的query：需要进行纠错/同义转换等语义处理</li>
+<li>表达方式很复杂的query:需要进行更加unique的语义处理，如披星（）月</li>
+</ol>
+</li>
+<li>需求明确，对答案有特殊需求；
+<ol>
+<li>除了统一的query变换外，需要将特定要求转换成搜索引擎可理解的特征
+<ol>
+<li>猪肉最新价格：资源时效性</li>
+<li>XX电影资源：考虑资源的可用性</li>
+<li>PPT素材：可用性&amp;特定文件格式</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>需求不明确，需要对需求进行扩展和预测
+<ol>
+<li>欢乐颂：视频链接，剧情介绍，演员表，评论</li>
+<li>电影名称：上映前预告片，上映时间，简介，在线购票，下线后的评论</li>
+</ol>
+</li>
+<li>每个query经过以上分类处理后，会统一解析为：需求类目/需求词/需求强度/待检索term/其他限定特征等内容，进行检索</li>
+<li>衡量指标：每个query规则的召回率和准确率，各需求的准召</li>
+</ol>
+</li>
+<li>
+<p>【排序】根据需求强度（命中需求的概率），结果质量（相关性，权威性，时效性，可用性）用户点击行为统一成排序指标，确定搜索结果的排序</p>
+</li>
+<li>
+<p>【展现】</p>
+<ol>
+<li>通用策略：将结果页中与query相关的信息提取为标题/摘要，进行飘红等处理帮助用户筛选信息</li>
+<li>细化策略：不同需求不同展示策略
+<ol>
+<li>单一明确需求：天气，客服电话，直接将答案摘要前置</li>
+<li>用户行为路径收敛：网易邮箱（登陆），欢乐颂（集数）歌曲（播放），缩短步骤</li>
+<li>对于不同资源类型的结果，可以针对性优化摘要（视频，图片，新闻，地图）</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<blockquote>
+<p>内容推荐策略</p>
+</blockquote>
+<ol>
+<li>产品目标：Kill Time</li>
+<li>需求理解：基础特征/历史行为/实时特征等组成用户潜在需求</li>
+<li>排序：根据需求预测和结果的各类特征综合排序，统一到CTR预估模型中</li>
+<li>展现：为点击服务，同时避免标题党</li>
+</ol>
+<blockquote>
+<p>网约车分派单策略0.0</p>
+</blockquote>
+<ol>
+<li>几个利益体：乘客希望被最近的司机接单（等待时间最短）；司机希望接到最挣钱的订单（接驾最短，距离最长，最不堵车）</li>
+<li>边界值：乘客能接受的最长等待时间最长是X分钟，司机能接受的最远接驾距离是XKM</li>
+<li>分析双方利益关系：都是希望撮合交易，但是矛盾点在于每个人都渴望最优质的匹配对象，而最优质的资源是稀缺的</li>
+<li>阶段性目标：成交率最大（在乘客需求更稀缺时，更偏向于乘客）</li>
+<li>方案：
+<img loading="lazy" src="https://lilulula.github.io//post-images/1585878966815.png"></li>
+</ol>
+<blockquote>
+<p>网约车分派单策略1.0——以乘客为中心</p>
+</blockquote>
+<ol>
+<li>阶段现状：需求比较低频稀疏，w单/天</li>
+<li>乘客：叫到车就好；司机：对平台无依赖，有单就好</li>
+<li>解决方案：以乘客为中心，由近到远播单；存在最大播单距离，保证司机体验</li>
+<li>问题：订单密度增加后，多个订单无差别推给司机，司机A被推送多个订单，而司机B却没有订单</li>
+</ol>
+<blockquote>
+<p>网约车分派单策略2.0——以司机为中心</p>
+</blockquote>
+<ol>
+<li>阶段现状：需求密集，10w单/天</li>
+<li>乘客：打到车；司机：希望更近更好的订单（市场上存在多个叫车平台）</li>
+<li>解决方案：以司机为中心，当司机需要订单时，由远及近播单；存在最大播单距离，保证司机体验</li>
+<li>问题：仅仅以距离作为条件派单很难将好订单筛选出来</li>
+</ol>
+<blockquote>
+<p>网约车分派单策略2.n——以司机为中心的订单推荐系统</p>
+</blockquote>
+<ol>
+<li>阶段现状：需求继续增加，&gt;10w单每天</li>
+<li>解决方案：引入订单长度，目的地特征，已被抢概率，取消概率，司机特征等因素升级为推荐系统</li>
+<li>以司机为中心，当司机需要订单时，选取周围订单按照模型排序</li>
+<li>问题：司乘存在明显分布不均，出现离所有司机很远无法播单的P1和离所有司机很近，被重复播单的P2</li>
+</ol>
+<blockquote>
+<p>网约车分派单策略3.0——以平台为中心的订单撮合系统</p>
+</blockquote>
+<ol>
+<li>阶段现状：需求继续密集，&gt;100w单/天</li>
+<li>解决方案：同时考虑区域内所有的乘客和司机，多种组合方式判定如何使得所有人的体验最佳（成交量最高）</li>
+<li>迭代：指派系统，动态调价</li>
+</ol>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/zh/tags/%E4%BA%A7%E5%93%81/">产品</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/zh/posts/022-%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5%E4%BC%98%E5%8C%96/">
+    <span class="title">« 上一页</span>
+    <br>
+    <span>豆瓣电影推荐策略优化</span>
+  </a>
+  <a class="next" href="http://localhost:1313/zh/posts/020-%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E6%96%B9%E6%B3%95%E8%AE%BA/">
+    <span class="title">下一页 »</span>
+    <br>
+    <span>策略产品方法论</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/zh/">lula的博客</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    
+<div class="busuanzi-footer">
+  <span id="busuanzi_container_site_pv">
+    Total views: <span id="busuanzi_value_site_pv"></span> 
+  </span>
+</div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

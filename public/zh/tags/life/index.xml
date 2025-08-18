@@ -6,13 +6,22 @@
     <description>Recent content in Life on lula的博客</description>
     <generator>Hugo -- 0.139.4</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 03 Aug 2024 11:30:03 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 Aug 2025 11:30:03 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/zh/tags/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Week33 - 拿到驾照&amp;MGV项目面试通过</title>
+      <link>http://localhost:1313/zh/posts/033-week33-%E6%8B%BF%E5%88%B0%E9%A9%BE%E7%85%A7mgv%E9%A1%B9%E7%9B%AE%E9%9D%A2%E8%AF%95%E9%80%9A%E8%BF%87/</link>
+      <pubDate>Mon, 18 Aug 2025 11:30:03 +0000</pubDate>
+      <guid>http://localhost:1313/zh/posts/033-week33-%E6%8B%BF%E5%88%B0%E9%A9%BE%E7%85%A7mgv%E9%A1%B9%E7%9B%AE%E9%9D%A2%E8%AF%95%E9%80%9A%E8%BF%87/</guid>
+      <description>&lt;p&gt;这周先是接着突发的热情疯狂开始使用Claude Code写项目，但是IOS的项目看起来表现和Web端差多了，主要可能也是因为IOS系统的封闭性，如果任由AI来写不忍直视的前端，重新开始拿起来Figma来自己画，进展一下子慢了很多。&lt;/p&gt;
+&lt;p&gt;然后就是遛狗的时候想起来好久没看信箱，没想到打开之后竟然看到Master Gardener的接收通知，左上角的Connell的LOGO还是挺开心哈哈，没想到还用这么传统的方式通知，我还等了好几天的Email。结果就看到了9.2的Orientation的安排，以后每周都要去一天的话，开车的问题必须要解决了，紧急打开了road test的预约，没想到正好有一个30mile之外的小村有三天后的一个spot，还在纠结的时候就被SSR催着赶紧预约了，提前还搜了一下网上关于这个考点的评价，总体来说是村里所以车很少，很容易通过，还找找到了一个三年前分享的驾考路线。到了周五早上，还是有些紧张，不过因为是第四次了，所以自然而然的项目也不用这么准备，先是高速开了40分钟到考点，在最右边以限速开，但是似乎路上所有人都是超过限速的。到了考点，发现竟然没有人排队，但是还是有些心理没谱，就按照那个三年前的线路尝试了两次侧方位停车，就直接去开始了，这个时候前面已经有三个车排队，考官有两个人，一直跟SSR讨论哪一个人看起来面相好些，很快轮到我，就想着是福是祸就这样吧，结果很短的路线，甚至没有考到走大路左转这个我最担心的项目，不过遇到一些前车突然倒车还有路口右转被停着的车挡住的情况，不过都礼貌应对了，每次有些担心的时候都偷瞄看他有没有记录，似乎一直没什么反应，结束之后感觉比较稳了。下午开始一直盯着result页面刷新，一直到四点突然就看到了那个小小的Pass，好开心。跟小狗一起庆祝了一会，决定带她去家旁边的一个小的Hiking路线，之前每次没走过去，她就气喘吁吁的，开车带她过去之后看到她开心的到处闻，自己也开心的行不行，算是在美国生活一个挺重要的节点吧，只是没想到竟然拖了这么久。回头看，好学生的心态每次fail之后，都会调整心态好久，然后重新预约再等着考试，兜兜转转还是运气作用很大。&lt;/p&gt;
+&lt;p&gt;周末又跟DL见面，去了中餐馆吃了有员工折扣的一餐，晚上一起玩桌游超开心的周末就结束了。下周准备去远一点的地方，有个mushroom festival，期待起来了。&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>2024年又重新开始写博客</title>
-      <link>http://localhost:1313/zh/posts/2024-starting-blogging-again/</link>
+      <link>http://localhost:1313/zh/posts/027-2024-starting-blogging-again/</link>
       <pubDate>Sat, 03 Aug 2024 11:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/2024-starting-blogging-again/</guid>
+      <guid>http://localhost:1313/zh/posts/027-2024-starting-blogging-again/</guid>
       <description>&lt;p&gt;现在写博客，可能也类似在在豆瓣写日记一样没人看吧，最近因为做独立产品买了一个域名，所以又开始产生折腾博客的念头，依然是用的Hugo+Github，似乎和七八年前一样，不过有了很多更便捷的工具。&lt;/p&gt;
 &lt;h3 id=&#34;挣扎的互联网产品经理的工作&#34;&gt;挣扎的互联网产品经理的工作&lt;/h3&gt;
 &lt;p&gt;在国内互联网挣扎了6年之后，终于躺平摊手放弃了，成了传说中“永远升不上P8的底层大头兵”，6年时间呆了4个团队，老板换了六七八个，经历了互联网最后一点荣光，越来越发现自己在这个环境中无法适从。&lt;/p&gt;
@@ -26,9 +35,9 @@
     </item>
     <item>
       <title>2019年终总结</title>
-      <link>http://localhost:1313/zh/posts/2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</link>
+      <link>http://localhost:1313/zh/posts/016-2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sat, 28 Dec 2019 17:58:15 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</guid>
+      <guid>http://localhost:1313/zh/posts/016-2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;p&gt;在准备写下这篇总结的时候，想着要选一个2019年的个人年度关键词，「妥协」这个词就蹦出来了；一直挂在嘴边的理想主义幻灭，一边在现有的生活中苟且着。&lt;/p&gt;
 &lt;h2 id=&#34;工作--个人&#34;&gt;工作 &amp;amp;&amp;amp; 个人&lt;/h2&gt;
 &lt;p&gt;如果统计一年各项活动的时间，工作应该是占比最大的吧。而独自一人在外，工作和生活似乎也难以分开。

@@ -6,8 +6,15 @@
     <description>Recent content in Tags on lula的博客</description>
     <generator>Hugo -- 0.139.4</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 13 Aug 2025 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 Aug 2025 11:30:03 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/zh/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Life</title>
+      <link>http://localhost:1313/zh/tags/life/</link>
+      <pubDate>Mon, 18 Aug 2025 11:30:03 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/life/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI</title>
       <link>http://localhost:1313/zh/tags/ai/</link>
@@ -51,6 +58,13 @@
       <description></description>
     </item>
     <item>
+      <title>Project</title>
+      <link>http://localhost:1313/zh/tags/project/</link>
+      <pubDate>Wed, 13 Aug 2025 11:30:03 +0000</pubDate>
+      <guid>http://localhost:1313/zh/tags/project/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>ADHD</title>
       <link>http://localhost:1313/zh/tags/adhd/</link>
       <pubDate>Tue, 01 Apr 2025 12:00:00 +0000</pubDate>
@@ -90,13 +104,6 @@
       <link>http://localhost:1313/zh/tags/share/</link>
       <pubDate>Wed, 16 Oct 2024 11:30:03 +0000</pubDate>
       <guid>http://localhost:1313/zh/tags/share/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Life</title>
-      <link>http://localhost:1313/zh/tags/life/</link>
-      <pubDate>Sat, 03 Aug 2024 11:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/zh/tags/life/</guid>
       <description></description>
     </item>
     <item>
