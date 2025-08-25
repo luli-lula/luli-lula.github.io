@@ -1,0 +1,23 @@
+# Hugo build files
+public/
+resources/
+.hugo_build.lock
+
+# Notion import processing
+notion-import/
+*.zip
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
