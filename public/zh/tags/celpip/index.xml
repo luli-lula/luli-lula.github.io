@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>CELPIP on lula的博客</title>
-    <link>http://localhost:1313/zh/tags/celpip/</link>
+    <link>http://localhost:61338/zh/tags/celpip/</link>
     <description>Recent content in CELPIP on lula的博客</description>
     <generator>Hugo -- 0.139.4</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 13 Aug 2025 12:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/tags/celpip/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:61338/zh/tags/celpip/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CELPIP12 - AI英语考试写作练习平台</title>
-      <link>http://localhost:1313/zh/projects/celpip12/</link>
+      <link>http://localhost:61338/zh/projects/celpip12/</link>
       <pubDate>Wed, 13 Aug 2025 12:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/zh/projects/celpip12/</guid>
+      <guid>http://localhost:61338/zh/projects/celpip12/</guid>
       <description>一个产品经理从自身需求出发，边学边做的CELPIP写作练习平台，记录了从零开始学习Web开发的完整过程</description>
     </item>
   </channel>

@@ -41,6 +41,9 @@ languages:
         - name: Projects
           url: projects/
           weight: 15
+        - name: Floating Thoughts
+          url: https://v0-floating-thoughts.vercel.app/
+          weight: 25
         - name: About
           url: about/
           weight: 30
@@ -62,6 +65,8 @@ languages:
             url: movies/
           - name: Books
             url: books/
+          - name: Floating Thoughts
+            url: https://v0-floating-thoughts.vercel.app/
 
   zh:
     languageName: "中文"
@@ -86,6 +91,9 @@ languages:
         - name: 项目
           url: projects/
           weight: 15
+        - name: 浮动想法
+          url: https://v0-floating-thoughts.vercel.app/
+          weight: 25
         - name: 关于
           url: about/
           weight: 30
@@ -107,6 +115,8 @@ languages:
             url: movies/
           - name: 书籍
             url: books/
+          - name: 浮动想法
+            url: https://v0-floating-thoughts.vercel.app/
 
 
 

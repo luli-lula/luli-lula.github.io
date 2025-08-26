@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Project on lula的博客</title>
-    <link>http://localhost:1313/zh/tags/project/</link>
+    <link>http://localhost:61338/zh/tags/project/</link>
     <description>Recent content in Project on lula的博客</description>
     <generator>Hugo -- 0.139.4</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 13 Aug 2025 11:30:03 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:61338/zh/tags/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>拖延了一年时间项目，花了5天上线了</title>
-      <link>http://localhost:1313/zh/posts/032-%E6%8B%96%E5%BB%B6%E4%BA%86%E4%B8%80%E5%B9%B4%E6%97%B6%E9%97%B4%E9%A1%B9%E7%9B%AE%E8%8A%B1%E4%BA%865%E5%A4%A9%E4%B8%8A%E7%BA%BF%E4%BA%86/</link>
+      <link>http://localhost:61338/zh/posts/032-%E6%8B%96%E5%BB%B6%E4%BA%86%E4%B8%80%E5%B9%B4%E6%97%B6%E9%97%B4%E9%A1%B9%E7%9B%AE%E8%8A%B1%E4%BA%865%E5%A4%A9%E4%B8%8A%E7%BA%BF%E4%BA%86/</link>
       <pubDate>Wed, 13 Aug 2025 11:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/zh/posts/032-%E6%8B%96%E5%BB%B6%E4%BA%86%E4%B8%80%E5%B9%B4%E6%97%B6%E9%97%B4%E9%A1%B9%E7%9B%AE%E8%8A%B1%E4%BA%865%E5%A4%A9%E4%B8%8A%E7%BA%BF%E4%BA%86/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;032-laji.jpg&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/032-laji.jpg&#34;&gt;&lt;/p&gt;
+      <guid>http://localhost:61338/zh/posts/032-%E6%8B%96%E5%BB%B6%E4%BA%86%E4%B8%80%E5%B9%B4%E6%97%B6%E9%97%B4%E9%A1%B9%E7%9B%AE%E8%8A%B1%E4%BA%865%E5%A4%A9%E4%B8%8A%E7%BA%BF%E4%BA%86/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;032-laji.jpg&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:61338/images/032-laji.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;上周不知道为什么突发奇想，想试试最近大火的Claude Code，Terminal上一行命令就开始了。&lt;/p&gt;
 &lt;p&gt;然后就一发不可收拾的突然进入了高效状态。&lt;/p&gt;
 &lt;p&gt;先是把整个Blog做了之前一直想加的内容，之前用Cursor尝试过一次最后走到死胡同就回滚了，准备这次用Claude完整尝试一次，结果发现效率奇高超快找到了解决办法，一口气做了四个feature&lt;/p&gt;

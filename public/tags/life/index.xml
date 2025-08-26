@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Life on lula&#39;s blog</title>
-    <link>http://localhost:1313/tags/life/</link>
+    <link>http://localhost:61338/tags/life/</link>
     <description>Recent content in Life on lula&#39;s blog</description>
     <generator>Hugo -- 0.139.4</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 03 Aug 2024 11:30:03 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/life/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:61338/tags/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Starting to Blog Again in 2024</title>
-      <link>http://localhost:1313/posts/027-2024-starting-blogging-again/</link>
+      <link>http://localhost:61338/posts/027-2024-starting-blogging-again/</link>
       <pubDate>Sat, 03 Aug 2024 11:30:03 +0000</pubDate>
-      <guid>http://localhost:1313/posts/027-2024-starting-blogging-again/</guid>
+      <guid>http://localhost:61338/posts/027-2024-starting-blogging-again/</guid>
       <description>&lt;p&gt;Writing blogs now might be as unnoticed as writing diaries on Douban. Recently, I bought a domain for an independent product project, which sparked the idea to set up a blog again. Still using Hugo + GitHub, just like seven or eight years ago, though with many more convenient tools available now.&lt;/p&gt;
 &lt;h3 id=&#34;the-struggling-life-of-an-internet-product-manager&#34;&gt;The Struggling Life of an Internet Product Manager&lt;/h3&gt;
 &lt;p&gt;After struggling in China&amp;rsquo;s internet industry for 6 years, I finally gave up and became what they call a &amp;ldquo;grassroots soldier who will never be promoted to P8&amp;rdquo;. In 6 years, I worked in 4 different teams, had 6-7-8 different bosses, experienced the last glimmer of the internet boom, and increasingly found myself unable to adapt to this environment.&lt;/p&gt;</description>
