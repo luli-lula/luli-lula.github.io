@@ -41,9 +41,6 @@ languages:
         - name: Projects
           url: projects/
           weight: 15
-        - name: Floating Thoughts
-          url: https://v0-floating-thoughts.vercel.app/
-          weight: 25
         - name: About
           url: about/
           weight: 30
@@ -91,9 +88,6 @@ languages:
         - name: 项目
           url: projects/
           weight: 15
-        - name: 浮动想法
-          url: https://v0-floating-thoughts.vercel.app/
-          weight: 25
         - name: 关于
           url: about/
           weight: 30
