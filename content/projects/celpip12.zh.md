@@ -9,7 +9,7 @@ TocOpen: false
 draft: false
 UseHugoToc: true
 cover:
-    image: "images/writing_preview.png"
+    image: "images/project-002-writing-preview.png"
     relative: false
     caption: "CELPIP12 写作练习平台界面"
 projectUrl: "https://github.com/luli-lula/celpip"

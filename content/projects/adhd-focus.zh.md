@@ -9,7 +9,7 @@ TocOpen: false
 draft: false
 UseHugoToc: true
 cover:
-    image: "images/adhd_preview.png"
+    image: "images/project-001-adhd-preview.png"
     relative: false
     caption: "ADHDFocus 专注计时器界面"
 projectUrl: "https://github.com/luli-lula/ADHDFocus"
