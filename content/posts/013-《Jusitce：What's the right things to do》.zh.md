@@ -5,6 +5,8 @@ tags: [Books]
 hideInList: false
 feature: /post-images/jusitcewhats-the-right-things-to-do.png
 ---
+![](/images/gridea/1574579008331.jpg)
+
 
 
 
