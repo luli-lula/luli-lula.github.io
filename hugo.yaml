@@ -1,4 +1,8 @@
-baseURL: https://ailula.top/
+# The site moved to https://ailula.top (ailula-site repo, 2026-11). This old blog stays here as an archive,
+# out of search results: its posts live on at ailula.top, and duplicates would compete with them.
+baseURL: https://luli-lula.github.io/
+cascade:
+  robotsNoIndex: true
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
 theme: PaperMod
